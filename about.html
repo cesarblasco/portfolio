@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="stylesheets/main.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About me</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div> -->
+
+      <!-- <div > -->
+      <nav id="menu-nav">
+        <ul class="menu-desktop">
+          <li>
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link active">
+              <i class="far fa-address-card"></i>
+              About me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">
+              <i class="fas fa-desktop"></i>
+              My projects
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link">
+              <i class="far fa-envelope"></i>
+              Contact
+            </a>
+          </li>
+
+          <li class="languages">
+            Languages <i class="fas fa-chevron-down"></i>
+          </li>
+        </ul>
+      </nav>
+      <!-- </div> -->
+
+      <!-- <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link">
+              About me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">
+              My work
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              How To Reach Me
+            </a>
+          </li>
+        </ul>
+      </nav> -->
+    </header>
+
+    <main id="about">
+      <div class="main-header">
+        <h1 class="lg-heading">
+          About
+          <span class="text-secondary">Me</span>
+        </h1>
+      </div>
+
+      <div class="categories">
+        <div class="category-link">
+          <a href="#introduction">Introduction</a>
+        </div>
+        <div class="category-link">
+          <a href="#technologies">Technologies</a>
+        </div>
+        <div class="category-link">
+          <a href="#experience">Experience and Education</a>
+        </div>
+        <div class="category-link">
+          <a href="#courses">Courses / Certifications</a>
+        </div>
+      </div>
+
+      <section id="introduction" class="about-info">
+        <img
+          src="images/portrait_filtered.jpg"
+          alt="Cesar Blasco"
+          class="cesar-avatar"
+        />
+
+        <div class="speech-bubble">
+          <div class="speech-text-container">
+            <p id="speech-bubble-text"></p>
+
+            <div id="reset-speech-bubble-btn">
+              <i class="fas fa-redo-alt"></i>
+            </div>
+
+            <div class="speech-bubble-scroll-btn">
+              <button id="speech-scroll-btn">
+                <i class="fas fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="technologies">
+        <h2 class="sm-heading">Technologies I've used</h2>
+
+        <div class="categories">
+          <div class="category active" data-category="all">All</div>
+          <div class="category" data-category="frontend">Frontend</div>
+          <div class="category" data-category="backend">Backend</div>
+          <div class="category" data-category="language">Languages</div>
+          <div class="category" data-category="tool">Tools</div>
+        </div>
+
+        <div class="technologies-categories">
+          <span class="pill" data-category="frontend language">HTML</span>
+          <span class="pill" data-category="frontend language">CSS3</span>
+          <span class="pill" data-category="frontend language"
+            >Javascript / ES6</span
+          >
+          <span class="pill" data-category="language">PHP</span>
+          <span class="pill" data-category="frontend">React JS</span>
+          <span class="pill" data-category="frontend">Jquery</span>
+          <span class="pill" data-category="frontend">Angular</span>
+          <span class="pill" data-category="frontend">Angular JS</span>
+          <span class="pill" data-category="backend">Laravel</span>
+          <span class="pill" data-category="backend">MySQL</span>
+          <span class="pill" data-category="backend">Spring Framework</span>
+          <span class="pill" data-category="tool">Underscore / Lodash ES</span>
+          <span class="pill" data-category="tool">Git</span>
+          <span class="pill" data-category="tool">Github</span>
+          <span class="pill" data-category="tool frontend">Typescript</span>
+          <span class="pill" data-category="tool">ES Lint</span>
+          <span class="pill" data-category="tool">Visual Studio Code</span>
+          <span class="pill" data-category="tool">Prettier</span>
+        </div>
+      </section>
+
+      <section id="experience" class="experience-section">
+        <h2 class="sm-heading">Experience and Education</h2>
+
+        <p class="resume-link">
+          You can download my resume
+          <a
+            target="_blank"
+            noreferrer
+            noopener
+            href="/files/CesarBlascoResume.pdf"
+            >here</a
+          >
+        </p>
+
+        <div class="timeline">
+          <!-- <div class="timeline-left-column"> -->
+
+          <!-- </div> -->
+
+          <div class="timeline-vertical-line">
+            <div class="timeline-circle"></div>
+            <div class="timeline-circle"></div>
+            <div class="timeline-circle"></div>
+            <div class="timeline-circle"></div>
+          </div>
+
+          <!-- <div class="timeline-right-column"> -->
+          <div class="timeline-event-left">
+            <h3 class="company-name">
+              <a href="https://rankmi.com" target="_blank" noopener noreferrer
+                >Rankmi.com</a
+              >
+            </h3>
+            <p class="company-position">
+              Frontend Developer (June 2018 - Ongoing)
+            </p>
+            <ul>
+              <li>
+                Developed components, modules and features of diverse
+                complexities using Angular JS framework version 1.6.7.
+              </li>
+              <li>
+                Refactored components from .js to .ts and made improvements over
+                legacy code.
+              </li>
+              <li>
+                Collaborated in creating and refactoring components to enable
+                accessibility by limited or impaired users WAI ARIA standards
+                for the web).
+              </li>
+              <li>
+                Learned React JS and collaborated in the migration of the
+                application from Angular JS to React JS.
+              </li>
+            </ul>
+          </div>
+          <div class="timeline-event-right">
+            <h3 class="company-name">
+              <a
+                href="http://www.sotec-consulting.com/"
+                target="_blank"
+                noopener
+                noreferrer
+                >SOTEC Consulting</a
+              >
+            </h3>
+            <p class="company-position">
+              Fullstack Developer (June 2017 - June 2018)
+            </p>
+            <ul>
+              <li>
+                Developed components, modules and features using the Angular
+                framework versions 2 to 5.
+              </li>
+              <li>
+                Collaborated in REST API development using Spring Framework and
+                Entity Framework with Microsoft SQL Server
+              </li>
+            </ul>
+          </div>
+
+          <div class="timeline-event-left">
+            <h3 class="company-name">
+              <a href="#" target="_blank" noopener noreferrer
+                >Dental Clinic Proequip Salud
+              </a>
+            </h3>
+            <p class="company-position">
+              Fullstack Developer (? 2017 - ? 2018)
+            </p>
+            <p>
+              This is a tiemline event when I worked at Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Sequi itaque dolorem vero, eos
+              rem unde accusamus laborum. Ut corrupti a quisquam incidunt!
+              Error, eum porro est explicabo reiciendis ea saepe!
+            </p>
+          </div>
+          <div class="timeline-event-right">
+            <h3 class="company-name">
+              <a
+                href="http://www.sotec-consulting.com/"
+                target="_blank"
+                noopener
+                noreferrer
+                >Universidad de Oriente</a
+              >
+            </h3>
+            <p class="company-position">
+              Computer Engineering (October 2009 - October 2018)
+            </p>
+            <ul>
+              <li>
+                Developed components, modules and features using the Angular
+                framework versions 2 to 5.
+              </li>
+              <li>
+                Collaborated in REST API development using Spring Framework and
+                Entity Framework with Microsoft SQL Server
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+
+      <section id="courses">
+        <h2 class="sm-heading">Courses / Certifications</h2>
+
+        <div class="certificates">
+          <a href="images/about/html-css-cert.png" target="_blank"
+            ><img src="images/about/html-css-cert.png" width="250" height="200"
+          /></a>
+          <a href="images/about/javascript-cert.png" target="_blank"
+            ><img
+              src="images/about/javascript-cert.png"
+              width="250"
+              height="200"
+          /></a>
+          <a href="images/about/angular-cert.png" target="_blank"
+            ><img src="images/about/angular-cert.png" width="250" height="200"
+          /></a>
+          <a href="images/about/angular-forms-cert.png" target="_blank"
+            ><img
+              src="images/about/angular-forms-cert.png"
+              width="250"
+              height="200"
+          /></a>
+          <a href="images/about/flex-cert.jpg" target="_blank"
+            ><img src="images/about/flex-cert.jpg" width="250" height="200"
+          /></a>
+          <a href="images/about/scrum-cert.jpg" target="_blank"
+            ><img src="images/about/scrum-cert.jpg" width="250" height="200"
+          /></a>
+          <a href="images/about/react-jest-cert.jpg" target="_blank"
+            ><img
+              src="images/about/react-jest-cert.jpg"
+              width="250"
+              height="200"
+          /></a>
+          <!-- <a href="images/about/html-css-cert.png" target="_blank"
+            ><img src="images/about/html-css-cert.png" width="250" height="200"
+          /></a> -->
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2020
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+     
+          <img src="images/about/react.png" width="125" height="125" />
+
+          <img src="images/about/typescript.png" width="125" height="125" />
+
+          <img src="images/about/angular2.png" width="125" height="125" />
+
+          <img src="images/about/angularjs.png" width="125" height="125" />
+
+          <img src="images/about/bootstrap.png" width="125" height="125" />
+
+          <img src="images/about/css3.png" width="125" height="125" />
+
+          <img src="images/about/es6.png" width="125" height="125" />
+
+          <img src="images/about/html5.png" width="125" height="125" />
+
+          <img src="images/about/sass.png" width="125" height="125" />
+       
+ 
+          <span class="technology-category">Backend / monolith</span>
+
+          <img src="images/about/laravel.png" width="125" height="125" />
+      
+
+          <span class="technology-category">Tools</span>
+
+          <img src="images/about/git.png" width="125" height="125" />
+
+          <img src="images/about/github.png" width="125" height="125" />
+
+          <img src="images/about/lodash.png" width="125" height="125" />
+     
+      -->

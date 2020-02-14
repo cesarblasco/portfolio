@@ -1,0 +1,86 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 1.5rem;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 50%;
+  color: #000;
+  text-align: center;
+
+  .modal-title {
+    grid-area: title;
+    margin-bottom: 1.2rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 10px;
+  }
+
+  .close {
+    grid-area: close;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 15px;
+    float: right;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-description {
+    margin-bottom: 1.2rem;
+  }
+
+  .modal-summary {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: justify;
+  }
+
+  @mixin modalBtn {
+    min-width: 12rem;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+  }
+
+  .modal-see-project {
+    @include modalBtn;
+    background: rgb(237, 81, 19);
+  }
+
+  #modal-btn {
+    @include modalBtn;
+    background: rgb(20, 158, 222);
+  }
+
+  .modal-technologies-title {
+    margin-bottom: -1px;
+  }
+
+  .modal-technologies {
+    margin-bottom: 5px;
+  }
+}

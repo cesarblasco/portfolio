@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="stylesheets/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>View My Projects</title>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div> -->
+        <nav id="menu-nav">
+            <ul class="menu-desktop">
+            <li>
+                    <a href="index.html" class="nav-link">
+                      <i class="fas fa-home"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about.html" class="nav-link">
+                      <i class="far fa-address-card"></i>
+                      About me
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="projects.html" class="nav-link active">
+                      <i class="fas fa-desktop"></i>
+                      My projects
+                    </a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="nav-link">
+                      <i class="far fa-envelope"></i>
+                      Contact
+                    </a>
+                  </li>
+          
+                  <li class="languages">
+                    Languages <i class="fas fa-chevron-down"></i>
+                  </li>
+                </ul>
+        </nav>
+
+        <!-- <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About me
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="projects.html" class="nav-link">
+                        My work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        How To Reach Me
+                    </a>
+                </li>
+            </ul>
+        </nav> -->
+    </header>
+
+    <main id="work">
+        <div class="main-header">
+            <h1 class="lg-heading">
+                My
+                <span class="text-secondary">Projects</span>
+            </h1>
+            <h2 class="sm-heading">
+                Check out my projects
+            </h2>
+        </div>
+
+        <div class="categories">
+            <div class="category active" data-category="all">All</div>
+            <div class="category" data-category="web">Web Apps</div>
+            <div class="category" data-category="games">Games</div>
+            <div class="category" data-category="others">Others</div>
+        </div>
+
+        <div class="projects">
+            <div class="project" data-category="web">
+                <div class="project-image">
+                    <span class="project-title" id="dental-title">
+                        <i class="fas fa-tooth"></i>
+                        </i> Dental Clinic
+                        <i class="fas fa-tooth"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="dental">
+                        <img src="images/projects/dental-clinic/thumbnail.jpg" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="dental">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="project" data-category="web">
+                <div class="project-image">
+                    <span class="project-title">
+                        <i class="fab fa-github"></i> Github Search
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="search">
+                        <img src="images/projects/search/thumbnail.png" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="search">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/cesarblasco/RKM-Test-Base" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="project" data-category="web">
+                <div class="project-image">
+                    <span class="project-title">
+                        <i class="fas fa-book"></i>
+                        </i> Tribute Page
+                        <i class="fas fa-book"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="tribute">
+                        <img src="images/projects/tribute/thumbnail.jpg" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="tribute">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/Cesar1337/pen/VmzzRL" class="btn-dark">
+                    <i class="fab fa-codepen"></i> Codepen
+                </a>
+            </div>
+
+            <div class="project" data-category="games">
+                <div class="project-image">
+                    <span class="project-title">
+                        <i class="fas fa-gamepad"></i>
+                        </i> Math Game
+                        <i class="fas fa-gamepad"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="math">
+                        <img src="images/projects/math/thumbnail.jpg" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="math">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="project" data-category="games">
+                <div class="project-image">
+                    <span class="project-title">
+                        <i class="fab fa-github"></i> JS Game
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="jsGame">
+                        <img src="images/projects/project4.jpg" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="jsGame">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="project" data-category="games">
+                <div class="project-image">
+                    <span class="project-title">
+                        <i class="fab fa-github"></i> Java Game
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="javaGame">
+                        <img src="images/projects/project2.jpg" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="javaGame">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="project" data-category="others">
+                <div class="project-image">
+                    <span class="project-title">
+                        <i class="fas fa-flask"></i> CSS Lab
+                        <i class="fas fa-flask"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="lab">
+                        <img src="images/projects/lab/thumbnail.jpeg" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="lab">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a href="https://github.com/cesarblasco/css-lab" target="_blank" noopener noreferrer class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="project" data-category="web">
+                <div class="project-image">
+                    <span class="project-title">
+                        <i class="fas fa-suitcase"></i> Portfolio
+                        <i class="fas fa-suitcase"></i>
+                    </span>
+                    <a href="#!" class="project-info" data-project="portfolio">
+                        <img src="images/projects/portfolio/portfolio-thumbnail.jpg" alt="Project">
+                    </a>
+                </div>
+
+                <a href="#!" class="btn-light project-info" data-project="portfolio">
+                    <i class="fas fa-eye"></i> Info
+                </a>
+
+                <a href="#!" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2020
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <i class="modal-icon"></i>
+                <h1 class="modal-title" id="modal-title"></h1>
+                <i class="modal-icon"></i>
+                <span class="close">&times;</span>
+            </div>
+
+            <h2 class="modal-description" id="modal-description"></h2>
+
+            <p id="modal-summary"></p>
+
+            <p class="modal-technologies-title">
+                <b>Technologies used:</b>
+            </p>
+
+            <div class="modal-technologies" id="modal-technologies"></div>
+
+            <div class="carousel" id="carousel">
+                <div class="previous" id="previous">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+
+                <!-- <div class="carousel-images">
+                    <figure>
+                        <img src="" id="current-carousel-image">
+                        <div id="carousel-pages-container"></div>
+                        <figcaption id="current-caption"></figcaption>
+                    </figure>
+                </div> -->
+
+                <div class="next" id="next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <div id="carousel-pages-container"></div>
+                <div id="current-caption"></div>
+            </div>
+            
+
+            <button class="modal-see-project">
+                <a id="project-link" href="#" target="_blank" rel="noopener noreferrer">View</a>
+            </button>
+            <button type="button" id="modal-btn">Ok</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+
+</html>

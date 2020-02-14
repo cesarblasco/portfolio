@@ -1,0 +1,381 @@
+section {
+  margin-bottom: 80px;
+}
+
+section:first-of-type {
+  margin-bottom: 40px;
+}
+
+ul {
+  padding-left: 15px;
+}
+
+.about-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+
+.speech-bubble {
+  position: relative;
+  background: white;
+  color: black;
+  border: 5px solid black;
+  border-radius: 30px;
+  width: 40%;
+  max-height: 300px;
+  font-size: 1.3rem;
+
+  .speech-text-container {
+    padding: 10px 25px;
+    padding-top: 0;
+    width: 100%;
+    max-height: 300px;
+    text-align: justify;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    p a {
+      color: blue;
+    }
+  }
+
+  .speech-text-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.speech-bubble:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 27px solid transparent;
+  border-right-color: black;
+  border-left: 0;
+  margin-top: -27px;
+  margin-left: -27px;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: white;
+  border-left: 0;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.cesar-avatar {
+  margin: 50px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border: $secondary-color 3px solid;
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.technologies-row {
+  margin-bottom: 20px;
+
+  img {
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+}
+
+@keyframes resetSpeechBubbleBtnAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes speechScrollBtnAnimation {
+  0% {
+    transform: translateY(+5px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(+5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(+5px);
+  }
+}
+
+#speech-bubble-text {
+  margin-bottom: 0;
+}
+
+#reset-speech-bubble-btn {
+  position: absolute;
+  display: none;
+  top: 87%;
+  left: 50%;
+  font-size: 1rem;
+
+  animation-name: resetSpeechBubbleBtnAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+
+  &:hover {
+    cursor: pointer;
+    color: $secondary-color;
+  }
+}
+
+.speech-bubble-scroll-btn {
+  position: absolute;
+  top: 85%;
+  left: 92%;
+  animation-name: speechScrollBtnAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  button {
+    font-size: 1.3rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.technologies-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 65%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.technology-category-column {
+  display: flex;
+  flex-direction: column;
+
+  & img {
+    margin: 10px 0;
+    margin: 0 auto;
+  }
+}
+
+.technology-category {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.pill {
+  border-radius: 15px;
+  background-color: #2684ff;
+  color: #fff;
+  padding: 5px 30px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-right: 15px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+
+  &:hover,
+  &.pill-active {
+    @include easeOut;
+    background-color: darken(#2684ff, 10);
+    color: darken(lightgray, 1);
+  }
+}
+
+.certificates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 65%;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+
+  & img {
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+.experience-section {
+  width: 100%;
+  height: 1300px;
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.timeline-vertical-line {
+  position: absolute;
+  margin-top: 100px;
+  left: 50%;
+  height: 1200px;
+  width: 5px;
+  background-color: $secondary-color;
+
+  .timeline-circle {
+    margin-top: 270px;
+    transform: translateX(-13px);
+    z-index: 1;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: $primary-color;
+    border: 2px solid black;
+  }
+
+  .timeline-circle:first-child {
+    margin-top: 155px;
+  }
+}
+
+@mixin timeline-event-layout {
+  position: relative;
+  background-color: gray;
+  min-width: 400px;
+  max-width: 600px;
+  min-height: 200px;
+  padding: 20px 30px;
+  padding-top: 10px;
+  border: 4px solid $secondary-color;
+  text-align: justify;
+}
+
+.timeline-event-left {
+  @include timeline-event-layout;
+  position: relative;
+  left: 10%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 27px solid transparent;
+    border-left-color: $secondary-color;
+    border-right: 0;
+    margin-top: -27px;
+    margin-right: -27px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-left-color: gray;
+    border-right: 0;
+    margin-top: -20px;
+    margin-right: -20px;
+  }
+}
+
+.timeline-event-right {
+  @include timeline-event-layout;
+  position: relative;
+  left: 55%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 27px solid transparent;
+    border-right-color: $secondary-color;
+    border-left: 0;
+    margin-top: -27px;
+    margin-left: -27px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: gray;
+    border-left: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+}
+
+.timeline-event-left:first-child {
+  margin-top: 0;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.company-position {
+  margin-bottom: 20px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-link a,
+.company-name a {
+  color: $secondary-color;
+  text-decoration: underline;
+}

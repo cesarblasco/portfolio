@@ -1,0 +1,32 @@
+Carousel y/o videos de mi aplicacion ademas del github (donde sea
+pertinente)
+
+Punto anterior dentro de un modal.. mostrar carousel con varias capturas
+de la app y un video (como parte del carousel tipo steam) que provenga
+de un boton "ver informacion" o algo asi ademas de los botones
+ver proyecto y ver github
+
+Seccion de tecnologias
+
+Seccion curriculum
+
+Translate-static (?) para que la pagina tenga version en ingles
+y espanol
+
+
+seccion proyectos
+
+- tabs por tipo
+
+
+
+seccion acerca de mi
+- experiencia 
+- tecnologias / carousel de tecnologias
+- informacion basica
+- a hrefs que te naveguen a la seccion que quieras
+
+
+toogle entre:
+- timeline 
+- panels (ya esta)
