@@ -27,33 +27,41 @@
           <li>
             <a href="index.html" class="nav-link">
               <i class="fas fa-home"></i>
-              Home
+              <span data-translate="navbar.home"></span>
             </a>
           </li>
           <li>
             <a href="about.html" class="nav-link active">
               <i class="far fa-address-card"></i>
-              About me
+              <span data-translate="navbar.aboutMe"></span>
             </a>
           </li>
           <li class="nav-item">
             <a href="projects.html" class="nav-link">
               <i class="fas fa-desktop"></i>
-              My projects
+              <span data-translate="navbar.projects"></span>
             </a>
           </li>
           <li>
             <a href="contact.html" class="nav-link">
               <i class="far fa-envelope"></i>
-              Contact
+              <span data-translate="navbar.contact"></span>
             </a>
           </li>
 
-          <li class="languages">
-            Languages <i class="fas fa-chevron-down"></i>
+          <li class="languages" id="languages-dropdown-btn">
+            <span data-translate="navbar.languages"></span>
+            <i class="fas fa-chevron-down" id="languages-dropdown-icon"></i>
           </li>
         </ul>
       </nav>
+
+      <div class="container-lang">
+        <div class="languages-dropdown" id="languages-dropdown">
+          <p id="lang-es"><a href="./about.html?lang=es">Espanol</a></p>
+          <p id="lang-en"><a href="./about.html?lang=en">English</a></p>
+        </div>
+      </div>
       <!-- </div> -->
 
       <!-- <nav class="menu">
@@ -87,24 +95,21 @@
 
     <main id="about">
       <div class="main-header">
-        <h1 class="lg-heading">
-          About
-          <span class="text-secondary">Me</span>
-        </h1>
+        <h1 class="lg-heading" data-translate="about.header"></h1>
       </div>
 
       <div class="categories">
         <div class="category-link">
-          <a href="#introduction">Introduction</a>
+          <a href="#introduction" data-translate="about.introductionLink"></a>
         </div>
         <div class="category-link">
-          <a href="#technologies">Technologies</a>
+          <a href="#technologies" data-translate="about.technologiesLink"></a>
         </div>
         <div class="category-link">
-          <a href="#experience">Experience and Education</a>
+          <a href="#experience" data-translate="about.experienceLink"></a>
         </div>
         <div class="category-link">
-          <a href="#courses">Courses / Certifications</a>
+          <a href="#courses" data-translate="about.coursesLink"></a>
         </div>
       </div>
 
@@ -133,14 +138,14 @@
       </section>
 
       <section id="technologies">
-        <h2 class="sm-heading">Technologies I've used</h2>
+        <h2 class="sm-heading" data-translate="about.technologiesTitle"></h2>
 
         <div class="categories">
-          <div class="category active" data-category="all">All</div>
-          <div class="category" data-category="frontend">Frontend</div>
-          <div class="category" data-category="backend">Backend</div>
-          <div class="category" data-category="language">Languages</div>
-          <div class="category" data-category="tool">Tools</div>
+          <div class="category tech-category active" data-category="all" data-translate="about.allTechnologiesCategory"></div>
+          <div class="category tech-category" data-category="frontend" data-translate="about.frontendTechnologiesCategory"></div>
+          <div class="category tech-category" data-category="backend" data-translate="about.backendTechnologiesCategory"></div>
+          <div class="category tech-category" data-category="language" data-translate="about.languagesTechnologiesCategory"></div>
+          <div class="category tech-category" data-category="tool" data-translate="about.toolsTechnologiesCategory"></div>
         </div>
 
         <div class="technologies-categories">
@@ -168,35 +173,29 @@
       </section>
 
       <section id="experience" class="experience-section">
-        <h2 class="sm-heading">Experience and Education</h2>
+        <h2 class="sm-heading" data-translate="about.experienceTitle"></h2>
 
-        <p class="resume-link">
-          You can download my resume
-          <a
-            target="_blank"
-            noreferrer
-            noopener
-            href="/files/CesarBlascoResume.pdf"
-            >here</a
-          >
-        </p>
+        <p class="resume-link" data-translate="about.resumeDownloadLink"></p>
 
-        <div class="timeline">
-          <!-- <div class="timeline-left-column"> -->
+        <div class="categories">
+          <div class="category timeline-category active" data-category="timeline" data-translate="about.timelineCategoryLine"></div>
+          <div class="category timeline-category" data-category="stacked" data-translate="about.timelineCategoryStacked"></div>
+        </div>
 
-          <!-- </div> -->
+        <!-- <div class="timeline-vertical-line"></div> -->
+        
+        <div clss="timeline" id="timeline-container"> 
+          <!-- <div class="back-arrow"></div>a -->
 
-          <div class="timeline-vertical-line">
-            <div class="timeline-circle"></div>
-            <div class="timeline-circle"></div>
-            <div class="timeline-circle"></div>
-            <div class="timeline-circle"></div>
-          </div>
+          <i class="fas fa-backward tl-navigate-backward" id="tl-navigate-backward"></i>
 
-          <!-- <div class="timeline-right-column"> -->
-          <div class="timeline-event-left">
+          <div class="timeline-event" id="tl-event-1">
             <h3 class="company-name">
-              <a href="https://rankmi.com" target="_blank" noopener noreferrer
+              <a
+                href="https://rankmi.com"
+                target="_blank"
+                noopener
+                noreferrer
                 >Rankmi.com</a
               >
             </h3>
@@ -209,13 +208,13 @@
                 complexities using Angular JS framework version 1.6.7.
               </li>
               <li>
-                Refactored components from .js to .ts and made improvements over
-                legacy code.
+                Refactored components from .js to .ts and made improvements
+                over legacy code.
               </li>
               <li>
-                Collaborated in creating and refactoring components to enable
-                accessibility by limited or impaired users WAI ARIA standards
-                for the web).
+                Collaborated in creating and refactoring components to
+                enable accessibility by limited or impaired users WAI ARIA
+                standards for the web).
               </li>
               <li>
                 Learned React JS and collaborated in the migration of the
@@ -223,7 +222,10 @@
               </li>
             </ul>
           </div>
-          <div class="timeline-event-right">
+
+          <!-- <div class="timeline-circle"></div> -->
+
+          <div class="timeline-event" id="tl-event-2">
             <h3 class="company-name">
               <a
                 href="http://www.sotec-consulting.com/"
@@ -247,8 +249,8 @@
               </li>
             </ul>
           </div>
-
-          <div class="timeline-event-left">
+      
+          <div class="timeline-event" id="tl-event-3">
             <h3 class="company-name">
               <a href="#" target="_blank" noopener noreferrer
                 >Dental Clinic Proequip Salud
@@ -257,14 +259,20 @@
             <p class="company-position">
               Fullstack Developer (? 2017 - ? 2018)
             </p>
-            <p>
-              This is a tiemline event when I worked at Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Sequi itaque dolorem vero, eos
-              rem unde accusamus laborum. Ut corrupti a quisquam incidunt!
-              Error, eum porro est explicabo reiciendis ea saepe!
-            </p>
+            <ul>
+              <li>
+                Developed an application to handle all the needs of a dental clinic
+              </li>
+              <li>
+                Featuring a fully interactive teeth view with bla blablabla and more blab
+              </li>
+              <li>
+                The application went live on xx october 2017, serving all the needs of the clinic
+              </li>
+            </ul>
           </div>
-          <div class="timeline-event-right">
+
+          <div class="timeline-event" id="tl-event-4">
             <h3 class="company-name">
               <a
                 href="http://www.sotec-consulting.com/"
@@ -279,21 +287,19 @@
             </p>
             <ul>
               <li>
-                Developed components, modules and features using the Angular
-                framework versions 2 to 5.
+                My second home for quite a while!
               </li>
               <li>
-                Collaborated in REST API development using Spring Framework and
-                Entity Framework with Microsoft SQL Server
+                Learned all the basics about computer science, it was a wild ride sdfdsf sdfsdfsfsdf!
               </li>
             </ul>
-          </div>
-          <!-- </div> -->
         </div>
+
+        <i class="fas fa-forward tl-navigate-forward" id="tl-navigate-forward"></i>
       </section>
 
       <section id="courses">
-        <h2 class="sm-heading">Courses / Certifications</h2>
+        <h2 class="sm-heading" data-translate="about.coursesTitle"></h2>
 
         <div class="certificates">
           <a href="images/about/html-css-cert.png" target="_blank"
@@ -339,6 +345,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/about.js"></script>
+    <script src="js/translate.js"></script>
   </body>
 </html>
 

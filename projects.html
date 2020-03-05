@@ -18,37 +18,45 @@
             <div class="btn-line"></div>
         </div> -->
         <nav id="menu-nav">
-            <ul class="menu-desktop">
+        <ul class="menu-desktop">
             <li>
-                    <a href="index.html" class="nav-link">
-                      <i class="fas fa-home"></i>
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about.html" class="nav-link">
-                      <i class="far fa-address-card"></i>
-                      About me
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="projects.html" class="nav-link active">
-                      <i class="fas fa-desktop"></i>
-                      My projects
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact.html" class="nav-link">
-                      <i class="far fa-envelope"></i>
-                      Contact
-                    </a>
-                  </li>
-          
-                  <li class="languages">
-                    Languages <i class="fas fa-chevron-down"></i>
-                  </li>
-                </ul>
+            <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span data-translate="navbar.home"></span>
+            </a>
+            </li>
+            <li>
+            <a href="about.html" class="nav-link">
+                <i class="far fa-address-card"></i>
+                <span data-translate="navbar.aboutMe"></span>
+            </a>
+            </li>
+            <li class="nav-item">
+            <a href="projects.html" class="nav-link active">
+                <i class="fas fa-desktop"></i>
+                <span data-translate="navbar.projects"></span>
+            </a>
+            </li>
+            <li>
+            <a href="contact.html" class="nav-link">
+                <i class="far fa-envelope"></i>
+                <span data-translate="navbar.contact"></span>
+            </a>
+            </li>
+
+            <li class="languages" id="languages-dropdown-btn">
+            <span data-translate="navbar.languages"></span>
+            <i class="fas fa-chevron-down" id="languages-dropdown-icon"></i>
+            </li>
+        </ul>
         </nav>
+
+        <div class="container-lang" >
+            <div class="languages-dropdown" id="languages-dropdown">
+              <p id="lang-es"><a href="./projects.html?lang=es">Espanol</a></p>
+              <p id="lang-en"><a href="./projects.html?lang=en">English</a></p>
+            </div>
+          </div>
 
         <!-- <nav class="menu">
             <div class="menu-branding">
@@ -81,20 +89,16 @@
 
     <main id="work">
         <div class="main-header">
-            <h1 class="lg-heading">
-                My
-                <span class="text-secondary">Projects</span>
-            </h1>
-            <h2 class="sm-heading">
-                Check out my projects
-            </h2>
+            <h1 class="lg-heading" data-translate="projects.header"></h1>
+            <h2 class="sm-heading" data-translate="projects.subHeader"></h2>
         </div>
 
         <div class="categories">
-            <div class="category active" data-category="all">All</div>
-            <div class="category" data-category="web">Web Apps</div>
-            <div class="category" data-category="games">Games</div>
-            <div class="category" data-category="others">Others</div>
+            <div class="category active" data-category="all" data-translate="projects.allProjectsCategory"></div>
+            <div class="category" data-category="web" data-translate="projects.webProjectsCategory"></div>
+            <div class="category" data-category="mobile" data-translate="projects.mobileAppsCategory"></div>
+            <div class="category" data-category="games" data-translate="projects.gamesProjectsCategory"></div>
+            <div class="category" data-category="others" data-translate="projects.otherProjectsCategory"></div>
         </div>
 
         <div class="projects">
@@ -111,11 +115,11 @@
                 </div>
 
                 <a href="#!" class="btn-light project-info" data-project="dental">
-                    <i class="fas fa-eye"></i> Info
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a href="#!" class="btn-dark">
-                    <i class="fab fa-github"></i> Github
+                    <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
                 </a>
             </div>
 
@@ -131,11 +135,11 @@
                 </div>
 
                 <a href="#!" class="btn-light project-info" data-project="search">
-                    <i class="fas fa-eye"></i> Info
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/cesarblasco/RKM-Test-Base" class="btn-dark">
-                    <i class="fab fa-github"></i> Github
+                    <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
                 </a>
             </div>
 
@@ -152,11 +156,11 @@
                 </div>
 
                 <a href="#!" class="btn-light project-info" data-project="tribute">
-                    <i class="fas fa-eye"></i> Info
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/Cesar1337/pen/VmzzRL" class="btn-dark">
-                    <i class="fab fa-codepen"></i> Codepen
+                    <i class="fab fa-codepen"></i> <span data-translate="projects.codepenBtn"></span>
                 </a>
             </div>
 
@@ -173,31 +177,31 @@
                 </div>
 
                 <a href="#!" class="btn-light project-info" data-project="math">
-                    <i class="fas fa-eye"></i> Info
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a href="#!" class="btn-dark">
-                    <i class="fab fa-github"></i> Github
+                    <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
                 </a>
             </div>
 
-            <div class="project" data-category="games">
+            <div class="project" data-category="web">
                 <div class="project-image">
                     <span class="project-title">
-                        <i class="fab fa-github"></i> JS Game
+                        <i class="fab fa-github"></i> Future React with API Proyect
                         <i class="fab fa-github"></i>
                     </span>
-                    <a href="#!" class="project-info" data-project="jsGame">
+                    <a href="#!" class="project-info" data-project="reactProject">
                         <img src="images/projects/project4.jpg" alt="Project">
                     </a>
                 </div>
 
-                <a href="#!" class="btn-light project-info" data-project="jsGame">
-                    <i class="fas fa-eye"></i> Info
+                <a href="#!" class="btn-light project-info" data-project="reactProject">
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a href="#!" class="btn-dark">
-                    <i class="fab fa-github"></i> Github
+                    <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
                 </a>
             </div>
 
@@ -213,11 +217,11 @@
                 </div>
 
                 <a href="#!" class="btn-light project-info" data-project="javaGame">
-                    <i class="fas fa-eye"></i> Info
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a href="#!" class="btn-dark">
-                    <i class="fab fa-github"></i> Github
+                    <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
                 </a>
             </div>
 
@@ -233,11 +237,11 @@
                 </div>
 
                 <a href="#!" class="btn-light project-info" data-project="lab">
-                    <i class="fas fa-eye"></i> Info
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a href="https://github.com/cesarblasco/css-lab" target="_blank" noopener noreferrer class="btn-dark">
-                    <i class="fab fa-github"></i> Github
+                    <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
                 </a>
             </div>
 
@@ -253,11 +257,11 @@
                 </div>
 
                 <a href="#!" class="btn-light project-info" data-project="portfolio">
-                    <i class="fas fa-eye"></i> Info
+                    <i class="fas fa-eye"></i> <span data-translate="projects.infoBtn"></span>
                 </a>
 
                 <a href="#!" class="btn-dark">
-                    <i class="fab fa-github"></i> Github
+                    <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
                 </a>
             </div>
         </div>
@@ -313,7 +317,7 @@
             
 
             <button class="modal-see-project">
-                <a id="project-link" href="#" target="_blank" rel="noopener noreferrer">View</a>
+                <a id="project-link" href="#" target="_blank" rel="noopener noreferrer">Try this project</a>
             </button>
             <button type="button" id="modal-btn">Ok</button>
         </div>
@@ -322,6 +326,7 @@
     <script src="js/main.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/translate.js"></script>
 </body>
 
 </html>

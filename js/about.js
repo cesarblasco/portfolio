@@ -1,19 +1,3 @@
-const speechScrollBtn = document.getElementById("speech-scroll-btn");
-const speechBubbleText = document.getElementById("speech-bubble-text");
-const resetSpeechBubbleBtn = document.getElementById("reset-speech-bubble-btn");
-const categoryButtons = document.querySelectorAll(".category");
-const technologyPills = document.querySelectorAll(".pill");
-
-categoryButtons.forEach(item =>
-  item.addEventListener("click", filterTechnologiesByCategory)
-);
-
-technologyPills.forEach(item =>
-  item.addEventListener("click", updateSpeechBubbleTextBySelectedTechnologyPill)
-);
-
-resetSpeechBubbleBtn.addEventListener("click", resetSpeechBubble);
-
 const speechBubbleTexts = [
   `Hello! I am a web developer that cares about good practices and clean code. 
    My main focus is the frontend and I am currently an Angular developer 
@@ -129,6 +113,56 @@ const technologiesSpeechTexts = [
   }
 ];
 
+const speechScrollBtn = document.getElementById("speech-scroll-btn");
+const speechBubbleText = document.getElementById("speech-bubble-text");
+const resetSpeechBubbleBtn = document.getElementById("reset-speech-bubble-btn");
+const techCategoryButtons = document.querySelectorAll(".tech-category");
+const technologyPills = document.querySelectorAll(".pill");
+const experienceSection = document.getElementById("experience");
+const timelineCategoriesButtons = document.querySelectorAll(
+  ".timeline-category"
+);
+
+let timelineEvents = document.querySelectorAll(".timeline-event");
+const navigateTimelineForward = document.getElementById("tl-navigate-forward");
+const navigateTimelineBackward = document.getElementById(
+  "tl-navigate-backward"
+);
+
+navigateTimelineBackward.addEventListener(
+  "click",
+  navigateStackedTimelineEventsForward
+);
+navigateTimelineForward.addEventListener(
+  "click",
+  navigateStackedTimelineEventsForward
+);
+
+console.log(navigateTimelineBackward, navigateTimelineForward);
+
+let timelineEventsCopy = document.querySelectorAll(".timeline-event");
+let currentSelectedTimelineLayout = null;
+
+const timelineContainer = document.getElementById("timeline-container");
+
+techCategoryButtons.forEach(item =>
+  item.addEventListener("click", filterTechnologiesByCategory)
+);
+
+technologyPills.forEach(item =>
+  item.addEventListener("click", updateSpeechBubbleTextBySelectedTechnologyPill)
+);
+
+// timelineEvents.forEach(item =>
+//   item.addEventListener("click", switchStackedTimelineEvents)
+// );
+
+timelineCategoriesButtons.forEach(item =>
+  item.addEventListener("click", changeTimelineLayout)
+);
+
+resetSpeechBubbleBtn.addEventListener("click", resetSpeechBubble);
+
 const technologySpeechBubbleTexts = [];
 
 const [firstText] = speechBubbleTexts;
@@ -160,7 +194,7 @@ function getNextSpeechBubbleDialog() {
 function filterTechnologiesByCategory() {
   isTechnologySelected = false;
   const selectedCategory = this.getAttribute("data-category");
-  categoryButtons.forEach(item => item.classList.remove("active"));
+  techCategoryButtons.forEach(item => item.classList.remove("active"));
   this.classList.add("active");
   if (selectedCategory === "all") {
     speechBubbleText.innerHTML = speechBubbleTexts[0];
@@ -234,4 +268,54 @@ function resetSpeechBubble() {
   technologyPills.forEach(item => {
     item.classList.remove("pill-active");
   });
+}
+
+function navigateStackedTimelineEventsForward() {
+  const [firstTimelineEvent] = timelineEvents;
+
+  console.log({ timelineEvents });
+  const navigateForwardArrow = document.getElementById("tl-navigate-forward");
+
+  timelineContainer.removeChild(navigateForwardArrow);
+  timelineContainer.removeChild(firstTimelineEvent);
+
+  timelineEvents = document.querySelectorAll(".timeline-event");
+
+  timelineContainer.appendChild(firstTimelineEvent);
+  timelineContainer.appendChild(navigateForwardArrow);
+}
+
+function navigateStackedTimelineEventsBackward() {
+  const [firstTimelineEvent, , lastTimelineEvent] = timelineEvents;
+
+  // // const navigateForwardArrow = document.getElementById("tl-navigate-forward");
+
+  // // timelineContainer.removeChild(navigateForwardArrow);
+  timelineContainer.removeChild(firstTimelineEvent);
+  // timelineContainer.removeChild(lastTimelineEvent);
+
+  // timelineEvents = document.querySelectorAll(".timeline-event");
+
+  // timelineContainer.appendChild(firstTimelineEvent);
+  // timelineContainer.appendChild(lastTimelineEvent);
+  // timelineContainer.appendChild(navigateForwardArrow);
+}
+
+function changeTimelineLayout() {
+  currentSelectedTimelineLayout = timelineContainer.classList.contains(
+    "timeline-stacked-container"
+  )
+    ? "timeline"
+    : "timeline-stacked-container";
+
+  experienceSection.style.height =
+    currentSelectedTimelineLayout === "timeline-stacked-container"
+      ? "700px"
+      : "100%";
+
+  timelineContainer.classList = "";
+  timelineContainer.classList.add(currentSelectedTimelineLayout);
+
+  timelineCategoriesButtons.forEach(item => item.classList.remove("active"));
+  this.classList.add("active");
 }

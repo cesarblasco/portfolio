@@ -26,33 +26,41 @@
           <li>
             <a href="index.html" class="nav-link active">
               <i class="fas fa-home"></i>
-              Home
+              <span data-translate="navbar.home"></span>
             </a>
           </li>
           <li>
             <a href="about.html" class="nav-link">
               <i class="far fa-address-card"></i>
-              About me
+              <span data-translate="navbar.aboutMe"></span>
             </a>
           </li>
           <li class="nav-item">
             <a href="projects.html" class="nav-link">
               <i class="fas fa-desktop"></i>
-              My projects
+              <span data-translate="navbar.projects"></span>
             </a>
           </li>
           <li>
             <a href="contact.html" class="nav-link">
               <i class="far fa-envelope"></i>
-              Contact
+              <span data-translate="navbar.contact"></span>
             </a>
           </li>
 
-          <li class="languages">
-            Languages <i class="fas fa-chevron-down"></i>
+          <li class="languages" id="languages-dropdown-btn">
+            <span data-translate="navbar.languages"></span>
+            <i class="fas fa-chevron-down" id="languages-dropdown-icon"></i>
           </li>
         </ul>
       </nav>
+
+      <div class="container-lang">
+        <div class="languages-dropdown" id="languages-dropdown">
+          <a href="./?lang=es"><p id="lang-es">Espanol</p></a>
+          <a href="./?lang=en"><p id="lang-en">English</p></a>
+        </div>
+      </div>
 
       <!-- <nav class="menu">
         <div class="menu-branding">
@@ -89,9 +97,7 @@
           Cesar
           <span class="text-secondary">Blasco</span>
         </h1>
-        <h2>
-          Computer Engineer, Web Developer and Programmer
-        </h2>
+        <h2 data-translate="index.subHeader"></h2>
 
         <div class="icons">
           <!-- <a href="#!">
@@ -119,5 +125,6 @@
     </main>
 
     <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
   </body>
 </html>

@@ -21,38 +21,46 @@
             <div class="btn-line"></div>
         </div> -->
 
-      <nav id="menu-nav">
-        <ul class="menu-desktop">
-          <li>
-            <a href="index.html" class="nav-link">
-              <i class="fas fa-home"></i>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="about.html" class="nav-link">
-              <i class="far fa-address-card"></i>
-              About me
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link">
-              <i class="fas fa-desktop"></i>
-              My projects
-            </a>
-          </li>
-          <li>
-            <a href="contact.html" class="nav-link active">
-              <i class="far fa-envelope"></i>
-              Contact
-            </a>
-          </li>
+        <nav id="menu-nav">
+          <ul class="menu-desktop">
+            <li>
+              <a href="index.html" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span data-translate="navbar.home"></span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">
+                <i class="far fa-address-card"></i>
+                <span data-translate="navbar.aboutMe"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link">
+                <i class="fas fa-desktop"></i>
+                <span data-translate="navbar.projects"></span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link active">
+                <i class="far fa-envelope"></i>
+                <span data-translate="navbar.contact"></span>
+              </a>
+            </li>
 
-          <li class="languages">
-            Languages <i class="fas fa-chevron-down"></i>
-          </li>
+            <li class="languages" id="languages-dropdown-btn">
+              <span data-translate="navbar.languages"></span>
+              <i class="fas fa-chevron-down" id="languages-dropdown-icon"></i>
+            </li>
         </ul>
       </nav>
+
+      <div class="container-lang" >
+        <div class="languages-dropdown" id="languages-dropdown">
+          <p id="lang-es"><a href="./contact.html?lang=es">Espanol</a></p>
+          <p id="lang-en"><a href="./contact.html?lang=en">English</a></p>
+        </div>
+      </div>
 
       <!-- <nav class="menu">
         <div class="menu-branding">
@@ -85,13 +93,8 @@
 
     <main id="contact">
       <div class="main-header">
-        <h1 class="lg-heading">
-          Contact
-          <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">
-          This is how you can reach me
-        </h2>
+        <h1 class="lg-heading" data-translate="contact.header"></h1>
+        <h2 class="sm-heading" data-translate="contact.subHeader"></h2>
       </div>
 
       <div class="boxes">
@@ -123,5 +126,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/translate.js"></script>
   </body>
 </html>

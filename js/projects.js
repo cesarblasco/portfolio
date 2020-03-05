@@ -1,28 +1,3 @@
-const viewInfoButtons = document.querySelectorAll(".project-info");
-const projectModalInfo = document.getElementById("modal");
-const categoryButtons = document.querySelectorAll(".category");
-const projectsHtml = document.querySelectorAll(".project");
-const closeModalIcon = document.getElementsByClassName("close")[0];
-const modalBtn = document.getElementById("modal-btn");
-const projectLink = document.getElementById("project-link");
-const carouselContainer = document.getElementById("carousel");
-
-let currentProject = null;
-
-// my carousel.js
-const previousImageButton = document.getElementById("previous");
-// const currentCarouselImage = document.getElementById("current-carousel-image");
-const nextImageButton = document.getElementById("next");
-const currentImageCaption = document.getElementById("current-caption");
-const carouselPagesContainer = document.getElementById(
-  "carousel-pages-container"
-);
-let currentImageIndex = 0;
-let carouselPagesElementCollection = null;
-
-let prefixImageDirectory = "images/projects/";
-let carouselInterval = null;
-
 const projects = [
   {
     id: "dental",
@@ -81,7 +56,7 @@ const projects = [
     technologies: [
       "Angular JS, UI Router, Bootstrap 3, TypeScript, Github API"
     ],
-    link: "http://www.cesarblasco.github.io/angular-search",
+    link: "https://cesarblasco.github.io/RKM-Test-Base",
     images: [
       {
         fileName: "github-search-1.jpg",
@@ -127,8 +102,62 @@ const projects = [
       },
       { fileName: "maths-6.jpg", caption: "Swing that master sword!" }
     ]
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio",
+    icon: "fas fa-suitcase",
+    description: "The project you are currently on :) ",
+    summary: `A game I made while I was playing around with Unity 2D. Solve basic math problems and collect coins. You can get a sword
+    if you have 10 coins by touching the golden treasures and use it with the spacebar`,
+    technologies: [
+      "HTML, SASS compiled to CSS via Watch SASS VS code plugin, JS / ES6, Font Awesome Icons"
+    ],
+    link: "https://cesarblasco.github.io/learnmaths/",
+    images: [
+      { fileName: "maths-1.jpg", caption: "Game start" },
+      { fileName: "maths-2.jpg", caption: "Chasing some coins" },
+      {
+        fileName: "maths-3.jpg",
+        caption: "Solve the problem and get more coins!"
+      },
+      {
+        fileName: "maths-4.jpg",
+        caption: "Problem solved! You get paid based on the answer"
+      },
+      {
+        fileName: "maths-5.jpg",
+        caption: "Just bought my sword with my hard earned money!"
+      },
+      { fileName: "maths-6.jpg", caption: "Swing that master sword!" }
+    ]
   }
 ];
+
+const viewInfoButtons = document.querySelectorAll(".project-info");
+const projectModalInfo = document.getElementById("modal");
+const categoryButtons = document.querySelectorAll(".category");
+const projectsHtml = document.querySelectorAll(".project");
+const closeModalIcon = document.getElementsByClassName("close")[0];
+const modalBtn = document.getElementById("modal-btn");
+const projectLink = document.getElementById("project-link");
+const carouselContainer = document.getElementById("carousel");
+
+let currentProject = null;
+
+// my carousel.js
+const previousImageButton = document.getElementById("previous");
+// const currentCarouselImage = document.getElementById("current-carousel-image");
+const nextImageButton = document.getElementById("next");
+const currentImageCaption = document.getElementById("current-caption");
+const carouselPagesContainer = document.getElementById(
+  "carousel-pages-container"
+);
+let currentImageIndex = 0;
+let carouselPagesElementCollection = null;
+
+let prefixImageDirectory = "images/projects/";
+let carouselInterval = null;
 
 viewInfoButtons.forEach(item =>
   item.addEventListener("click", openProjectInformationModal)

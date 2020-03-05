@@ -1,0 +1,46 @@
+{
+  "navbar": {
+    "home": "Home",
+    "aboutMe": "About me",
+    "projects": "My projects",
+    "contact": "Contact",
+    "languages": "Languages"
+  },
+  "index": {
+    "subHeader": "Computer Engineer, Web Developer and Programmer"
+  },
+  "about": {
+    "header": "About <span class='text-secondary'>me</span>",
+    "introductionLink": "Introduction",
+    "technologiesLink": "Technologies",
+    "experienceLink": "Experience",
+    "coursesLink": "Courses / Certifications",
+    "technologiesTitle": "Technologies I've worked with",
+    "allTechnologiesCategory": "All",
+    "frontendTechnologiesCategory": "Frontend",
+    "backendTechnologiesCategory": "Backend",
+    "languagesTechnologiesCategory": "Languages",
+    "toolsTechnologiesCategory": "Tools",
+    "experienceTitle": "Experience and education",
+    "resumeDownloadLink": "You can download my resume  <a target='_blank'  noreferrer noopener  href='/files/CesarBlascoResume.pdf'>here</a>",
+    "timelineCategoryLine": "Timeline",
+    "timelineCategoryStacked": "Stacked cards",
+    "coursesTitle": "Courses / certifications"
+  },
+  "projects": {
+    "header": "My <span class='text-secondary'>projects</span>",
+    "subHeader": "Check out my projects",
+    "allProjectsCategory": "All",
+    "webProjectsCategory": "Web",
+    "mobileAppsCategory": "Mobile Apps",
+    "gamesProjectsCategory": "Games",
+    "otherProjectsCategory": "Others",
+    "infoBtn": "Info",
+    "githubBtn": "Github",
+    "codepenBtn": "Codepen"
+  },
+  "contact": {
+    "header": "Contact <span class='text-secondary'>me</span>",
+    "subHeader": "This is how you can reach me"
+  }
+}

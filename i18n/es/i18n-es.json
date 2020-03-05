@@ -1,0 +1,46 @@
+{
+  "navbar": {
+    "home": "Home",
+    "aboutMe": "Sobre mi",
+    "projects": "Mis proyectos",
+    "contact": "Contacto",
+    "languages": "Idiomas"
+  },
+  "index": {
+    "subHeader": "Ingeniero en computación, Desarrollador Web y Programador"
+  },
+  "about": {
+    "header": "Sobre <span class='text-secondary'>mi</span>",
+    "introductionLink": "Introducción",
+    "technologiesLink": "Tecnologías",
+    "experienceLink": "Experiencia",
+    "coursesLink": "Cursos / Certificados",
+    "technologiesTitle": "Tecnologias con las que he trabajado",
+    "allTechnologiesCategory": "Todas",
+    "frontendTechnologiesCategory": "Frontend",
+    "backendTechnologiesCategory": "Backend",
+    "languagesTechnologiesCategory": "Lenguajes",
+    "toolsTechnologiesCategory": "Herramientas",
+    "experienceTitle": "Experiencia y educación",
+    "resumeDownloadLink": "Puede descargar my CV <a target='_blank'  noreferrer noopener  href='/files/CesarBlascoResumeEsp.pdf'>aquí</a>",
+    "timelineCategoryLine": "Linea de tiempo",
+    "timelineCategoryStacked": "Cartas apiladas",
+    "coursesTitle": "Cursos / certificados"
+  },
+  "projects": {
+    "header": "Mis <span class='text-secondary'>proyectos</span>",
+    "subHeader": "Revise mis proyectos",
+    "allProjectsCategory": "Todos",
+    "webProjectsCategory": "Web",
+    "mobileAppsCategory": "Apps moviles",
+    "gamesProjectsCategory": "Juegos",
+    "otherProjectsCategory": "Otros",
+    "infoBtn": "Información",
+    "githubBtn": "Github",
+    "codepenBtn": "Codepen"
+  },
+  "contact": {
+    "header": "Vias de <span class='text-secondary'>contacto</span>",
+    "subHeader": "Asi puede ponerse en contacto conmigo"
+  }
+}
