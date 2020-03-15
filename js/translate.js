@@ -5,30 +5,37 @@ const currentUrl = new URL(urlLocation);
 const currentLang = currentUrl.searchParams.get("lang");
 
 addOrReplaceLangInUrl();
+translateAllPageKeys();
 
-if (currentLang) {
-  loadTranslationKeysFromCurrentLanguageJSON(response => {
-    // Parse JSON string into object
-    jsonData = JSON.parse(response);
-    console.log({ jsonData });
-    translatableElements.forEach(element => {
-      const splittedTranslationKeys = element.dataset.translate.split(".");
-      const baseKey = splittedTranslationKeys[0];
-      const elementTranslationKey = splittedTranslationKeys[1];
-      const elementKeyValue = jsonData[baseKey][elementTranslationKey];
-      element.innerHTML = elementKeyValue || element.dataset.translate;
+function translateAllPageKeys() {
+  if (currentLang) {
+    loadTranslationKeysFromCurrentLanguageJSON(response => {
+      // Parse JSON string into object
+      jsonData = JSON.parse(response);
+      console.log({ jsonData });
+      translatableElements.forEach(element => {
+        const splittedTranslationKeys = element.dataset.translate.split(".");
+        const baseKey = splittedTranslationKeys[0];
+        const elementTranslationKey = splittedTranslationKeys[1];
+        const elementKeyValue = jsonData[baseKey][elementTranslationKey];
+        element.innerHTML = elementKeyValue || element.dataset.translate;
+      });
     });
-  });
+  }
+}
+
+function translateSpecificKey(element, baseKey, key) {
+  const elementKeyValue = jsonData[baseKey][key];
+  element.innerHTML = elementKeyValue;
 }
 
 function loadTranslationKeysFromCurrentLanguageJSON(callback) {
   const translationKeysToLoad = `./i18n/${currentLang}/i18n-${currentLang}.json`;
   const xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open("GET", translationKeysToLoad, true); // Replace 'my_data' with the path to your file
+  xobj.open("GET", translationKeysToLoad, true);
   xobj.onreadystatechange = function() {
     if (xobj.readyState == 4 && xobj.status == "200") {
-      // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
       callback(xobj.responseText);
     }
   };

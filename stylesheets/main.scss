@@ -61,6 +61,11 @@ nav {
   ul {
     li {
       cursor: pointer;
+      &.active,
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
       a {
         &.active,
         &:hover {
@@ -143,30 +148,10 @@ nav {
   text-align: center;
 }
 
-.container-lang {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  min-width: 100px;
-  margin-right: 15px;
-  margin-top: -15px;
-}
-
-.languages-dropdown {
-  @include easeOut;
-  background-color: lightgrey;
-  display: none;
-
-  & p {
-    margin: 0;
-    padding: 7px 15px;
-    width: 120px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: $secondary-color;
-    }
-  }
+.centered-unordered-list {
+  margin-top: 0;
+  text-align: center;
+  list-style-type: none;
 }
 
 @import "mobile";

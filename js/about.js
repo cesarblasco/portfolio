@@ -1,29 +1,22 @@
 const speechBubbleTexts = [
-  `Hello! I am a web developer that cares about good practices and clean code. 
-   My main focus is the frontend and I am currently an Angular developer 
-   transitioning to React. I've also done some backend in Java and PHP with frameworks
-  Lorem ipsum ssdf sdfdskfj dsfjsdf jdsfj sdfjsdfj sdiofjs dofijsdfijsdfisdjf sidjf`,
-  `I consider myself to be a team player, always willing to help others whenever I can. `,
-  `testing 3 again lol`,
-  `xd look at this`
+  `defaultSpeechBubbleText1`,
+  `defaultSpeechBubbleText2`,
+  `defaultSpeechBubbleText3`,
+  `defaultSpeechBubbleText4`
 ];
 
 const technologiesSpeechTexts = [
   {
     id: "HTML",
-    texts: ["The skeleton of the web"]
+    texts: ["htmlSpeechBubbleText1"]
   },
   {
     id: "CSS3",
-    texts: [
-      `<p>The skin of the web, the layer where the beauty of the websites come from. I've worked with both regular CSS and frameworks.
-          Flexbox is currently my favorite layout design pattern. I've also tried some CSS grid. This website is mostly flexbox and a bit
-          of Grid</p>`
-    ]
+    texts: [`cssSpeechBubbleText1`]
   },
   {
     id: "Javascript / ES6",
-    texts: ["The brains of the web"]
+    texts: ["jsSpeechBubbleText1"]
   },
   {
     id: "PHP",
@@ -37,11 +30,7 @@ const technologiesSpeechTexts = [
   },
   {
     id: "React JS",
-    texts: [
-      `I've been transitioning to React since the company where I work decided to migrate to React instead of Angular and so far I've loved it. It's easy to understand such a small
-       but powerful library. I definitely like HTML in JS (JSX) instead of the other way around, it's much more flexible and powerful, and any little typo you make in your
-       markup will be detected. `
-    ]
+    texts: [`reactSpeechBubbleText1 `]
   },
   {
     id: "Spring Framework",
@@ -124,6 +113,9 @@ const timelineCategoriesButtons = document.querySelectorAll(
 );
 
 let timelineEvents = document.querySelectorAll(".timeline-event");
+let timelineStackedEvents = document.querySelectorAll(
+  ".timeline-stacked-event"
+);
 const navigateTimelineForward = document.getElementById("tl-navigate-forward");
 const navigateTimelineBackward = document.getElementById(
   "tl-navigate-backward"
@@ -131,19 +123,19 @@ const navigateTimelineBackward = document.getElementById(
 
 navigateTimelineBackward.addEventListener(
   "click",
-  navigateStackedTimelineEventsForward
+  navigateStackedTimelineEventsBackward
 );
 navigateTimelineForward.addEventListener(
   "click",
   navigateStackedTimelineEventsForward
 );
-
-console.log(navigateTimelineBackward, navigateTimelineForward);
-
 let timelineEventsCopy = document.querySelectorAll(".timeline-event");
 let currentSelectedTimelineLayout = null;
 
 const timelineContainer = document.getElementById("timeline-container");
+const timelineStackedContainer = document.getElementById(
+  "timeline-stacked-container"
+);
 
 techCategoryButtons.forEach(item =>
   item.addEventListener("click", filterTechnologiesByCategory)
@@ -152,10 +144,6 @@ techCategoryButtons.forEach(item =>
 technologyPills.forEach(item =>
   item.addEventListener("click", updateSpeechBubbleTextBySelectedTechnologyPill)
 );
-
-// timelineEvents.forEach(item =>
-//   item.addEventListener("click", switchStackedTimelineEvents)
-// );
 
 timelineCategoriesButtons.forEach(item =>
   item.addEventListener("click", changeTimelineLayout)
@@ -186,9 +174,11 @@ function getNextSpeechBubbleDialog() {
       ? 0
       : currentTextIndex + 1;
 
-  speechBubbleText.innerHTML = !!selectedTechnology
+  const keyToApply = !!selectedTechnology
     ? selectedTechnology.texts[currentTextIndex]
     : speechBubbleTexts[currentTextIndex];
+
+  translateSpecificKey(speechBubbleText, "about", keyToApply);
 }
 
 function filterTechnologiesByCategory() {
@@ -210,7 +200,6 @@ function filterTechnologiesByCategory() {
       }
     });
   }
-
   resetSpeechBubble();
 }
 
@@ -252,13 +241,14 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
     }
   }
 
-  speechBubbleText.innerHTML = selectedTechnology
+  const keyToApply = selectedTechnology
     ? selectedTechnology.texts[0]
     : speechBubbleTexts[0];
+
+  translateSpecificKey(speechBubbleText, "about", keyToApply);
 }
 
 function resetSpeechBubble() {
-  speechBubbleText.innerHTML = speechBubbleTexts[0];
   currentTextIndex = 0;
   selectedTechnology = null;
   resetSpeechBubbleBtn.style.display = "none";
@@ -268,53 +258,52 @@ function resetSpeechBubble() {
   technologyPills.forEach(item => {
     item.classList.remove("pill-active");
   });
+
+  translateSpecificKey(speechBubbleText, "about", "defaultSpeechBubbleText1");
 }
 
 function navigateStackedTimelineEventsForward() {
-  const [firstTimelineEvent] = timelineEvents;
+  const [firstTimelineEvent] = timelineStackedEvents;
 
-  console.log({ timelineEvents });
   const navigateForwardArrow = document.getElementById("tl-navigate-forward");
 
-  timelineContainer.removeChild(navigateForwardArrow);
-  timelineContainer.removeChild(firstTimelineEvent);
+  timelineStackedContainer.removeChild(navigateForwardArrow);
+  timelineStackedContainer.removeChild(firstTimelineEvent);
 
-  timelineEvents = document.querySelectorAll(".timeline-event");
+  timelineStackedEvents = document.querySelectorAll(".timeline-stacked-event");
 
-  timelineContainer.appendChild(firstTimelineEvent);
-  timelineContainer.appendChild(navigateForwardArrow);
+  timelineStackedContainer.appendChild(firstTimelineEvent);
+  timelineStackedContainer.appendChild(navigateForwardArrow);
 }
 
 function navigateStackedTimelineEventsBackward() {
-  const [firstTimelineEvent, , lastTimelineEvent] = timelineEvents;
+  const [firstTimelineEvent, , lastTimelineEvent] = timelineStackedEvents;
 
-  // // const navigateForwardArrow = document.getElementById("tl-navigate-forward");
+  const navigateBackwardArrow = document.getElementById(
+    "tl-navigate-backwward"
+  );
 
-  // // timelineContainer.removeChild(navigateForwardArrow);
-  timelineContainer.removeChild(firstTimelineEvent);
-  // timelineContainer.removeChild(lastTimelineEvent);
+  timelineStackedContainer.removeChild(navigateBackwardArrow);
+  timelineStackedContainer.appendChild(lastTimelineEvent);
+  timelineStackedContainer.removeChild(firstTimelineEvent);
 
-  // timelineEvents = document.querySelectorAll(".timeline-event");
+  timelineStackedEvents = document.querySelectorAll(".timeline-stacked-event");
 
-  // timelineContainer.appendChild(firstTimelineEvent);
-  // timelineContainer.appendChild(lastTimelineEvent);
-  // timelineContainer.appendChild(navigateForwardArrow);
+  // timelineStackedContainer.removeChild(lastTimelineEvent);
+  timelineStackedContainer.appendChild(lastTimelineEvent);
 }
 
 function changeTimelineLayout() {
-  currentSelectedTimelineLayout = timelineContainer.classList.contains(
-    "timeline-stacked-container"
-  )
-    ? "timeline"
-    : "timeline-stacked-container";
-
-  experienceSection.style.height =
-    currentSelectedTimelineLayout === "timeline-stacked-container"
-      ? "700px"
-      : "100%";
-
-  timelineContainer.classList = "";
-  timelineContainer.classList.add(currentSelectedTimelineLayout);
+  console.log(this.dataset);
+  if (this.dataset.category.includes("stacked")) {
+    timelineContainer.style.display = "none";
+    timelineStackedContainer.style.display = "flex";
+    experienceSection.style.height = "700px";
+  } else {
+    timelineContainer.style.display = "flex";
+    timelineStackedContainer.style.display = "none";
+    experienceSection.style.height = "100%";
+  }
 
   timelineCategoriesButtons.forEach(item => item.classList.remove("active"));
   this.classList.add("active");

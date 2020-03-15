@@ -50,6 +50,7 @@
           </li>
 
           <li class="languages" id="languages-dropdown-btn">
+            <i class="fas fa-globe"></i>
             <span data-translate="navbar.languages"></span>
             <i class="fas fa-chevron-down" id="languages-dropdown-icon"></i>
           </li>
@@ -58,8 +59,8 @@
 
       <div class="container-lang">
         <div class="languages-dropdown" id="languages-dropdown">
-          <p id="lang-es"><a href="./about.html?lang=es">Espanol</a></p>
-          <p id="lang-en"><a href="./about.html?lang=en">English</a></p>
+          <a href="./about.html?lang=es"><p>Español</p></a>
+          <a href="./about.html?lang=en"><p>English</p></a>
         </div>
       </div>
       <!-- </div> -->
@@ -122,7 +123,7 @@
 
         <div class="speech-bubble">
           <div class="speech-text-container">
-            <p id="speech-bubble-text"></p>
+            <p id="speech-bubble-text" data-translate="about.defaultSpeechBubbleText1"></p>
 
             <div id="reset-speech-bubble-btn">
               <i class="fas fa-redo-alt"></i>
@@ -162,7 +163,7 @@
           <span class="pill" data-category="backend">Laravel</span>
           <span class="pill" data-category="backend">MySQL</span>
           <span class="pill" data-category="backend">Spring Framework</span>
-          <span class="pill" data-category="tool">Underscore / Lodash ES</span>
+          <span class="pill" data-category="tool frontend">Underscore / Lodash ES</span>
           <span class="pill" data-category="tool">Git</span>
           <span class="pill" data-category="tool">Github</span>
           <span class="pill" data-category="tool frontend">Typescript</span>
@@ -181,15 +182,9 @@
           <div class="category timeline-category active" data-category="timeline" data-translate="about.timelineCategoryLine"></div>
           <div class="category timeline-category" data-category="stacked" data-translate="about.timelineCategoryStacked"></div>
         </div>
-
-        <!-- <div class="timeline-vertical-line"></div> -->
         
-        <div clss="timeline" id="timeline-container"> 
-          <!-- <div class="back-arrow"></div>a -->
-
-          <i class="fas fa-backward tl-navigate-backward" id="tl-navigate-backward"></i>
-
-          <div class="timeline-event" id="tl-event-1">
+        <div class="timeline" id="timeline-container"> 
+          <div class="timeline-event">
             <h3 class="company-name">
               <a
                 href="https://rankmi.com"
@@ -199,33 +194,18 @@
                 >Rankmi.com</a
               >
             </h3>
-            <p class="company-position">
-              Frontend Developer (June 2018 - Ongoing)
-            </p>
+            <p class="company-position" data-translate="about.rankmiPosition"></p>
             <ul>
-              <li>
-                Developed components, modules and features of diverse
-                complexities using Angular JS framework version 1.6.7.
-              </li>
-              <li>
-                Refactored components from .js to .ts and made improvements
-                over legacy code.
-              </li>
-              <li>
-                Collaborated in creating and refactoring components to
-                enable accessibility by limited or impaired users WAI ARIA
-                standards for the web).
-              </li>
-              <li>
-                Learned React JS and collaborated in the migration of the
-                application from Angular JS to React JS.
-              </li>
+              <li data-translate="about.rankmiBullet1"></li>
+              <li data-translate="about.rankmiBullet2"></li>
+              <li data-translate="about.rankmiBullet3"></li>
+              <li data-translate="about.rankmiBullet4"></li>
             </ul>
           </div>
 
-          <!-- <div class="timeline-circle"></div> -->
+          <div class="timeline-circle"><span class="timeline-circle-date">2018</span></div>
 
-          <div class="timeline-event" id="tl-event-2">
+          <div class="timeline-event">
             <h3 class="company-name">
               <a
                 href="http://www.sotec-consulting.com/"
@@ -235,66 +215,92 @@
                 >SOTEC Consulting</a
               >
             </h3>
-            <p class="company-position">
-              Fullstack Developer (June 2017 - June 2018)
-            </p>
+            <p class="company-position" data-translate="about.sotecPosition"></p>
             <ul>
-              <li>
-                Developed components, modules and features using the Angular
-                framework versions 2 to 5.
-              </li>
-              <li>
-                Collaborated in REST API development using Spring Framework and
-                Entity Framework with Microsoft SQL Server
-              </li>
+              <li data-translate="about.sotecBullet1"></li>
+              <li data-translate="about.sotecBullet2"></li>
+              <li data-translate="about.sotecBullet3"></li>
             </ul>
           </div>
+
+          <div class="timeline-circle"><span class="timeline-circle-date">2017</span></div>
       
-          <div class="timeline-event" id="tl-event-3">
+          <div class="timeline-event">
             <h3 class="company-name">
               <a href="#" target="_blank" noopener noreferrer
                 >Dental Clinic Proequip Salud
               </a>
             </h3>
-            <p class="company-position">
-              Fullstack Developer (? 2017 - ? 2018)
-            </p>
+            <p class="company-position" data-translate="about.dentalClinicPosition"></p>
             <ul>
-              <li>
-                Developed an application to handle all the needs of a dental clinic
-              </li>
-              <li>
-                Featuring a fully interactive teeth view with bla blablabla and more blab
-              </li>
-              <li>
-                The application went live on xx october 2017, serving all the needs of the clinic
-              </li>
+              <li data-translate="about.dentalClinicBullet1"></li>
+              <li data-translate="about.dentalClinicBullet2"></li>
+              <li data-translate="about.dentalClinicBullet3"></li>
+              <li data-translate="about.dentalClinicBullet4"></li>
+              <li data-translate="about.dentalClinicBullet5"></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Stacked timeline-->
+
+        <div class="timeline-stacked-container" id="timeline-stacked-container"> 
+          <i class="fas fa-backward tl-navigate-backward" id="tl-navigate-backward"></i>
+
+          <div class="timeline-stacked-event">
+            <h3 class="company-name">
+              <a
+                href="https://rankmi.com"
+                target="_blank"
+                noopener
+                noreferrer
+                >Rankmi.com</a
+              >
+            </h3>
+            <p class="company-position" data-translate="about.rankmiPosition"></p>
+            <ul>
+              <li data-translate="about.rankmiBullet1"></li>
+              <li data-translate="about.rankmiBullet2"></li>
+              <li data-translate="about.rankmiBullet3"></li>
+              <li data-translate="about.rankmiBullet4"></li>
             </ul>
           </div>
 
-          <div class="timeline-event" id="tl-event-4">
+          <div class="timeline-stacked-event">
             <h3 class="company-name">
               <a
                 href="http://www.sotec-consulting.com/"
                 target="_blank"
                 noopener
                 noreferrer
-                >Universidad de Oriente</a
+                >SOTEC Consulting</a
               >
             </h3>
-            <p class="company-position">
-              Computer Engineering (October 2009 - October 2018)
-            </p>
+            <p class="company-position" data-translate="about.sotecPosition"></p>
             <ul>
-              <li>
-                My second home for quite a while!
-              </li>
-              <li>
-                Learned all the basics about computer science, it was a wild ride sdfdsf sdfsdfsfsdf!
-              </li>
+              <li data-translate="about.sotecBullet1"></li>
+              <li data-translate="about.sotecBullet2"></li>
+              <li data-translate="about.sotecBullet3"></li>
+              <li data-translate="about.sotecBullet4"></li>
             </ul>
-        </div>
-
+          </div>
+      
+          <div class="timeline-stacked-event">
+            <h3 class="company-name">
+              <a href="#" target="_blank" noopener noreferrer
+                >Dental Clinic Proequip Salud
+              </a>
+            </h3>
+            <p class="company-position" data-translate="about.dentalClinicPosition"></p>
+            <ul>
+              <li data-translate="about.dentalClinicBullet1"></li>
+              <li data-translate="about.dentalClinicBullet2"></li>
+              <li data-translate="about.dentalClinicBullet3"></li>
+              <li data-translate="about.dentalClinicBullet4"></li>
+              <li data-translate="about.dentalClinicBullet5"></li>
+            </ul>
+          </div>
+          
         <i class="fas fa-forward tl-navigate-forward" id="tl-navigate-forward"></i>
       </section>
 
@@ -348,40 +354,3 @@
     <script src="js/translate.js"></script>
   </body>
 </html>
-
-<!-- 
-
-     
-          <img src="images/about/react.png" width="125" height="125" />
-
-          <img src="images/about/typescript.png" width="125" height="125" />
-
-          <img src="images/about/angular2.png" width="125" height="125" />
-
-          <img src="images/about/angularjs.png" width="125" height="125" />
-
-          <img src="images/about/bootstrap.png" width="125" height="125" />
-
-          <img src="images/about/css3.png" width="125" height="125" />
-
-          <img src="images/about/es6.png" width="125" height="125" />
-
-          <img src="images/about/html5.png" width="125" height="125" />
-
-          <img src="images/about/sass.png" width="125" height="125" />
-       
- 
-          <span class="technology-category">Backend / monolith</span>
-
-          <img src="images/about/laravel.png" width="125" height="125" />
-      
-
-          <span class="technology-category">Tools</span>
-
-          <img src="images/about/git.png" width="125" height="125" />
-
-          <img src="images/about/github.png" width="125" height="125" />
-
-          <img src="images/about/lodash.png" width="125" height="125" />
-     
-      -->

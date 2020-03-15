@@ -13,6 +13,10 @@ let displayLanguagesDropdown = false;
 
 languagesDropdownBtn.addEventListener("click", () => {
   displayLanguagesDropdown = !displayLanguagesDropdown;
+  displayLanguagesDropdown
+    ? languagesDropdownBtn.classList.add("active")
+    : languagesDropdownBtn.classList.remove("active");
+
   languagesDropdown.style.display = displayLanguagesDropdown ? "block" : "none";
 
   languagesDropdownIcon.classList.remove("fa-chevron-down");
@@ -22,36 +26,6 @@ languagesDropdownBtn.addEventListener("click", () => {
     ? "fa-chevron-up"
     : "fa-chevron-down";
   languagesDropdownIcon.classList.add(newIconClass);
-});
-
-window.addEventListener("scroll", () => {
-  // https://codepen.io/lehollandaisvolant/pen/ryrrGx
-  let opacityFactor = 0;
-
-  if (document.body.getBoundingClientRect().top > scrollPos) {
-    menuNav.style.opacity = 1;
-    opacityFactor = -0.2;
-    languagesDropdown.style.display = displayLanguagesDropdown
-      ? "block"
-      : "none";
-
-    // setInterval(() => {
-    //   menuNav.style.opacity = menuNav.style.opacity - opacityFactor;
-    // }, 100);
-    console.log("scrolling UP biatch");
-  } else {
-    menuNav.style.opacity = 0;
-    opacityFactor = 0.2;
-    languagesDropdown.style.display = "none";
-
-    // setInterval(() => {
-    //   menuNav.style.opacity = menuNav.style.opacity - opacityFactor;
-    // }, 100);
-
-    console.log("scrolling DOWN biatch");
-  }
-
-  scrollPos = document.body.getBoundingClientRect().top;
 });
 
 function toggleMenu() {

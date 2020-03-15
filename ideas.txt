@@ -30,3 +30,6 @@ seccion acerca de mi
 toogle entre:
 - timeline 
 - panels (ya esta)
+
+
+- que la foto en el about me cambie automagicamente tipo carousel (?)
