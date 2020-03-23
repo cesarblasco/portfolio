@@ -4,7 +4,7 @@ const urlLocation = window.location.href;
 const currentUrl = new URL(urlLocation);
 const currentLang = currentUrl.searchParams.get("lang");
 
-addOrReplaceLangInUrl();
+addOrReplaceLangInURL();
 translateAllPageKeys();
 
 function translateAllPageKeys() {
@@ -42,7 +42,7 @@ function loadTranslationKeysFromCurrentLanguageJSON(callback) {
   xobj.send(null);
 }
 
-function addOrReplaceLangInUrl() {
+function addOrReplaceLangInURL() {
   const urlLocation = window.location.href;
   const currentUrl = new URL(urlLocation);
   let currentLanguage = currentUrl.searchParams.get("lang");
@@ -52,9 +52,7 @@ function addOrReplaceLangInUrl() {
     navbarLinks.forEach(link => {
       link.href = `${link.href}?lang=${currentLanguage}`;
     });
-  }
-
-  if (!currentLanguage) {
+  } else {
     currentUrl.searchParams.set("lang", "en");
     history.replaceState(null, null, currentUrl);
     location.reload();

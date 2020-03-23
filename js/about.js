@@ -1,4 +1,4 @@
-const speechBubbleTexts = [
+const defaultSpeechBubbleTexts = [
   `defaultSpeechBubbleText1`,
   `defaultSpeechBubbleText2`,
   `defaultSpeechBubbleText3`,
@@ -20,85 +20,67 @@ const technologiesSpeechTexts = [
   },
   {
     id: "PHP",
-    texts: [
-      `I started my journey as a web developer back in 2016 when I decided my thesis application was going to be a web app. 
-       I started learning PHP as my first web language and then I started learning the Laravel framework (a PHP framework) 
-      in which I finally developed my app. Check out my "dental clinic app" in "My projects" section to see my thesis application.`,
-      `PHP SUCKS MAN`,
-      `WHY U DO DIS????`
-    ]
+    texts: [`phpSpeechBubbleText1`]
   },
   {
     id: "React JS",
-    texts: [`reactSpeechBubbleText1 `]
+    texts: [`reactSpeechBubbleText1`]
   },
   {
     id: "Spring Framework",
-    texts: ["Ahh spring"]
+    texts: ["springSpeechBubbleText1"]
   },
   {
     id: "Jquery",
-    texts: [
-      `One of the first javascript libraries I learned. Even though nowdays the web development world is shifting away from this library, I found it easy to understand and even
-           learn more about DOM manipulation with it.`
-    ]
+    texts: [`jquerySpeechBubbleText1`]
   },
   {
     id: "Angular",
-    texts: [
-      `Angular was actually the first frontend framework I learned, even before Angular JS (yes that sounds weird right?) I got a opportunity to work at SOTEC consulting as a remote
-           web developer. I completed some courses and trained myself and got the job, which allowed me to start getting web application experience right away.`
-    ]
+    texts: [`angularSpeechBubbleText1`]
   },
   {
     id: "Angular JS",
-    texts: [
-      `I learned Angular JS when I shifted to my second job at Rankmi.com. The shift wasn't as hard as I thought it would be since the version that the company used was the 1.6.7
-           that uses the component model for development, very similar to Angular 2's.`
-    ]
+    texts: [`angularjsSpeechBubbleText1`]
   },
   {
     id: "Laravel",
-    texts: ["LARAVEL"]
+    texts: ["laravelSpeechBubbleText1"]
   },
   {
     id: "MySQL",
-    texts: ["MYSQL"]
+    texts: ["mySqlSpeechText1"]
   },
   {
     id: "Underscore / Lodash ES",
-    texts: ["UNDERSCORE LODASHFK"]
+    texts: ["underscoreSpeechBubbleText1"]
   },
   {
     id: "Git",
-    texts: ["Git sss"]
+    texts: ["gitSpeechBubbleText1", "gitSpeechBubbleText2"]
   },
   {
     id: "Github",
-    texts: ["Github"]
+    texts: ["githubSpeechBubbleText1"]
   },
   {
     id: "Typescript",
-    texts: [
-      `I learned typescript when I began developing apps in Angular 2 (since it's mandatory for the framework) and it's the best thing I could've done. Nowdays typescript keeps
-           growing and the type safety has definitely helped me prevent bugs, have more readable, mantainable code and a better development experience.`
-    ]
+    texts: [`typescriptSpeechBubbleText1`]
   },
   {
     id: "ES Lint",
-    texts: ["Lint that shet"]
+    texts: ["esLintSpeechBubbleText1"]
   },
   {
     id: "Visual Studio Code",
-    texts: [
-      `My favorite code editor. It's so simple yet powerful, an infinite amount of plugins and a huge community backing it up. I actually started with Sublime Text when I started
-           learning web development, but now I can't go back. Some of my favorite plugins include: Live Server, Live Sass Compiler, Prettier, Bracket 
-           Pair Colorizer and Annotator.`
-    ]
+    texts: [`vsCodeSpeechBubbleText1`, `vsCodeSpeechBubbleText2`]
   },
   {
     id: "Prettier",
-    texts: ["Prettier"]
+    texts: ["prettierSpeechBubbleText1"]
+  },
+  {
+    id: "Bootstrap 3 / 4",
+    texts: ["bootstrapSpeechBubbleText"]
   }
 ];
 
@@ -151,9 +133,7 @@ timelineCategoriesButtons.forEach(item =>
 
 resetSpeechBubbleBtn.addEventListener("click", resetSpeechBubble);
 
-const technologySpeechBubbleTexts = [];
-
-const [firstText] = speechBubbleTexts;
+const [firstText] = defaultSpeechBubbleTexts;
 
 let currentTextIndex = 0;
 
@@ -167,7 +147,7 @@ speechScrollBtn.addEventListener("click", getNextSpeechBubbleDialog);
 function getNextSpeechBubbleDialog() {
   const maxLengthOfCurrentSpeechBubbleTexts = !!selectedTechnology
     ? selectedTechnology.texts.length
-    : speechBubbleTexts.length;
+    : defaultSpeechBubbleTexts.length;
 
   currentTextIndex =
     currentTextIndex === maxLengthOfCurrentSpeechBubbleTexts - 1
@@ -176,7 +156,7 @@ function getNextSpeechBubbleDialog() {
 
   const keyToApply = !!selectedTechnology
     ? selectedTechnology.texts[currentTextIndex]
-    : speechBubbleTexts[currentTextIndex];
+    : defaultSpeechBubbleTexts[currentTextIndex];
 
   translateSpecificKey(speechBubbleText, "about", keyToApply);
 }
@@ -187,7 +167,8 @@ function filterTechnologiesByCategory() {
   techCategoryButtons.forEach(item => item.classList.remove("active"));
   this.classList.add("active");
   if (selectedCategory === "all") {
-    speechBubbleText.innerHTML = speechBubbleTexts[0];
+    const [firstDefaultSpeechBubbleText] = defaultSpeechBubbleTexts;
+    speechBubbleText.innerHTML = firstDefaultSpeechBubbleText;
     technologyPills.forEach(item => {
       item.classList.remove("hidden");
     });
@@ -241,9 +222,12 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
     }
   }
 
+  const [selectedTechnologyFirstText] = selectedTechnology.texts;
+  const [firstDefaultSpeechBubbleText] = defaultSpeechBubbleTexts;
+
   const keyToApply = selectedTechnology
-    ? selectedTechnology.texts[0]
-    : speechBubbleTexts[0];
+    ? selectedTechnologyFirstText
+    : firstDefaultSpeechBubbleText;
 
   translateSpecificKey(speechBubbleText, "about", keyToApply);
 }
@@ -264,7 +248,6 @@ function resetSpeechBubble() {
 
 function navigateStackedTimelineEventsForward() {
   const [firstTimelineEvent] = timelineStackedEvents;
-
   const navigateForwardArrow = document.getElementById("tl-navigate-forward");
 
   timelineStackedContainer.removeChild(navigateForwardArrow);
@@ -277,24 +260,15 @@ function navigateStackedTimelineEventsForward() {
 }
 
 function navigateStackedTimelineEventsBackward() {
-  const [firstTimelineEvent, , lastTimelineEvent] = timelineStackedEvents;
-
-  const navigateBackwardArrow = document.getElementById(
-    "tl-navigate-backwward"
-  );
-
-  timelineStackedContainer.removeChild(navigateBackwardArrow);
-  timelineStackedContainer.appendChild(lastTimelineEvent);
+  const [firstTimelineEvent] = timelineStackedEvents;
   timelineStackedContainer.removeChild(firstTimelineEvent);
 
   timelineStackedEvents = document.querySelectorAll(".timeline-stacked-event");
 
-  // timelineStackedContainer.removeChild(lastTimelineEvent);
-  timelineStackedContainer.appendChild(lastTimelineEvent);
+  timelineStackedContainer.appendChild(firstTimelineEvent);
 }
 
 function changeTimelineLayout() {
-  console.log(this.dataset);
   if (this.dataset.category.includes("stacked")) {
     timelineContainer.style.display = "none";
     timelineStackedContainer.style.display = "flex";

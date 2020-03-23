@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>About me</title>
+    <title data-translate="head.aboutTitle"></title>
   </head>
 
   <body>
@@ -101,9 +101,6 @@
 
       <div class="categories">
         <div class="category-link">
-          <a href="#introduction" data-translate="about.introductionLink"></a>
-        </div>
-        <div class="category-link">
           <a href="#technologies" data-translate="about.technologiesLink"></a>
         </div>
         <div class="category-link">
@@ -139,7 +136,7 @@
       </section>
 
       <section id="technologies">
-        <h2 class="sm-heading" data-translate="about.technologiesTitle"></h2>
+        <h2 class="sm-heading" data-translate="about.technologiesTitle" id="technologies-title"></h2>
 
         <div class="categories">
           <div class="category tech-category active" data-category="all" data-translate="about.allTechnologiesCategory"></div>
@@ -155,14 +152,14 @@
           <span class="pill" data-category="frontend language"
             >Javascript / ES6</span
           >
-          <span class="pill" data-category="language">PHP</span>
           <span class="pill" data-category="frontend">React JS</span>
-          <span class="pill" data-category="frontend">Jquery</span>
           <span class="pill" data-category="frontend">Angular</span>
           <span class="pill" data-category="frontend">Angular JS</span>
+          <span class="pill" data-category="frontend">Bootstrap 3 / 4</span>
           <span class="pill" data-category="backend">Laravel</span>
           <span class="pill" data-category="backend">MySQL</span>
           <span class="pill" data-category="backend">Spring Framework</span>
+          <span class="pill" data-category="tool frontend">SCSS</span>
           <span class="pill" data-category="tool frontend">Underscore / Lodash ES</span>
           <span class="pill" data-category="tool">Git</span>
           <span class="pill" data-category="tool">Github</span>
@@ -170,11 +167,13 @@
           <span class="pill" data-category="tool">ES Lint</span>
           <span class="pill" data-category="tool">Visual Studio Code</span>
           <span class="pill" data-category="tool">Prettier</span>
+          <span class="pill" data-category="language">PHP</span>
+          <span class="pill" data-category="frontend">Jquery</span>
         </div>
       </section>
 
       <section id="experience" class="experience-section">
-        <h2 class="sm-heading" data-translate="about.experienceTitle"></h2>
+        <h2 class="sm-heading" data-translate="about.experienceTitle" id="experience-title"></h2>
 
         <p class="resume-link" data-translate="about.resumeDownloadLink"></p>
 
@@ -281,7 +280,6 @@
               <li data-translate="about.sotecBullet1"></li>
               <li data-translate="about.sotecBullet2"></li>
               <li data-translate="about.sotecBullet3"></li>
-              <li data-translate="about.sotecBullet4"></li>
             </ul>
           </div>
       
@@ -305,7 +303,7 @@
       </section>
 
       <section id="courses">
-        <h2 class="sm-heading" data-translate="about.coursesTitle"></h2>
+        <h2 class="sm-heading" data-translate="about.coursesTitle" id="courses-title"></h2>
 
         <div class="certificates">
           <a href="images/about/html-css-cert.png" target="_blank"
@@ -338,19 +336,16 @@
               width="250"
               height="200"
           /></a>
-          <!-- <a href="images/about/html-css-cert.png" target="_blank"
-            ><img src="images/about/html-css-cert.png" width="250" height="200"
-          /></a> -->
         </div>
       </section>
     </main>
 
     <footer id="main-footer">
-      Copyright &copy; 2020
+      Copyright &copy; <span id="current-year"></span>
     </footer>
 
     <script src="js/main.js"></script>
     <script src="js/about.js"></script>
-    <script src="js/translate.js"></script>
+    <script src="js/cb-translate.js"></script>
   </body>
 </html>

@@ -7,9 +7,17 @@ const languagesDropdownIcon = document.getElementById(
   "languages-dropdown-icon"
 );
 const languagesDropdown = document.getElementById("languages-dropdown");
+const currentYear = document.getElementById("current-year");
 let showMenu = false;
 let scrollPos = 0;
 let displayLanguagesDropdown = false;
+
+function getCurrentYear() {
+  const currentDate = new Date();
+  currentYear.innerHTML = currentDate.getFullYear();
+}
+
+getCurrentYear();
 
 languagesDropdownBtn.addEventListener("click", () => {
   displayLanguagesDropdown = !displayLanguagesDropdown;
