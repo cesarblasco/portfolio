@@ -1,0 +1,21 @@
+@media (max-width: 1000px) {
+  .modal {
+    .modal-content {
+      width: 90%;
+
+      button {
+        margin-bottom: 10px;
+      }
+
+      .modal-header {
+        .modal-title {
+          font-size: 1.3rem;
+        }
+      }
+
+      .modal-description {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

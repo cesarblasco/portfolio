@@ -64,3 +64,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 489px) {
+  h1.lg-heading {
+    font-size: 4.5rem;
+  }
+}

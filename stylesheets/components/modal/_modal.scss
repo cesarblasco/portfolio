@@ -8,15 +8,16 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 0 1.5rem;
+  padding: 0 0;
 }
 
 .modal-content {
   background-color: #fefefe;
   margin: 1% auto;
+  margin-top: 50px;
   padding: 30px;
   border: 1px solid #888;
-  width: 50%;
+  width: 70%;
   color: #000;
   text-align: center;
 
@@ -29,17 +30,20 @@
   }
 
   .close {
-    grid-area: close;
+    position: absolute;
+    left: 80%;
+    top: 4%;
+    margin-top: 30px;
+    margin-left: 15px;
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
     padding-right: 15px;
-    float: right;
   }
 
   .close:hover,
   .close:focus {
-    color: black;
+    color: $secondary-color;
     text-decoration: none;
     cursor: pointer;
   }
@@ -84,3 +88,5 @@
     margin-bottom: 5px;
   }
 }
+
+@import "./modal-mobile";

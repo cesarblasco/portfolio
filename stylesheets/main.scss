@@ -1,15 +1,17 @@
 @import "config";
-@import "animations";
-@import "index";
 // @import "menu";
+
+@import "./shared/animations";
 @import "./shared/menu-desktop";
 @import "./shared/menu-mobile";
+
+@import "./index/index";
 @import "./about/about";
-@import "./about/about-mobile";
-@import "projects";
-@import "contact";
-@import "carousel";
-@import "modal";
+@import "./projects/projects";
+@import "./contact/contact";
+
+@import "./components/carousel/carousel";
+@import "./components/modal/modal";
 
 * {
   box-sizing: border-box;
@@ -170,4 +172,14 @@ nav {
   margin: 0 10px;
 }
 
-@import "mobile";
+.reset-speech-with-more-text {
+  top: 82%;
+  left: 75%;
+}
+
+.reset-speech-no-more-text {
+  top: 82%;
+  left: 90%;
+}
+
+@import "./shared/mobile";

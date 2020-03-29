@@ -8,6 +8,7 @@ const languagesDropdownIcon = document.getElementById(
 );
 const languagesDropdown = document.getElementById("languages-dropdown");
 const currentYear = document.getElementById("current-year");
+const menuMobileBtn = document.getElementById("menu-mobile-btn");
 let showMenu = false;
 let scrollPos = 0;
 let displayLanguagesDropdown = false;
@@ -18,6 +19,8 @@ function getCurrentYear() {
 }
 
 getCurrentYear();
+
+menuMobileBtn.addEventListener("click", toggleMobileMenu);
 
 languagesDropdownBtn.addEventListener("click", () => {
   displayLanguagesDropdown = !displayLanguagesDropdown;
@@ -36,7 +39,7 @@ languagesDropdownBtn.addEventListener("click", () => {
   languagesDropdownIcon.classList.add(newIconClass);
 });
 
-function toggleMenu() {
+function toggleMobileMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");
     menu.classList.add("show");

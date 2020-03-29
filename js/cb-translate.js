@@ -12,7 +12,6 @@ function translateAllPageKeys() {
     loadTranslationKeysFromCurrentLanguageJSON(response => {
       // Parse JSON string into object
       jsonData = JSON.parse(response);
-      console.log({ jsonData });
       translatableElements.forEach(element => {
         const splittedTranslationKeys = element.dataset.translate.split(".");
         const baseKey = splittedTranslationKeys[0];

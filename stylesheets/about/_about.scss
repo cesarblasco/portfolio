@@ -140,8 +140,6 @@ ul {
 #reset-speech-bubble-btn {
   position: absolute;
   display: none;
-  top: 85%;
-  left: 80%;
   font-size: 1rem;
 
   animation-name: rotateClockwise;
@@ -156,8 +154,8 @@ ul {
 
 .speech-bubble-scroll-btn {
   position: absolute;
-  top: 85%;
-  left: 92%;
+  top: 80%;
+  left: 90%;
   animation-name: speechScrollBtnAnimation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -417,3 +415,5 @@ ul {
   color: $secondary-color;
   text-decoration: underline;
 }
+
+@import "./about-mobile";

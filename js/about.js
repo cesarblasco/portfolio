@@ -80,7 +80,11 @@ const technologiesSpeechTexts = [
   },
   {
     id: "Bootstrap 3 / 4",
-    texts: ["bootstrapSpeechBubbleText"]
+    texts: ["bootstrapSpeechBubbleText1"]
+  },
+  {
+    id: "SCSS / SCSS Modules",
+    texts: ["scssModulesSpeechBubbleText1", "scssModulesSpeechBubbleText2"]
   }
 ];
 
@@ -103,22 +107,10 @@ const navigateTimelineBackward = document.getElementById(
   "tl-navigate-backward"
 );
 
-navigateTimelineBackward.addEventListener(
-  "click",
-  navigateStackedTimelineEventsBackward
-);
-navigateTimelineForward.addEventListener(
-  "click",
-  navigateStackedTimelineEventsForward
-);
 let timelineEventsCopy = document.querySelectorAll(".timeline-event");
 let currentSelectedTimelineLayout = null;
 
 const timelineContainer = document.getElementById("timeline-container");
-const timelineStackedContainer = document.getElementById(
-  "timeline-stacked-container"
-);
-
 techCategoryButtons.forEach(item =>
   item.addEventListener("click", filterTechnologiesByCategory)
 );
@@ -213,15 +205,13 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
     speechScrollBtn.style.display =
       selectedTechnology.texts.length > 1 ? "block" : "none";
 
-    // if (selectedTechnology.texts.length > 1) {
-    //   // resetSpeechBubbleBtn.style.left = "80%";
-    //   // speechScrollBtn.style.display = "initial";
-    //   // resetSpeechBubbleBtn.style.left = "85%";
-    //   // } else {
-    //   //   speechScrollBtn.style.display = "none";
-    //   //   resetSpeechBubbleBtn.style.left = "94%";
-    //   // }
-    // }
+    if (selectedTechnology.texts.length > 1) {
+      resetSpeechBubbleBtn.classList.remove("reset-speech-no-more-text");
+      resetSpeechBubbleBtn.classList.add("reset-speech-with-more-text");
+    } else {
+      resetSpeechBubbleBtn.classList.remove("reset-speech-with-more-text");
+      resetSpeechBubbleBtn.classList.add("reset-speech-no-more-text");
+    }
   }
 
   const [selectedTechnologyFirstText] = selectedTechnology.texts;
@@ -246,41 +236,4 @@ function resetSpeechBubble() {
   });
 
   translateSpecificKey(speechBubbleText, "about", "defaultSpeechBubbleText1");
-}
-
-function navigateStackedTimelineEventsForward() {
-  const [firstTimelineEvent] = timelineStackedEvents;
-  const navigateForwardArrow = document.getElementById("tl-navigate-forward");
-
-  timelineStackedContainer.removeChild(navigateForwardArrow);
-  timelineStackedContainer.removeChild(firstTimelineEvent);
-
-  timelineStackedEvents = document.querySelectorAll(".timeline-stacked-event");
-
-  timelineStackedContainer.appendChild(firstTimelineEvent);
-  timelineStackedContainer.appendChild(navigateForwardArrow);
-}
-
-function navigateStackedTimelineEventsBackward() {
-  const [firstTimelineEvent] = timelineStackedEvents;
-  timelineStackedContainer.removeChild(firstTimelineEvent);
-
-  timelineStackedEvents = document.querySelectorAll(".timeline-stacked-event");
-
-  timelineStackedContainer.appendChild(firstTimelineEvent);
-}
-
-function changeTimelineLayout() {
-  if (this.dataset.category.includes("stacked")) {
-    timelineContainer.style.display = "none";
-    timelineStackedContainer.style.display = "flex";
-    experienceSection.style.height = "700px";
-  } else {
-    timelineContainer.style.display = "flex";
-    timelineStackedContainer.style.display = "none";
-    experienceSection.style.height = "100%";
-  }
-
-  timelineCategoriesButtons.forEach(item => item.classList.remove("active"));
-  this.classList.add("active");
 }

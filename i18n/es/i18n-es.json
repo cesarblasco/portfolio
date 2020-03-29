@@ -28,8 +28,6 @@
     "toolsTechnologiesCategory": "Herramientas",
     "experienceTitle": "<i class='fa fa-book'></i> <i class='fas fa-book-open'></i> Experiencia <i class='fa fa-book'></i> <i class='fas fa-book-open'></i>",
     "resumeDownloadLink": "Puede descargar my CV <a target='_blank'  noreferrer noopener  href='/files/CesarBlascoResumeEsp.pdf'>aquí</a>",
-    "timelineCategoryLine": "Linea de tiempo",
-    "timelineCategoryStacked": "Cartas apiladas",
     "coursesTitle": "Cursos",
     "rankmiPosition": "Desarrollador Frontend (June 2018 - Actualidad)",
     "rankmiBullet1": "Desarrolle componentes, módulos y funcionalidades de diversas complejidades usando el framework Angular JS en su versión 1.6.7.",
@@ -57,7 +55,7 @@
     "jquerySpeechBubbleText1": "Una de las primeras librerías javascript que aprendí. Aunque actualmente el mundo esta dejando atrás esta librería, me pareció bastante fácil de entender e incluso aprender mas manipulación del DOM con ella.",
     "phpSpeechBubbleText1": "Aprendí por mi cuenta mientras estaba en la universidad y despues aprendí el framework Laravel (un framework PHP) en el cual desarrolle mi aplicación web de clínica odontológica. No he desarrollador en PHP desde hace un tiempo ya que me he quedado con las librerías y frameworks JS, pero aun tengo el conocimiento.",
     "vsCodeSpeechBubbleText1": "Mi editor de código favorito. Es tan simple pero tan poderoso, una cantidad infinita de plugins y una comunidad gigantesca respaldandolo. De hecho yo empecé con Sublime Text cuando empecé a aprender desarrollo web pero ahora no puedo devolverme :)",
-    "vsCodeSpeechBubbleText2": "Algunos de mis plugins favoritos son: Live Server, Live Sass Compiler, Prettier, Bracket Pair Colorizer, Git History y algunos otros.",
+    "vsCodeSpeechBubbleText2": "Algunos de mis plugins favoritos son: Live Server, Live Sass Compiler, Prettier, Bracket Pair Colorizer, Git Lens y algunos otros.",
     "angularSpeechBubbleText1": "Angular fue el primer framework frontend que aprendí. Complete cursos, me entrene y conseguí mi primer trabajo usando este poderoso framework. Al principio fue difícil ya que hay demasiados conceptos que aprender, pero una vez dominados te das cuenta que puedes desarrollar lo que sea y ya viene todo incluido.",
     "angularjsSpeechBubbleText1": "Aprendí Angular JS cuando me cambie de trabajo. La transición no fue tan difícil como pensé que seria ya que la versión que usaba la empresa era la 1.6.7 la cual usaba el modelo orientado a componentes similar a angular 2+.",
     "laravelSpeechBubbleText1": "El primer framework de desarrollo web que aprendí y use. Estaba en la universidad cuando escuche de este framework y decidí probarlo. Es bastante bueno y es tan fácil de desarrollar apps con el. Desarrolle mi aplicación de clínica dental usando este framework y salio bastante bien.",
@@ -69,7 +67,9 @@
     "underscoreSpeechBubbleText1": "Very useful libraries, you can save alot of time with them. I've worked with both already, lodash-es being the best version since it exports code as ES modules, reducing the bundle size",
     "esLintSpeechBubbleText1": "Otra herramienta útil para declarar convenciones en el código y asegurar que cada desarrollador las siga. Es muy útil para detectar cualquier inconveniente a la hora de subir código. Ya esto familiarizado con su uso y también lo recomiendo.",
     "mySqlSpeechText1": "El primer sistema de base de datos relacional que use y en el cual aprendi y aplique mis conocimientos basicos de SQL.",
-    "bootstrapSpeechBubbleText": "Una librería CSS muy fácil y útil y la primera que utilice despues de aprender CSS. He trabajado mas que todo con la versión 3 pero también he usado la versión 4. Me gusta lo fácil que es implementar maquetación y responsive con este."
+    "bootstrapSpeechBubbleText": "Una librería CSS muy fácil y útil y la primera que utilice despues de aprender CSS. He trabajado mas que todo con la versión 3 pero también he usado la versión 4. Me gusta lo fácil que es implementar maquetación y responsive con este.",
+    "scssModulesSpeechBubbleText1": "El mejor preprocesador CSS con el que he trabajado hasta los momentos. Me gusta como facilita el desarrollo de CSS. De hecho este portafolio usa SCSS que es compilado a CSS usando un plugin de VS Code llamado \"Live SASS compiler\".",
+    "scssModulesSpeechBubbleText2": "En lo que respecta a los módulos SCSS, he trabajado con ellos recientemente y realmente ayuda a organizar y realmente separar el CSS de cada componente. Esto evita conflictos extranos entre clases o errores de CSS."
   },
   "projects": {
     "header": "Mis <span class='text-secondary'>proyectos</span>",
@@ -81,7 +81,17 @@
     "otherProjectsCategory": "Otros",
     "infoBtn": "Información",
     "githubBtn": "Github",
-    "codepenBtn": "Codepen"
+    "codepenBtn": "Codepen",
+    "dentalClinic": "<i class='fas fa-tooth'></i></i> Clinica Dental <i class='fas fa-tooth'></i>",
+    "githubSearch": "<i class='fab fa-github'></i> Buscador de Github <i class='fab fa-github'></i>",
+    "tributePage": "<i class='fas fa-book'></i> </i> Tributo <i class='fas fa-book'></i>",
+    "mathGame": "<i class='fas fa-gamepad'></i></i> LearnMaths <i class='fas fa-gamepad'></i>",
+    "react": "<i class='fab fa-github'></i> Proyecto con React <i class='fab fa-github'></i>",
+    "battleCity": "<i class='fab fa-github'></i> Java Game <i class='fab fa-github'></i>",
+    "cssLab": "<i class='fas fa-flask'></i> Laboratorio CSS <i class='fas fa-flask'></i>",
+    "portfolio": "<i class='fas fa-suitcase'></i> Portafolio <i class='fas fa-suitcase'></i>",
+    "technologiesUsed": "Technologies used:",
+    "tryProject": "Probar proyecto"
   },
   "contact": {
     "header": "Vias de <span class='text-secondary'>contacto</span>",
