@@ -19,6 +19,10 @@
     margin-left: auto;
     margin-right: 20px;
   }
+
+  @media (max-width: 633px) {
+    display: none;
+  }
 }
 
 .container-lang {

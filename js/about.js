@@ -197,7 +197,7 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
   smoothscroll();
 
   isTechnologySelected = true;
-  resetSpeechBubbleBtn.style.display = "initial";
+  resetSpeechBubbleBtn.style.display = "block";
 
   technologyPills.forEach(item => {
     item.classList.remove("pill-active");
@@ -211,15 +211,17 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
     this.classList.add("pill-active");
 
     speechScrollBtn.style.display =
-      selectedTechnology.texts.length > 1 ? "initial" : "none";
+      selectedTechnology.texts.length > 1 ? "block" : "none";
 
-    if (selectedTechnology.texts.length > 1) {
-      speechScrollBtn.style.display = "initial";
-      resetSpeechBubbleBtn.style.left = "85%";
-    } else {
-      speechScrollBtn.style.display = "none";
-      resetSpeechBubbleBtn.style.left = "94%";
-    }
+    // if (selectedTechnology.texts.length > 1) {
+    //   // resetSpeechBubbleBtn.style.left = "80%";
+    //   // speechScrollBtn.style.display = "initial";
+    //   // resetSpeechBubbleBtn.style.left = "85%";
+    //   // } else {
+    //   //   speechScrollBtn.style.display = "none";
+    //   //   resetSpeechBubbleBtn.style.left = "94%";
+    //   // }
+    // }
   }
 
   const [selectedTechnologyFirstText] = selectedTechnology.texts;

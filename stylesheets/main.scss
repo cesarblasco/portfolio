@@ -1,9 +1,11 @@
 @import "config";
 @import "animations";
 @import "index";
-@import "menu";
-@import "menu-desktop";
-@import "about";
+// @import "menu";
+@import "./shared/menu-desktop";
+@import "./shared/menu-mobile";
+@import "./about/about";
+@import "./about/about-mobile";
 @import "projects";
 @import "contact";
 @import "carousel";
@@ -125,6 +127,7 @@ nav {
   .category-link {
     display: inline-block;
     margin-right: 1.5rem;
+    margin-bottom: 10px;
     cursor: pointer;
   }
 

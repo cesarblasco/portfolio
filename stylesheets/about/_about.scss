@@ -17,6 +17,16 @@ ul {
 }
 
 #experience-title {
+  & i:nth-child(1) {
+    position: relative;
+    left: 30px;
+  }
+
+  & i:nth-child(4) {
+    position: relative;
+    right: 30px;
+  }
+
   & i:nth-child(1),
   & i:nth-child(4) {
     animation: toggleVisibility 2s infinite;
@@ -24,8 +34,9 @@ ul {
 
   & i:nth-child(2),
   & i:nth-child(3) {
-    animation-delay: 5s;
+    opacity: 0;
     animation: toggleVisibilityReversed 2s infinite;
+    animation-delay: 2s;
   }
 }
 
@@ -50,14 +61,14 @@ ul {
   border: 5px solid black;
   border-radius: 30px;
   width: 40%;
-  max-height: 300px;
+  height: 300px;
   font-size: 1.5rem;
 
   .speech-text-container {
     padding: 10px 25px;
     padding-top: 0;
     width: 100%;
-    max-height: 300px;
+    height: 290px;
     text-align: justify;
     overflow-y: auto;
     scrollbar-width: none;
@@ -74,32 +85,34 @@ ul {
   }
 }
 
-.speech-bubble:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 0;
-  height: 0;
-  border: 27px solid transparent;
-  border-right-color: black;
-  border-left: 0;
-  margin-top: -27px;
-  margin-left: -27px;
-}
+@media (min-width: 1029px) {
+  .speech-bubble:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 27px solid transparent;
+    border-right-color: black;
+    border-left: 0;
+    margin-top: -27px;
+    margin-left: -27px;
+  }
 
-.speech-bubble:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  border-right-color: white;
-  border-left: 0;
-  margin-top: -20px;
-  margin-left: -20px;
+  .speech-bubble:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: white;
+    border-left: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
 }
 
 .cesar-avatar {
@@ -108,12 +121,6 @@ ul {
   width: 300px;
   height: 300px;
   border: $secondary-color 3px solid;
-}
-
-.technologies-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .technologies-row {
@@ -133,8 +140,8 @@ ul {
 #reset-speech-bubble-btn {
   position: absolute;
   display: none;
-  top: 87%;
-  left: 50%;
+  top: 85%;
+  left: 80%;
   font-size: 1rem;
 
   animation-name: rotateClockwise;
@@ -194,7 +201,7 @@ ul {
 }
 
 .pill {
-  border-radius: 15px;
+  border-radius: 25px;
   background-color: #2684ff;
   color: #fff;
   padding: 5px 30px;
