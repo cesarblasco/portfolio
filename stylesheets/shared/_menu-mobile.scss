@@ -1,14 +1,32 @@
-.menu-mobile-btn {
-  position: absolute;
-  margin-top: 30px;
-  left: calc(95% - 30px);
-  cursor: pointer;
+@media (max-width: 633px) {
+  .menu {
+    li {
+      font-size: 1.15rem;
+      text-align: center;
+      width: 20%;
+      min-width: 20%;
+      a {
+        span {
+          display: none;
+        }
+      }
+    }
 
-  @media (min-width: 633px) {
-    display: none;
+    li.languages {
+      span,
+      #languages-dropdown-icon {
+        display: none;
+      }
+    }
   }
 
-  @media (max-width: 633px) {
-    display: block;
+  .container-lang {
+    margin-right: 5px;
+
+    .languages-dropdown {
+      & p {
+        width: 100%;
+      }
+    }
   }
 }

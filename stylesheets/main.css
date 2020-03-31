@@ -340,7 +340,7 @@
   }
 }
 
-.menu-desktop {
+ul.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +350,7 @@
   border: 1px solid black;
 }
 
-.menu-desktop li {
+ul.menu li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -358,21 +358,15 @@
   list-style-type: none;
 }
 
-.menu-desktop li:hover {
+ul.menu li:hover {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   color: #eece1a;
 }
 
-.menu-desktop li:last-child {
+ul.menu li:last-child {
   margin-left: auto;
   margin-right: 20px;
-}
-
-@media (max-width: 633px) {
-  .menu-desktop {
-    display: none;
-  }
 }
 
 .container-lang {
@@ -411,22 +405,47 @@
   background-color: #eece1a;
 }
 
-.menu-mobile-btn {
-  position: absolute;
-  margin-top: 30px;
-  left: calc(95% - 30px);
-  cursor: pointer;
-}
-
-@media (min-width: 633px) {
-  .menu-mobile-btn {
+@media (max-width: 633px) {
+  .menu li {
+    font-size: 1.15rem;
+    text-align: center;
+    width: 20%;
+    min-width: 20%;
+  }
+  .menu li a span {
     display: none;
+  }
+  .menu li.languages span,
+  .menu li.languages #languages-dropdown-icon {
+    display: none;
+  }
+  .container-lang {
+    margin-right: 5px;
+  }
+  .container-lang .languages-dropdown p {
+    width: 100%;
   }
 }
 
 @media (max-width: 633px) {
-  .menu-mobile-btn {
-    display: block;
+  .menu li {
+    font-size: 1.15rem;
+    text-align: center;
+    width: 20%;
+    min-width: 20%;
+  }
+  .menu li a span {
+    display: none;
+  }
+  .menu li.languages span,
+  .menu li.languages #languages-dropdown-icon {
+    display: none;
+  }
+  .container-lang {
+    margin-right: 5px;
+  }
+  .container-lang .languages-dropdown p {
+    width: 100%;
   }
 }
 
@@ -1062,7 +1081,8 @@ ul {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 50%;
+  width: 200px;
+  min-width: 200px;
   padding: 1rem;
   text-align: center;
   cursor: pointer;
@@ -1498,6 +1518,7 @@ nav ul li a.active, nav ul li a:hover {
   }
   main .lg-heading {
     line-height: 1;
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
   .ul.menu-nav,
@@ -1546,7 +1567,7 @@ nav ul li a.active, nav ul li a:hover {
 
 @media (max-width: 489px) {
   h1.lg-heading {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

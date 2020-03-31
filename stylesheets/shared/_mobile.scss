@@ -17,6 +17,7 @@
 
     .lg-heading {
       line-height: 1;
+      margin-top: 1rem;
       margin-bottom: 1rem;
     }
   }
@@ -67,6 +68,6 @@
 
 @media (max-width: 489px) {
   h1.lg-heading {
-    font-size: 4.5rem;
+    font-size: 4.25rem;
   }
 }
