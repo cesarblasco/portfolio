@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-right: 30px;
   padding-left: 30px;
   align-items: center;
@@ -20,12 +20,12 @@
 
 @mixin carouselNavigationButtons {
   cursor: pointer;
-  font-size: 2rem;
   z-index: 2;
+  padding: 15px;
+  font-size: 1.5rem;
 
   &:hover {
     @include easeOut;
-    font-size: 2.5rem;
     color: $secondary-color;
   }
 }
@@ -45,8 +45,29 @@
 .carousel-page {
   color: $primary-color;
   margin-right: 0.3rem;
+  cursor: pointer;
 }
 
 .carousel-page.active {
   color: $secondary-color;
 }
+
+#carousel-pages-container {
+  margin-top: 15px;
+}
+
+.carousel-interval-progressbar {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid black;
+  height: 10px;
+  .carousel-interval-progress {
+    height: 10px;
+    background-color: #34bdeb;
+    animation-name: carouselIntervalProgress;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@import "./carousel-mobile";

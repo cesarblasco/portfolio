@@ -19,3 +19,13 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .modal {
+    .modal-content {
+      #modal-summary {
+        max-width: 100%;
+      }
+    }
+  }
+}

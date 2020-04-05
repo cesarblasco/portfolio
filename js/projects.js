@@ -1,137 +1,113 @@
 const projects = [
   {
     id: "dental",
-    title: "Dental Clinic",
+    title: "dentalClinicTitle",
     icon: "fas fa-tooth",
-    description: "Dental clinic management web app",
-    summary: `My largest application yet. 
-                  This application handles the whole flow of work in a dental clinic. It features the following modules:
-                  appointments module, patient management, dentist management, patient history, interactive teeth view, 
-                  billing, PDF and Excel reports`,
+    description: "dentalClinicDescription",
+    summary: "dentalClinicSummary",
     technologies: ["Laravel Framework, Bootstrap 3, JQuery, Raphael.js, mySQL"],
     link: "http://www.gooogle.com",
     images: [
-      { fileName: "project1.jpg", caption: "Login Screen" },
-      { fileName: "project2.jpg", caption: "Appointments view" },
-      { fileName: "project3.jpg", caption: "Managing patients" },
-      { fileName: "project4.jpg", caption: "Teeth View" },
-      { fileName: "project5.jpg", caption: "Billing" },
-      { fileName: "project3.jpg", caption: "PDF report sample" },
-      { fileName: "project2.jpg", caption: "Excel report sample" }
-    ]
+      { fileName: "project1.jpg", caption: "dentalClinicCaption1" },
+      { fileName: "project2.jpg", caption: "dentalClinicCaption2" },
+      { fileName: "project3.jpg", caption: "dentalClinicCaption3" },
+      { fileName: "project4.jpg", caption: "dentalClinicCaption4" },
+      { fileName: "project5.jpg", caption: "dentalClinicCaption5" },
+      { fileName: "project3.jpg", caption: "dentalClinicCaption6" },
+      { fileName: "project2.jpg", caption: "dentalClinicCaption7" },
+    ],
   },
   {
     id: "tribute",
-    title: "Tribute page",
+    title: "tributePageTitle",
     icon: "fas fa-book",
-    description: "A small bio page about Alan Turing",
-    summary: `Part of the Free Code Camp challenges and frontend certificate`,
+    description: "tributePageDescription",
+    summary: `tributePageSummary`,
     technologies: ["Bootstrap 3"],
     link: "https://codepen.io/Cesar1337/pen/VmzzRL",
-    images: [{ fileName: "tribute-page.jpg", caption: "Sample of the page" }]
+    images: [{ fileName: "tribute-page.jpg", caption: "tributePageCaption1" }],
   },
   {
     id: "lab",
-    title: "CSS Lab",
+    title: "cssLabTitle",
     icon: "fas fa-flask",
-    description: "A repository where I play around with CSS",
-    summary: `Mini proyects where I apply css to create stuff like drawings or some basic layouts`,
-    technologies: ["Basic HTML and CSS"],
+    description: "cssLabDescription",
+    summary: `cssLabSummary`,
+    technologies: ["HTML, CSS"],
     link: "https://cesarblasco.github.io/css-lab/",
     images: [
-      { fileName: "css-lab-2.jpg", caption: "Animated compass" },
-      { fileName: "css-lab-3.jpg", caption: "Cartoon building" },
-      { fileName: "css-lab-4.jpg", caption: "CSS Box sample" }
-    ]
+      { fileName: "css-lab-2.jpg", caption: "cssLabCaption1" },
+      { fileName: "css-lab-3.jpg", caption: "cssLabCaption2" },
+      { fileName: "css-lab-4.jpg", caption: "cssLabCaption3" },
+    ],
   },
   {
     id: "search",
-    title: "Github Search",
+    title: "githubSearchTitle",
     icon: "fab fa-github",
-    description:
-      "Angular JS app that uses Github's API to search for users and see repository details",
-    summary: `This project was the technical assessment sent to aspiring frontend developers for 
-                  <a style="color: blue;" href="https://www.rankmi.com" target="_blank" noopener noreferrer>Rankmi.com</a> 
-                  which I passed and got accepted into the team.`,
+    description: "githubSearchDescription",
+    summary: "githubSearchSummary",
     technologies: [
-      "Angular JS, UI Router, Bootstrap 3, TypeScript, Github API"
+      "Angular JS, UI Router, Bootstrap 3, TypeScript, Github API",
     ],
     link: "https://cesarblasco.github.io/RKM-Test-Base",
     images: [
       {
         fileName: "github-search-1.jpg",
-        caption: "Loading search from github user endpoint"
+        caption: "githubSearchCaption1",
       },
       {
         fileName: "github-search-2.jpg",
-        caption: "Search results for Angular user"
+        caption: "githubSearchCaption2",
       },
       {
         fileName: "github-search-3.jpg",
-        caption: "Selected repository detail"
+        caption: "githubSearchCaption3",
       },
       {
         fileName: "github-search-4.jpg",
-        caption: "End of repository detail with back button"
-      }
-    ]
+        caption: "githubSearchCaption4",
+      },
+    ],
   },
   {
     id: "math",
-    title: "Math Game",
+    title: "mathGameTitle",
     icon: "fas fa-gamepad",
-    description: "A little game developed in Unity 2D",
-    summary: `A game I made while I was playing around with Unity 2D. Solve basic math problems and collect coins. You can get a sword
-    if you have 10 coins by touching the golden treasures and use it with the spacebar`,
+    description: "mathGameDescription",
+    summary: `mathGameSummary`,
     technologies: ["Unity 2D, C#"],
     link: "https://cesarblasco.github.io/learnmaths/",
     images: [
-      { fileName: "maths-1.jpg", caption: "Game start" },
-      { fileName: "maths-2.jpg", caption: "Chasing some coins" },
+      { fileName: "maths-1.jpg", caption: "mathGameCaption1" },
+      { fileName: "maths-2.jpg", caption: "mathGameCaption2" },
       {
         fileName: "maths-3.jpg",
-        caption: "Solve the problem and get more coins!"
+        caption: "mathGameCaption3",
       },
       {
         fileName: "maths-4.jpg",
-        caption: "Problem solved! You get paid based on the answer"
+        caption: "mathGameCaption4",
       },
       {
         fileName: "maths-5.jpg",
-        caption: "Just bought my sword with my hard earned money!"
+        caption: "mathGameCaption5",
       },
-      { fileName: "maths-6.jpg", caption: "Swing that master sword!" }
-    ]
+      { fileName: "maths-6.jpg", caption: "mathGameCaption6" },
+    ],
   },
   {
     id: "portfolio",
-    title: "Portfolio",
+    title: "portfolioTitle",
     icon: "fas fa-suitcase",
-    description: "The project you are currently on :) ",
-    summary: `A game I made while I was playing around with Unity 2D. Solve basic math problems and collect coins. You can get a sword
-    if you have 10 coins by touching the golden treasures and use it with the spacebar`,
+    description: "portfolioDescription",
+    summary: `portfolioSummary`,
     technologies: [
-      "HTML, SASS compiled to CSS via Watch SASS VS code plugin, JS / ES6, Font Awesome Icons"
+      "HTML, SASS ---> CSS via Watch SASS VS code plugin, JS / ES6, Font Awesome",
     ],
     link: "https://cesarblasco.github.io/learnmaths/",
-    images: [
-      { fileName: "maths-1.jpg", caption: "Game start" },
-      { fileName: "maths-2.jpg", caption: "Chasing some coins" },
-      {
-        fileName: "maths-3.jpg",
-        caption: "Solve the problem and get more coins!"
-      },
-      {
-        fileName: "maths-4.jpg",
-        caption: "Problem solved! You get paid based on the answer"
-      },
-      {
-        fileName: "maths-5.jpg",
-        caption: "Just bought my sword with my hard earned money!"
-      },
-      { fileName: "maths-6.jpg", caption: "Swing that master sword!" }
-    ]
-  }
+    images: [{ fileName: "maths-1.jpg", caption: "portfolioCaption1" }],
+  },
 ];
 
 const viewInfoButtons = document.querySelectorAll(".project-info");
@@ -147,11 +123,13 @@ let currentProject = null;
 
 // my carousel.js
 const previousImageButton = document.getElementById("previous");
-// const currentCarouselImage = document.getElementById("current-carousel-image");
 const nextImageButton = document.getElementById("next");
 const currentImageCaption = document.getElementById("current-caption");
 const carouselPagesContainer = document.getElementById(
   "carousel-pages-container"
+);
+const carouselIntervalProgressbar = document.getElementById(
+  "carousel-interval-progressbar"
 );
 let currentImageIndex = 0;
 let carouselPagesElementCollection = null;
@@ -159,29 +137,40 @@ let carouselPagesElementCollection = null;
 let prefixImageDirectory = "images/projects/";
 let carouselInterval = null;
 
-viewInfoButtons.forEach(item =>
+viewInfoButtons.forEach((item) =>
   item.addEventListener("click", openProjectInformationModal)
 );
+
 closeModalIcon.addEventListener("click", closeProjectInformationModal);
 modalBtn.addEventListener("click", closeProjectInformationModal);
-categoryButtons.forEach(item =>
+
+categoryButtons.forEach((item) =>
   item.addEventListener("click", filterProjectsBySelectedCategory)
 );
-previousImageButton.addEventListener("click", setPreviousImageOfCurrentProject);
-nextImageButton.addEventListener("click", setNextImageOfCurrentProject);
 
-function openProjectInformationModal() {
+previousImageButton.addEventListener("click", () => {
+  return setNextOrPreviousImageOfCurrentProject("backward");
+});
+
+nextImageButton.addEventListener("click", () => {
+  return setNextOrPreviousImageOfCurrentProject("forward");
+});
+
+function setCarouselInterval() {
   carouselInterval = setInterval(() => {
     if (currentProject && carouselPagesElementCollection) {
       handleImageChange("forward");
     }
   }, 4500);
+}
+
+function openProjectInformationModal() {
+  setCarouselInterval();
 
   currentImageIndex = 0;
   const selectedProjectId = this.getAttribute("data-project");
   currentProject = projects.find(({ id }) => selectedProjectId === id);
 
-  console.log("selected project id", selectedProjectId, currentProject);
   const modalTitle = document.getElementById("modal-title");
   const modalDescription = document.getElementById("modal-description");
   const modalSummary = document.getElementById("modal-summary");
@@ -191,19 +180,23 @@ function openProjectInformationModal() {
   );
   const modalIcons = document.getElementsByClassName("modal-icon");
 
-  modalTitle.innerHTML = currentProject.title;
-  modalDescription.innerHTML = currentProject.description;
-  modalSummary.innerHTML = currentProject.summary;
+  translateSpecificKey(modalTitle, "projects", currentProject.title);
+  translateSpecificKey(
+    modalDescription,
+    "projects",
+    currentProject.description
+  );
+  translateSpecificKey(modalSummary, "projects", currentProject.summary);
   projectLink.setAttribute("href", currentProject.link);
-  // currentCarouselImage.setAttribute(
-  //   "src",
-  //   `${prefixImageDirectory}${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`
-  // );
   const path = `${prefixImageDirectory}${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`;
   const urlString = `url(${path})`;
   carousel.style.backgroundImage = urlString;
-  currentImageCaption.innerHTML =
-    currentProject.images[currentImageIndex].caption;
+
+  translateSpecificKey(
+    currentImageCaption,
+    "projects",
+    currentProject.images[currentImageIndex].caption
+  );
 
   for (let i = 0; i < modalIcons.length; i++) {
     modalIcons[i].className = `modal-icon fa-2x ${currentProject.icon}`;
@@ -218,17 +211,27 @@ function openProjectInformationModal() {
 
   removeAllChildsFromNode(carouselPagesContainer);
 
-  currentProject.images.forEach(() => {
+  currentProject.images.forEach((image, index) => {
     const node = document.createElement("i");
     node.classList = "fas fa-circle carousel-page";
+    node.dataset.index = index;
     document.getElementById("carousel-pages-container").appendChild(node);
   });
 
   carouselPagesElementCollection = document.getElementsByClassName(
     "carousel-page"
   );
+
+  const carouselPagesNodeCollection = document.querySelectorAll(
+    ".carousel-page"
+  );
+
   carouselPagesElementCollection[currentImageIndex].classList.add("active");
   projectModalInfo.style.display = "block";
+
+  carouselPagesNodeCollection.forEach((node) => {
+    node.addEventListener("click", handleImageChangeOnClickedCarouselPage);
+  });
 }
 
 function removeAllChildsFromNode(node) {
@@ -245,15 +248,15 @@ function closeProjectInformationModal() {
 
 function filterProjectsBySelectedCategory() {
   const selectedCategory = this.getAttribute("data-category");
-  categoryButtons.forEach(item => item.classList.remove("active"));
+  categoryButtons.forEach((item) => item.classList.remove("active"));
   this.classList.add("active");
 
   if (selectedCategory === "all") {
-    projectsHtml.forEach(item => {
+    projectsHtml.forEach((item) => {
       item.classList.remove("hidden");
     });
   } else {
-    projectsHtml.forEach(item => {
+    projectsHtml.forEach((item) => {
       if (item.getAttribute("data-category") !== selectedCategory) {
         item.classList.add("hidden");
       } else {
@@ -263,29 +266,45 @@ function filterProjectsBySelectedCategory() {
   }
 }
 
-function handleImageChange(direction) {
+function handleImageChangeOnClickedCarouselPage() {
+  resetCarouselIntervalProgressbar();
+  handleImageChange("forward", this.dataset.index);
+}
+
+function handleImageChange(direction, selectedCarouselPageIndex = "") {
   carouselPagesElementCollection[currentImageIndex].classList.remove("active");
-  currentImageIndex =
-    direction === "forward"
-      ? (currentImageIndex + 1) % currentProject.images.length
-      : (currentImageIndex - 1 + currentProject.images.length) %
-        currentProject.images.length;
+
+  if (!!selectedCarouselPageIndex) {
+    currentImageIndex = +selectedCarouselPageIndex;
+  } else {
+    currentImageIndex =
+      direction === "forward"
+        ? (currentImageIndex + 1) % currentProject.images.length
+        : (currentImageIndex - 1 + currentProject.images.length) %
+          currentProject.images.length;
+  }
+
   carouselPagesElementCollection[currentImageIndex].classList.add("active");
-  // currentCarouselImage.setAttribute(
-  //   "src",
-  //   `${prefixImageDirectory}${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`
-  // );
   const path = `${prefixImageDirectory}${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`;
   const urlString = `url(${path})`;
   carousel.style.backgroundImage = urlString;
-  currentImageCaption.innerHTML =
-    currentProject.images[currentImageIndex].caption;
+
+  translateSpecificKey(
+    currentImageCaption,
+    "projects",
+    currentProject.images[currentImageIndex].caption
+  );
 }
 
-function setNextImageOfCurrentProject() {
-  handleImageChange("forward");
+function resetCarouselIntervalProgressbar() {
+  clearInterval(carouselInterval);
+  setCarouselInterval();
+  carouselIntervalProgressbar.classList.remove("carousel-interval-progressbar");
+  void carouselIntervalProgressbar.offsetWidth;
+  carouselIntervalProgressbar.classList.add("carousel-interval-progressbar");
 }
 
-function setPreviousImageOfCurrentProject() {
-  handleImageChange("backward");
+function setNextOrPreviousImageOfCurrentProject(direction) {
+  resetCarouselIntervalProgressbar();
+  handleImageChange(direction);
 }

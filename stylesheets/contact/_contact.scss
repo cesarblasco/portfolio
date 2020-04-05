@@ -1,25 +1,48 @@
-.boxes {
+.contact {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  margin-top: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 70px;
 
-  div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 3rem;
-    min-width: 3rem;
-    @include easeOut;
+  .fab,
+  .far {
+    border-radius: 50%;
+    padding: 7px;
+    background: white;
+  }
 
-    &:hover {
-      padding: 1.5rem 2.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
-      }
+  .fa-linkedin {
+    color: #0076b4;
+  }
+
+  .fa-github {
+    color: #1b1f23;
+  }
+
+  .fa-envelope {
+    background: white;
+    color: #cf493c;
+  }
+
+  a {
+    margin-bottom: 20px;
+    text-align: left;
+    span {
+      font-size: 2rem;
+    }
+
+    &:hover span {
+      @include easeOut;
+      color: $secondary-color;
+      animation-name: scaleUpAndDown;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      font-size: 2.5rem;
     }
   }
 }
+
+@import "contact-mobile";
