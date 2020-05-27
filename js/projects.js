@@ -25,7 +25,10 @@ const projects = [
     summary: `tributePageSummary`,
     technologies: ["Bootstrap 3"],
     link: "https://codepen.io/Cesar1337/pen/VmzzRL",
-    images: [{ fileName: "tribute-page.jpg", caption: "tributePageCaption1" }],
+    images: [
+      { fileName: "tribute-page.jpg", caption: "tributePageCaption1" },
+      { fileName: "tribute-page-2.jpg", caption: "tributePageCaption2" },
+    ],
   },
   {
     id: "lab",
@@ -103,10 +106,15 @@ const projects = [
     description: "portfolioDescription",
     summary: `portfolioSummary`,
     technologies: [
-      "HTML, SASS ---> CSS via Watch SASS VS code plugin, JS / ES6, Font Awesome",
+      "HTML, SASS ---> CSS via Watch SASS VS code plugin, JS / ES6, JSON, Font Awesome",
     ],
-    link: "https://cesarblasco.github.io/learnmaths/",
-    images: [{ fileName: "maths-1.jpg", caption: "portfolioCaption1" }],
+    link: "https://cesarblasco.github.io/portfolio/",
+    images: [
+      { fileName: "maths-1.jpg", caption: "portfolioCaption1" },
+      { fileName: "maths-2.jpg", caption: "portfolioCaption2" },
+      { fileName: "maths-3.jpg", caption: "portfolioCaption3" },
+      { fileName: "maths-4.jpg", caption: "portfolioCaption4" },
+    ],
   },
 ];
 

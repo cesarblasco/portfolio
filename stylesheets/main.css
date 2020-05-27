@@ -707,7 +707,7 @@ ul {
   background-color: #eece1a;
   position: relative;
   display: inline-block;
-  left: 25px;
+  left: 30px;
   bottom: 98px;
 }
 
@@ -719,7 +719,7 @@ ul {
   background-color: #eece1a;
   position: relative;
   display: inline-block;
-  right: 25px;
+  right: 30px;
   top: 53px;
 }
 
@@ -1000,28 +1000,103 @@ ul {
   opacity: 1;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+form .form-group label {
+  display: block;
+}
+
+form .form-group input {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form .form-group input.inline {
+  height: 40px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+form .form-group textarea {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+form .form-group input:focus,
+form .form-group textarea:focus {
+  border: 2px solid #eece1a;
+}
+
+form .form-group .form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form .form-group .form-inline .inline-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+}
+
+form input[type="submit"] {
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #2684ff;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
-  width: 100%;
-  padding-top: 70px;
+  width: 50%;
 }
 
 .contact .fab,
 .contact .far {
   border-radius: 50%;
-  padding: 7px;
+  padding: 8px;
   background: white;
 }
 
@@ -1038,26 +1113,28 @@ ul {
   color: #cf493c;
 }
 
+.contact .fa-twitter {
+  color: #38a1f3;
+}
+
+.contact .fa-instagram {
+  color: #dd2a7b;
+}
+
 .contact a {
   margin-bottom: 20px;
+  margin-right: 15px;
   text-align: left;
 }
 
 .contact a span {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
-.contact a:hover span {
+.contact a:hover i {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   color: #eece1a;
-  -webkit-animation-name: scaleUpAndDown;
-          animation-name: scaleUpAndDown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  font-size: 2.5rem;
 }
 
 @media (max-width: 427px) {
@@ -1224,9 +1301,10 @@ ul {
 }
 
 .modal-content #modal-summary {
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 .modal-content .modal-see-project {
@@ -1289,6 +1367,10 @@ ul {
           box-sizing: border-box;
 }
 
+main {
+  display: none;
+}
+
 body {
   background: #444;
   color: #fff;
@@ -1305,7 +1387,7 @@ body#bg-img {
 }
 
 body#bg-img:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1313,6 +1395,22 @@ body#bg-img:after {
   height: 100%;
   background: rgba(68, 68, 68, 0.9);
   z-index: -1;
+}
+
+body textarea::-webkit-input-placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body textarea::-ms-input-placeholder {
+  font-family: "myFont", Arial, Helvetica, sans-serif;
+}
+
+body textarea::-moz-placeholder {
+  font-family: "myFont", Arial, Helvetica, sans-serif;
+}
+
+body textarea::-moz-placeholder {
+  font-family: "myFont", Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -1469,6 +1567,18 @@ nav ul li a.active, nav ul li a:hover {
 .reset-speech-no-more-text {
   top: 82%;
   left: 90%;
+}
+
+.loader {
+  -webkit-filter: invert(80%) sepia(84%) saturate(564%) hue-rotate(343deg) brightness(97%) contrast(93%);
+          filter: invert(80%) sepia(84%) saturate(564%) hue-rotate(343deg) brightness(97%) contrast(93%);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 1171px) {

@@ -28,9 +28,9 @@
     "toolsTechnologiesCategory": "Tools",
     "experienceTitle": "<i class='fa fa-book'></i> <i class='fas fa-book-open'></i> Experience <i class='fas fa-book-open'></i> <i class='fa fa-book'></i>",
     "resumeDownloadLink": "You can download my resume  <a target='_blank'  noreferrer noopener  href='/files/CesarBlascoResume.pdf'>here</a>",
-    "coursesTitle": "<i class='fas fa-chalkboard-teacher'></i> Courses <i class='fas fa-chalkboard-teacher'></i>",
+    "coursesTitle": "<i class='fas fa-chalkboard-teacher'></i> Certifications <i class='fas fa-chalkboard-teacher'></i>",
     "rankmiPosition": "Frontend Developer (June 2018 - Ongoing)",
-    "rankmiBullet1": "Developed components, modules and features of diverse complexities using Angular JS framework version 1.6.7.",
+    "rankmiBullet1": "Developed components, modules and features from the most trivial, up the most complex using Angular JS framework version 1.6.7.",
     "rankmiBullet2": "Refactored components from .js to .ts and made improvements over legacy code.",
     "rankmiBullet3": "Collaborated in creating and refactoring components to enable accessibility by limited or impaired users (WAI ARIA standards for the web). This portfolio website is fully accesible.",
     "rankmiBullet4": "Learned React JS and collaborated in the migration of the application from Angular JS to React JS.",
@@ -44,7 +44,7 @@
     "dentalClinicBullet3": "Featuring the following modules: appointments, specialist and procedures management, patient's CRUD, patient's history, interactive patient teeth interface, reports (PDF, Excel) and payments.",
     "dentalClinicBullet4": "The interface that displays the patient's teeth allows the user to display certain figures and color each section of each tooth individually as well.",
     "dentalClinicBullet5": "Tools used: Jquery, Laravel Framework, Bootstrap 3, SVG, Raphael JS, MySQL.",
-    "defaultSpeechBubbleText1": "Hello! My name is César Blasco, I'm a software engineer that cares about good practices and clean code.  My main focus right now is the frontend and I am currently an Angular developer transitioning to React. I've also done some backend in Java and PHP with frameworks.",
+    "defaultSpeechBubbleText1": "Hello! My name is César Blasco, I'm a software engineer that cares about good practices and clean code.  My main focus right now  is the frontend and I'm an Angular and React developer. I've also done some backend in Java and PHP with frameworks.",
     "defaultSpeechBubbleText2": "I consider myself a team player, always willing to help others whenever I can. I've mentored and have been mentored by others with higher seniority, something I find very fullfulling.",
     "defaultSpeechBubbleText3": "When building software I'm analitic, methodic and I design the architecture to give the best solution possible.",
     "defaultSpeechBubbleText4": "<div class='text-center'>Some of my favorite hobbies are:</div> <ul class='centered-unordered-list'><li><i class='fas fa-tv'></i> Watching movies and series <i class='fas fa-tv'></i></li><li><i class='fas fa-laptop-code'></i> Programming <i class='fas fa-laptop-code'></i></li> <li><i class='fas fa-gamepad'></i> Videogames <i class='fas fa-gamepad'></i></li> <li><i class='fas fa-music'></i> Listening to music <i class='fas fa-music'></i></li> <li><i class='fas fa-walking'></i> Taking long walks <i class='fas fa-walking'></i></li><ul>",
@@ -114,7 +114,7 @@
     "cssLabCaption3": "CSS Box model made in... CSS",
     "githubSearchTitle": "Github Search",
     "githubSearchDescription": "Angular JS app that uses Github's API to search for users and see repository details",
-    "githubSearchSummary": "This project was the technical assessment sent to aspiring frontend developers for <a style='color: blue;' href='https://www.rankmi.com' target='blank' noopener noreferrer>Rankmi.com</a> which I passed and got accepted into the team.`",
+    "githubSearchSummary": "This project was the technical assessment sent to aspiring frontend developers for <a style='color: blue;' href='https://www.rankmi.com' target='blank' noopener noreferrer>Rankmi.com</a> which I passed and got accepted into the team.",
     "githubSearchCaption1": "Loading search from github user endpoint",
     "githubSearchCaption2": "Search results for Angular user",
     "githubSearchCaption3": "Selected repository detail",
@@ -135,6 +135,14 @@
   },
   "contact": {
     "header": "Contact <span class='text-secondary'>me</span>",
-    "subHeader": "This is how you can reach me"
+    "subHeader": "This is how you can reach me",
+    "name": "Name:",
+    "namePlaceholder": "Your name",
+    "email": "Email:",
+    "emailPlaceholder": "Your email",
+    "subject": "Subject:",
+    "subjectPlaceholder": "Subject",
+    "message": "Message:",
+    "messagePlaceholder": "Your message..."
   }
 }

@@ -1,6 +1,4 @@
 @import "config";
-// @import "menu";
-
 @import "./shared/animations";
 @import "./shared/menu-desktop";
 @import "./shared/menu-mobile";
@@ -17,6 +15,10 @@
   box-sizing: border-box;
 }
 
+main {
+  display: none;
+}
+
 body {
   @include background;
   background: $primary-color;
@@ -25,6 +27,22 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+
+  & textarea::-webkit-input-placeholder {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  & textarea::-ms-input-placeholder {
+    font-family: "myFont", Arial, Helvetica, sans-serif;
+  }
+
+  & textarea::-moz-placeholder {
+    font-family: "myFont", Arial, Helvetica, sans-serif;
+  }
+
+  & textarea::-moz-placeholder {
+    font-family: "myFont", Arial, Helvetica, sans-serif;
+  }
 }
 
 // Headings
@@ -180,6 +198,17 @@ nav {
 .reset-speech-no-more-text {
   top: 82%;
   left: 90%;
+}
+
+.loader {
+  filter: invert(80%) sepia(84%) saturate(564%) hue-rotate(343deg)
+    brightness(97%) contrast(93%);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @import "./shared/mobile";

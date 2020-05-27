@@ -58,6 +58,8 @@
       </div>
     </header>
 
+    <img class="loader" src="./images/shared/spinner.svg" />
+
     <main id="contact">
       <div class="main-header">
         <h1 class="lg-heading" data-translate="contact.header"></h1>
@@ -65,13 +67,6 @@
       </div>
 
       <div class="contact">
-        <a target="_blank" noopener href="https://github.com/cesarblasco">
-          <span>
-            <i class="fab fa-github"></i>
-            <span class="contact-info">Github</span>
-          </span>
-        </a>
-
         <a
           target="_blank"
           noopener
@@ -79,21 +74,61 @@
         >
           <span>
             <i class="fab fa-linkedin"></i>
-            <span class="contact-info">LinkedIn</span>
           </span>
         </a>
 
-        <a noopener target="_blank" href="mailto:cesarblasco50@gmail.com">
+        <a target="_blank" noopener href="https://twitter.com/cesarbs182">
           <span>
-            <i class="far fa-envelope"></i>
-            <span class="contact-info">cesarblasco50@gmail.com</span>
+            <i class="fab fa-twitter"></i>
+          </span>
+        </a>
+
+        <a target="_blank" noopener href="https://instagram.com/cesarblasco">
+          <span>
+            <i class="fab fa-instagram"></i>
+          </span>
+        </a>
+
+        <a target="_blank" noopener href="https://github.com/cesarblasco">
+          <span>
+            <i class="fab fa-github"></i>
           </span>
         </a>
       </div>
+
+      <!-- <p>Or just send me an email directlfy:</p> <i class="far fa-envelope"></i> -->
+      <form>
+        <div class="form-group">
+          <div class="form-inline">
+            <div class="inline-col">
+              <label for="name" required data-translate="contact.name"></label>
+              <input id="name" type="text" data-translate="contact.namePlaceholder">
+            </div>
+            
+            <div class="inline-col">
+              <label for="email" required data-translate="contact.email"></label>
+              <input id="email" type="email" data-translate="contact.emailPlaceholder">
+            </div>
+          </div>
+        
+        </div>
+       
+        <div class="form-group">
+          <label for="subject" required data-translate="contact.subject"></label>
+          <input id="subject" type="text" data-translate="contact.subjectPlaceholder">
+        </div>
+        
+        <div class="form-group">
+          <label for="message" required data-translate="contact.message"></label>
+          <textarea id="message" maxlength="5000" rows="5" data-translate="contact.messagePlaceholder"></textarea>
+        </div>
+
+        <input type="submit" value="Send Message">
+      </form>
     </main>
 
     <footer id="main-footer">
-      Copyright &copy; <span id="current-year"></span>
+      Copyright &copy; 2020</span>
     </footer>
 
     <script src="js/main.js"></script>

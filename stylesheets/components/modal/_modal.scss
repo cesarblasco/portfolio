@@ -53,9 +53,10 @@
   }
 
   #modal-summary {
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
     text-align: center;
+    font-size: 1.1rem;
   }
 
   @mixin modalBtn {

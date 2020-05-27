@@ -2,90 +2,94 @@ const defaultSpeechBubbleTexts = [
   `defaultSpeechBubbleText1`,
   `defaultSpeechBubbleText2`,
   `defaultSpeechBubbleText3`,
-  `defaultSpeechBubbleText4`
+  `defaultSpeechBubbleText4`,
 ];
 
 const technologiesSpeechTexts = [
   {
     id: "HTML",
-    texts: ["htmlSpeechBubbleText1"]
+    texts: ["htmlSpeechBubbleText1"],
   },
   {
     id: "CSS3",
-    texts: [`cssSpeechBubbleText1`]
+    texts: [`cssSpeechBubbleText1`],
   },
   {
     id: "Javascript / ES6",
-    texts: ["jsSpeechBubbleText1"]
+    texts: ["jsSpeechBubbleText1"],
   },
   {
     id: "PHP",
-    texts: [`phpSpeechBubbleText1`]
+    texts: [`phpSpeechBubbleText1`],
   },
   {
     id: "React JS",
-    texts: [`reactSpeechBubbleText1`]
+    texts: [`reactSpeechBubbleText1`],
   },
   {
     id: "Spring Framework",
-    texts: ["springSpeechBubbleText1"]
+    texts: ["springSpeechBubbleText1"],
   },
   {
     id: "Jquery",
-    texts: [`jquerySpeechBubbleText1`]
+    texts: [`jquerySpeechBubbleText1`],
   },
   {
     id: "Angular",
-    texts: [`angularSpeechBubbleText1`]
+    texts: [`angularSpeechBubbleText1`],
   },
   {
     id: "Angular JS",
-    texts: [`angularjsSpeechBubbleText1`]
+    texts: [`angularjsSpeechBubbleText1`],
   },
   {
     id: "Laravel",
-    texts: ["laravelSpeechBubbleText1"]
+    texts: ["laravelSpeechBubbleText1"],
   },
   {
     id: "MySQL",
-    texts: ["mySqlSpeechText1"]
+    texts: ["mySqlSpeechText1"],
   },
   {
     id: "Underscore / Lodash ES",
-    texts: ["underscoreSpeechBubbleText1"]
+    texts: ["underscoreSpeechBubbleText1"],
   },
   {
     id: "Git",
-    texts: ["gitSpeechBubbleText1", "gitSpeechBubbleText2"]
+    texts: ["gitSpeechBubbleText1", "gitSpeechBubbleText2"],
   },
   {
     id: "Github",
-    texts: ["githubSpeechBubbleText1"]
+    texts: ["githubSpeechBubbleText1"],
   },
   {
     id: "Typescript",
-    texts: [`typescriptSpeechBubbleText1`]
+    texts: [`typescriptSpeechBubbleText1`],
   },
   {
     id: "ES Lint",
-    texts: ["esLintSpeechBubbleText1"]
+    texts: ["esLintSpeechBubbleText1"],
   },
   {
     id: "Visual Studio Code",
-    texts: [`vsCodeSpeechBubbleText1`, `vsCodeSpeechBubbleText2`]
+    texts: [`vsCodeSpeechBubbleText1`, `vsCodeSpeechBubbleText2`],
   },
   {
     id: "Prettier",
-    texts: ["prettierSpeechBubbleText1"]
+    texts: ["prettierSpeechBubbleText1"],
   },
   {
     id: "Bootstrap 3 / 4",
-    texts: ["bootstrapSpeechBubbleText1"]
+    texts: ["bootstrapSpeechBubbleText1"],
   },
   {
     id: "SCSS / SCSS Modules",
-    texts: ["scssModulesSpeechBubbleText1", "scssModulesSpeechBubbleText2"]
-  }
+    texts: ["scssModulesSpeechBubbleText1", "scssModulesSpeechBubbleText2"],
+  },
+  {
+    id: "Jest / Enzyme",
+    texts: [""],
+  },
 ];
 
 const speechScrollBtn = document.getElementById("speech-scroll-btn");
@@ -111,15 +115,15 @@ let timelineEventsCopy = document.querySelectorAll(".timeline-event");
 let currentSelectedTimelineLayout = null;
 
 const timelineContainer = document.getElementById("timeline-container");
-techCategoryButtons.forEach(item =>
+techCategoryButtons.forEach((item) =>
   item.addEventListener("click", filterTechnologiesByCategory)
 );
 
-technologyPills.forEach(item =>
+technologyPills.forEach((item) =>
   item.addEventListener("click", updateSpeechBubbleTextBySelectedTechnologyPill)
 );
 
-timelineCategoriesButtons.forEach(item =>
+timelineCategoriesButtons.forEach((item) =>
   item.addEventListener("click", changeTimelineLayout)
 );
 
@@ -156,16 +160,16 @@ function getNextSpeechBubbleDialog() {
 function filterTechnologiesByCategory() {
   isTechnologySelected = false;
   const selectedCategory = this.getAttribute("data-category");
-  techCategoryButtons.forEach(item => item.classList.remove("active"));
+  techCategoryButtons.forEach((item) => item.classList.remove("active"));
   this.classList.add("active");
   if (selectedCategory === "all") {
     const [firstDefaultSpeechBubbleText] = defaultSpeechBubbleTexts;
     speechBubbleText.innerHTML = firstDefaultSpeechBubbleText;
-    technologyPills.forEach(item => {
+    technologyPills.forEach((item) => {
       item.classList.remove("hidden");
     });
   } else {
-    technologyPills.forEach(item => {
+    technologyPills.forEach((item) => {
       if (!item.getAttribute("data-category").includes(selectedCategory)) {
         item.classList.add("hidden");
       } else {
@@ -191,7 +195,7 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
   isTechnologySelected = true;
   resetSpeechBubbleBtn.style.display = "block";
 
-  technologyPills.forEach(item => {
+  technologyPills.forEach((item) => {
     item.classList.remove("pill-active");
   });
 
@@ -231,7 +235,7 @@ function resetSpeechBubble() {
   isTechnologySelected = false;
   speechScrollBtn.style.display = "initial";
 
-  technologyPills.forEach(item => {
+  technologyPills.forEach((item) => {
     item.classList.remove("pill-active");
   });
 

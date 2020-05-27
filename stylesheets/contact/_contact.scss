@@ -1,16 +1,77 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  margin: 0 auto;
+
+  .form-group {
+    label {
+      display: block;
+    }
+
+    input {
+      height: 40px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    input.inline {
+      height: 40px;
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      height: 250px;
+      width: 100%;
+      margin-bottom: 20px;
+      resize: none;
+    }
+
+    input:focus,
+    textarea:focus {
+      border: 2px solid $secondary-color;
+    }
+
+    .form-inline {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .inline-col {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+      }
+    }
+  }
+
+  input[type="submit"] {
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #2684ff;
+    margin: 0 auto;
+    font-weight: 700;
+  }
+}
+
 .contact {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   margin: 0 auto;
-  width: 100%;
-  padding-top: 70px;
+  width: 50%;
 
   .fab,
   .far {
     border-radius: 50%;
-    padding: 7px;
+    padding: 8px;
     background: white;
   }
 
@@ -27,20 +88,25 @@
     color: #cf493c;
   }
 
+  .fa-twitter {
+    color: #38a1f3;
+  }
+
+  .fa-instagram {
+    color: #dd2a7b;
+  }
+
   a {
     margin-bottom: 20px;
+    margin-right: 15px;
     text-align: left;
     span {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
-    &:hover span {
+    &:hover i {
       @include easeOut;
       color: $secondary-color;
-      animation-name: scaleUpAndDown;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      font-size: 2.5rem;
     }
   }
 }
