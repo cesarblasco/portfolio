@@ -1038,6 +1038,7 @@ form .form-group textarea {
 form .form-group input:focus,
 form .form-group textarea:focus {
   border: 2px solid #eece1a;
+  outline: none;
 }
 
 form .form-group .form-inline {
@@ -1261,7 +1262,7 @@ form input[type="submit"] {
 .modal-content {
   background-color: #fefefe;
   margin: 1% auto;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 30px;
   border: 1px solid #888;
   width: 70%;
@@ -1402,15 +1403,11 @@ body textarea::-webkit-input-placeholder {
 }
 
 body textarea::-ms-input-placeholder {
-  font-family: "myFont", Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body textarea::-moz-placeholder {
-  font-family: "myFont", Arial, Helvetica, sans-serif;
-}
-
-body textarea::-moz-placeholder {
-  font-family: "myFont", Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,

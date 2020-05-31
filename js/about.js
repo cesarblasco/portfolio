@@ -16,7 +16,7 @@ const technologiesSpeechTexts = [
   },
   {
     id: "Javascript / ES6",
-    texts: ["jsSpeechBubbleText1"],
+    texts: ["jsSpeechBubbleText1", "jsSpeechBubbleText2"],
   },
   {
     id: "PHP",

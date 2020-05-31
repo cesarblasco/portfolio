@@ -5,10 +5,17 @@ const currentLang = currentUrl.searchParams.get("lang");
 const loader = document.querySelector(".loader");
 const mainElement = document.querySelector("main");
 const navElement = document.querySelector("nav");
-const htmlElementsWithPlaceholder = ["TEXTAREA", "INPUT"];
+const translatableHTMLInputs = ["TEXTAREA", "INPUT"];
 
 addOrReplaceLangInURL();
 translateAllPageKeys();
+
+function getAttributeToTranslateFromInput(element) {
+  if (element.getAttribute("type") === "submit") {
+    return "value";
+  }
+  return "placeholder";
+}
 
 function translateAllPageKeys() {
   loader.style.display = "block";
@@ -23,10 +30,10 @@ function translateAllPageKeys() {
           const baseKey = splittedTranslationKeys[0];
           const elementTranslationKey = splittedTranslationKeys[1];
           const elementKeyValue = data[baseKey][elementTranslationKey];
-          const attributeToModify = htmlElementsWithPlaceholder.includes(
+          const attributeToModify = translatableHTMLInputs.includes(
             element.nodeName
           )
-            ? "placeholder"
+            ? getAttributeToTranslateFromInput(element)
             : "innerHTML";
           element[attributeToModify] =
             elementKeyValue || element.dataset.translate;

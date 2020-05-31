@@ -19,7 +19,7 @@
     "header": "About <span class='text-secondary'>me</span>",
     "technologiesLink": "Technologies",
     "experienceLink": "Experience",
-    "coursesLink": "Courses ",
+    "coursesLink": "Certifications",
     "technologiesTitle": "<i class='fas fa-cog'></i> Skills <i class='fas fa-cog'></i>",
     "allTechnologiesCategory": "All",
     "frontendTechnologiesCategory": "Frontend",
@@ -51,7 +51,8 @@
     "htmlSpeechBubbleText1": "The skeleton of the web, defines the basic structure of the websites. Nowdays you write HMTL depending on the framework / library being used. Be it html in JS (JSX / React), JS in HTML (directives / Angular). Accesibility and semantic HTML are also important concepts.",
     "cssSpeechBubbleText1": "The skin of the web, the layer where the beauty of the websites come from. I've worked with regular CSS, frameworks and preprocessors. Flexbox is currently my favorite layout design pattern. I've also tried some CSS grid. This website is mostly flexbox and a bit of Grid",
     "jsSpeechBubbleText1": "Javascript has gotten better over time, currently I use ES6+ features which have allowed me to write efficient and more readable code. <br> I've shipped code to production environments using deestructuring, arrow functions, const, let, map, filter and many more.",
-    "reactSpeechBubbleText1": "I've been transitioning to React since the company where I work decided to migrate to React instead of Angular and so far I've loved it. It's easy to understand such a small but powerful library. I definitely like HTML in JS (JSX) instead of the other way around, it's much more flexible and powerful, and any little typo you make in your markup will be detected.",
+    "jsSpeechBubbleText2": "You can see some samples too in the source code of this portfolio. Also, I didn't use a framework to develop this project, I thought it was overkill, so you'll only find vanilla JS.",
+    "reactSpeechBubbleText1": "I've been been a React developer since late 2019 and I've loved it so far. The API is small but very powerfull. Combine it with JSX and TS (TSX, which I've worked with since I started learning the library) and any little typo you make in your markup will be detected. It's way safer.",
     "jquerySpeechBubbleText1": "One of the first javascript libraries I learned. Even though nowdays the web development world is shifting away from this library, I found it easy to understand and learn even more about DOM manipulation with it.",
     "phpSpeechBubbleText1": "I learned PHP by myself when I was in college and then I learned learning the Laravel framework (a PHP framework) in which I developed my dental clinic app. I haven't developed in PHP for a good while now as I'm sticking to JS libraries and frameworks but I still got the knowledge.",
     "vsCodeSpeechBubbleText1": "My favorite code editor. It's so simple yet powerful, an infinite amount of plugins and a huge community backing it up. I actually started with Sublime Text when I started learning web development, but now I can't go back :)",
@@ -67,7 +68,7 @@
     "underscoreSpeechBubbleText1": "Very useful libraries, you can save alot of time with them. I've worked with both already, lodash-es being the best version since it exports code as ES modules, reducing the bundle size",
     "esLintSpeechBubbleText1": "Another useful tool for declaring conventions in the code and making sure every developer follows them. It is quite handy to detect any issues when commiting code. I'm now familiar with the use and also recommend it.",
     "mySqlSpeechText1": "The first relational database management system I used and where I learned and applied the basics of the SQL language.",
-    "bootstrapSpeechBubbleText1": "A very easy and useful CSS library and the first one I used after learning CSS. I've worked with version 3 mostly but I have also used version 4. I like how easy it is to implement responsiveness and layout with it.",
+    "bootstrapSpeechBubbleText1": "A very easy and useful CSS framework and the first one I used after learning CSS. I've worked with version 3 mostly but I have also used version 4. I like how easy it is to implement responsiveness and layout with it.",
     "scssModulesSpeechBubbleText1": "The best CSS preprocessor I've worked with so far. I like how it facilitates CSS development. In fact this portfolio uses SCSS that's compiled to CSS using a VS Code plugin called \"Live SASS compiler\".",
     "scssModulesSpeechBubbleText2": "When it comes to SCSS modules, I've worked with them recently and it really helps organize and truly separate CSS from each component. No more weird clashes between classes or weird bugs, I truly recommend it."
   },
@@ -143,6 +144,7 @@
     "subject": "Subject:",
     "subjectPlaceholder": "Subject",
     "message": "Message:",
-    "messagePlaceholder": "Your message..."
+    "messagePlaceholder": "Your message...",
+    "sendMessage": "Send"
   }
 }

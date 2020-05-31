@@ -265,11 +265,9 @@ function filterProjectsBySelectedCategory() {
     });
   } else {
     projectsHtml.forEach((item) => {
-      if (item.getAttribute("data-category") !== selectedCategory) {
-        item.classList.add("hidden");
-      } else {
-        item.classList.remove("hidden");
-      }
+      item.getAttribute("data-category") !== selectedCategory
+        ? item.classList.add("hidden")
+        : item.classList.remove("hidden");
     });
   }
 }
