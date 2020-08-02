@@ -428,7 +428,8 @@ ul {
           animation-delay: 2s;
 }
 
-#courses-title i {
+#courses-title i,
+#education-title i {
   -webkit-animation: scaleUpAndDown 1.5s infinite;
           animation: scaleUpAndDown 1.5s infinite;
 }
@@ -618,12 +619,12 @@ ul {
   margin-right: 15px;
   border: none;
   margin: 10px;
-  cursor: pointer;
 }
 
-.pill:hover, .pill.pill-active {
+.pill:hover:not(.presentational-pill), .pill.pill-active {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  cursor: pointer;
   background-color: #0069f2;
   color: #d0d0d0;
 }
@@ -723,86 +724,7 @@ ul {
   top: 53px;
 }
 
-.timeline-stacked-container {
-  display: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.timeline-stacked-container .timeline-stacked-event {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  height: 440px;
-  overflow-y: none;
-  margin-bottom: 100px;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-
-.timeline-stacked-container .timeline-stacked-event ul li {
-  margin-bottom: 5px;
-}
-
-.timeline-stacked-container .timeline-stacked-event:nth-child(5) {
-  z-index: 1;
-  opacity: 0.4;
-}
-
-.timeline-stacked-container .timeline-stacked-event:nth-child(4) {
-  z-index: 2;
-  opacity: 0.6;
-  margin-top: 50px;
-}
-
-.timeline-stacked-container .timeline-stacked-event:nth-child(3) {
-  z-index: 3;
-  opacity: 0.8;
-  margin-top: 100px;
-}
-
-.timeline-stacked-container .timeline-stacked-event:nth-child(2) {
-  z-index: 4;
-  margin-top: 150px;
-}
-
-.timeline-stacked-container i {
-  margin-top: 270px;
-  font-size: 5rem;
-}
-
-.timeline-stacked-container i.tl-navigate-backward:hover {
-  color: #eece1a;
-  cursor: pointer;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: animateNavigateStackedTimelineBtnBackward;
-          animation-name: animateNavigateStackedTimelineBtnBackward;
-}
-
-.timeline-stacked-container i.tl-navigate-forward:hover {
-  color: #eece1a;
-  cursor: pointer;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: animateNavigateStackedTimelineBtnForward;
-          animation-name: animateNavigateStackedTimelineBtnForward;
-}
-
-.timeline-event,
-.timeline-stacked-event {
+.timeline-event {
   background-color: gray;
   max-width: 600px;
   min-height: 200px;
@@ -813,16 +735,12 @@ ul {
 }
 
 .timeline-event h3,
-.timeline-event p,
-.timeline-stacked-event h3,
-.timeline-stacked-event p {
+.timeline-event p {
   text-align: center;
 }
 
 .timeline-event h3 a,
-.timeline-event p a,
-.timeline-stacked-event h3 a,
-.timeline-stacked-event p a {
+.timeline-event p a {
   text-align: center;
 }
 
@@ -1339,6 +1257,8 @@ form input[type="submit"] {
 }
 
 .modal-content .modal-technologies {
+  margin: 0 auto;
+  width: 70%;
   margin-bottom: 5px;
 }
 

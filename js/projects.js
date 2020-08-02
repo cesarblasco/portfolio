@@ -5,7 +5,13 @@ const projects = [
     icon: "fas fa-tooth",
     description: "dentalClinicDescription",
     summary: "dentalClinicSummary",
-    technologies: ["Laravel Framework, Bootstrap 3, JQuery, Raphael.js, mySQL"],
+    technologies: [
+      "Laravel Framework",
+      "Bootstrap 3",
+      "JQuery",
+      "Raphael.js",
+      "mySQL",
+    ],
     link: "http://www.gooogle.com",
     images: [
       { fileName: "project1.jpg", caption: "dentalClinicCaption1" },
@@ -36,7 +42,7 @@ const projects = [
     icon: "fas fa-flask",
     description: "cssLabDescription",
     summary: `cssLabSummary`,
-    technologies: ["HTML, CSS"],
+    technologies: ["HTML", "CSS"],
     link: "https://cesarblasco.github.io/css-lab/",
     images: [
       { fileName: "css-lab-2.jpg", caption: "cssLabCaption1" },
@@ -51,7 +57,11 @@ const projects = [
     description: "githubSearchDescription",
     summary: "githubSearchSummary",
     technologies: [
-      "Angular JS, UI Router, Bootstrap 3, TypeScript, Github API",
+      "Angular JS",
+      "UI Router",
+      "Bootstrap 3",
+      "TypeScript",
+      "Github API",
     ],
     link: "https://cesarblasco.github.io/RKM-Test-Base",
     images: [
@@ -79,7 +89,7 @@ const projects = [
     icon: "fas fa-gamepad",
     description: "mathGameDescription",
     summary: `mathGameSummary`,
-    technologies: ["Unity 2D, C#"],
+    technologies: ["Unity 2D", "C#"],
     link: "https://cesarblasco.github.io/learnmaths/",
     images: [
       { fileName: "maths-1.jpg", caption: "mathGameCaption1" },
@@ -100,13 +110,44 @@ const projects = [
     ],
   },
   {
+    id: "crypto",
+    title: "cryptoTitle",
+    icon: "fab fa-bitcoin",
+    description: "cryptoDescription",
+    summary: `cryptoSummary`,
+    technologies: [
+      "React JS / Hooks V 6.13.18",
+      "React Tooltip",
+      "Tailwind CSS",
+      "Nivo.rocks charts",
+      "Typescript",
+      "Coincap.io API",
+    ],
+    link: "https://cesarblasco.github.io/crypto-compare/",
+    images: [
+      { fileName: "crypto-1.jpg", caption: "cryptoCaption1" },
+      { fileName: "crypto-2.jpg", caption: "cryptoCaption2" },
+      { fileName: "crypto-3.jpg", caption: "cryptoCaption3" },
+      { fileName: "crypto-4.jpg", caption: "cryptoCaption4" },
+      { fileName: "crypto-5.jpg", caption: "cryptoCaption5" },
+      { fileName: "crypto-6.jpg", caption: "cryptoCaption6" },
+      { fileName: "crypto-7.jpg", caption: "cryptoCaption7" },
+      { fileName: "crypto-8.jpg", caption: "cryptoCaption8" },
+      { fileName: "crypto-9.jpg", caption: "cryptoCaption9" },
+    ],
+  },
+  {
     id: "portfolio",
     title: "portfolioTitle",
     icon: "fas fa-suitcase",
     description: "portfolioDescription",
     summary: `portfolioSummary`,
     technologies: [
-      "HTML, SASS ---> CSS via Watch SASS VS code plugin, JS / ES6, JSON, Font Awesome",
+      "HTML",
+      "SASS ---> CSS via Watch SASS VS code plugin",
+      "JS / ES6",
+      "JSON",
+      "Font Awesome 5",
     ],
     link: "https://cesarblasco.github.io/portfolio/",
     images: [
@@ -212,10 +253,13 @@ function openProjectInformationModal() {
 
   removeAllChildsFromNode(modalTechnologies);
 
-  const node = document.createElement("span");
-  const textnode = document.createTextNode(`${currentProject.technologies}`);
-  node.appendChild(textnode);
-  document.getElementById("modal-technologies").appendChild(node);
+  currentProject.technologies.forEach((technology) => {
+    const node = document.createElement("div");
+    node.classList = "pill presentational-pill";
+    const textnode = document.createTextNode(`${technology}`);
+    node.appendChild(textnode);
+    document.getElementById("modal-technologies").appendChild(node);
+  });
 
   removeAllChildsFromNode(carouselPagesContainer);
 

@@ -40,7 +40,8 @@ ul {
   }
 }
 
-#courses-title {
+#courses-title,
+#education-title {
   i {
     animation: scaleUpAndDown 1.5s infinite;
   }
@@ -210,11 +211,11 @@ ul {
   margin-right: 15px;
   border: none;
   margin: 10px;
-  cursor: pointer;
 
-  &:hover,
+  &:hover:not(.presentational-pill),
   &.pill-active {
     @include easeOut;
+    cursor: pointer;
     background-color: darken(#2684ff, 10);
     color: darken(lightgray, 1);
   }
@@ -302,79 +303,6 @@ ul {
   }
 }
 
-.timeline-stacked-container {
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 50%;
-  margin: 0 auto;
-
-  .timeline-stacked-event {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 440px;
-    overflow-y: none;
-    margin-bottom: 100px;
-    @include easeOut;
-
-    ul {
-      li {
-        margin-bottom: 5px;
-      }
-    }
-
-    &:nth-child(5) {
-      z-index: 1;
-      opacity: 0.4;
-    }
-
-    &:nth-child(4) {
-      z-index: 2;
-      opacity: 0.6;
-      margin-top: 50px;
-    }
-
-    &:nth-child(3) {
-      z-index: 3;
-      opacity: 0.8;
-      margin-top: 100px;
-    }
-
-    &:nth-child(2) {
-      z-index: 4;
-      margin-top: 150px;
-    }
-  }
-
-  i {
-    margin-top: 270px;
-    font-size: 5rem;
-
-    @mixin hoverNavigateTimeline() {
-      color: $secondary-color;
-      cursor: pointer;
-      animation-duration: 0.7s;
-      animation-iteration-count: infinite;
-    }
-
-    &.tl-navigate-backward {
-      &:hover {
-        @include hoverNavigateTimeline;
-        animation-name: animateNavigateStackedTimelineBtnBackward;
-      }
-    }
-
-    &.tl-navigate-forward {
-      &:hover {
-        @include hoverNavigateTimeline;
-        animation-name: animateNavigateStackedTimelineBtnForward;
-      }
-    }
-  }
-}
-
 @mixin timeline-event-layout {
   background-color: gray;
   max-width: 600px;
@@ -393,8 +321,7 @@ ul {
   }
 }
 
-.timeline-event,
-.timeline-stacked-event {
+.timeline-event {
   @include timeline-event-layout;
 }
 
