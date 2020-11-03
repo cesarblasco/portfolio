@@ -61,7 +61,10 @@ function addOrReplaceLangInURL() {
       link.href = `${link.href}?lang=${currentLanguage}`;
     });
   } else {
-    currentUrl.searchParams.set("lang", "en");
+    const userLang = navigator.language || navigator.userLanguage;
+    const urlLangParam = userLang.includes("es") ? "es" : "en";
+
+    currentUrl.searchParams.set("lang", urlLangParam);
     history.replaceState(null, null, currentUrl);
     location.reload();
   }

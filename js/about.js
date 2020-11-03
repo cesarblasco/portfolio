@@ -5,6 +5,7 @@ const defaultSpeechBubbleTexts = [
   `defaultSpeechBubbleText4`,
 ];
 
+// Texts is an array that contains translation keys (found in i18n-es.json and i18n-en.json)
 const technologiesSpeechTexts = [
   {
     id: "HTML",
@@ -27,11 +28,7 @@ const technologiesSpeechTexts = [
     texts: [`reactSpeechBubbleText1`],
   },
   {
-    id: "Spring Framework",
-    texts: ["springSpeechBubbleText1"],
-  },
-  {
-    id: "Jquery",
+    id: "JQuery",
     texts: [`jquerySpeechBubbleText1`],
   },
   {
@@ -88,7 +85,11 @@ const technologiesSpeechTexts = [
   },
   {
     id: "Jest / Enzyme",
-    texts: [""],
+    texts: ["jestSpeechBubbleText1", "jestSpeechBubbleText2"],
+  },
+  {
+    id: "Font Awesome",
+    texts: ["fontAwesomeBubbleText1"],
   },
 ];
 

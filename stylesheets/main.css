@@ -388,6 +388,7 @@ main .main-header {
 
 section {
   margin-bottom: 80px;
+  scroll-margin-top: 70px;
 }
 
 section:first-of-type {
@@ -470,11 +471,6 @@ ul {
 
 .speech-bubble .speech-text-container p a {
   color: blue;
-}
-
-.speech-bubble .speech-text-container::-webkit-scrollbar {
-  width: 0;
-  height: 0;
 }
 
 @media (min-width: 1029px) {
@@ -783,9 +779,6 @@ ul {
     width: 70%;
     height: 100%;
   }
-  .speech-bubble .speech-text-container {
-    height: 95%;
-  }
 }
 
 @media (max-width: 1141px) and (max-width: 1029px) {
@@ -794,7 +787,7 @@ ul {
     margin-left: 10px;
   }
   .speech-bubble {
-    width: 95%;
+    width: 100%;
   }
   .speech-bubble:before {
     content: "";
@@ -850,6 +843,9 @@ ul {
     padding-right: 5px;
     padding-left: 5px;
   }
+  .speech-bubble .speech-text-container {
+    margin-bottom: 35px;
+  }
   #speech-bubble-text {
     font-size: 1.15rem;
   }
@@ -857,10 +853,10 @@ ul {
     display: none;
   }
   #reset-speech-bubble-btn {
-    top: 85%;
+    top: 88%;
   }
   .speech-bubble-scroll-btn {
-    top: 85%;
+    top: 88%;
     left: 85%;
   }
 }
@@ -1013,7 +1009,8 @@ form input[type="submit"] {
 }
 
 .contact .fab,
-.contact .far {
+.contact .far,
+.contact .fas {
   border-radius: 50%;
   padding: 8px;
   background: white;
@@ -1056,7 +1053,16 @@ form input[type="submit"] {
   color: #eece1a;
 }
 
+@media (max-width: 960px) {
+  form {
+    width: 70%;
+  }
+}
+
 @media (max-width: 427px) {
+  form {
+    width: 90%;
+  }
   .contact a span {
     font-size: 1.3rem;
   }
@@ -1424,6 +1430,7 @@ nav ul li a.active, nav ul li a:hover {
 
 .categories {
   text-align: center;
+  padding: 0 5px;
   margin-bottom: 1.5rem;
 }
 
@@ -1560,7 +1567,7 @@ nav ul li a.active, nav ul li a:hover {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh;
+    margin-top: 20vh;
   }
   .projects {
     -ms-grid-columns: 1fr;

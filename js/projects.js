@@ -12,30 +12,35 @@ const projects = [
       "Raphael.js",
       "mySQL",
     ],
-    link: "http://www.gooogle.com",
     images: [
-      { fileName: "project1.jpg", caption: "dentalClinicCaption1" },
-      { fileName: "project2.jpg", caption: "dentalClinicCaption2" },
-      { fileName: "project3.jpg", caption: "dentalClinicCaption3" },
-      { fileName: "project4.jpg", caption: "dentalClinicCaption4" },
-      { fileName: "project5.jpg", caption: "dentalClinicCaption5" },
-      { fileName: "project3.jpg", caption: "dentalClinicCaption6" },
-      { fileName: "project2.jpg", caption: "dentalClinicCaption7" },
+      { fileName: "dental-clinic.jpg", caption: "dentalClinicCaption1" },
+      { fileName: "dental-clinic-1.jpg", caption: "dentalClinicCaption2" },
+      { fileName: "dental-clinic-2.jpg", caption: "dentalClinicCaption3" },
+      { fileName: "dental-clinic-3.jpg", caption: "dentalClinicCaption4" },
+      { fileName: "dental-clinic-4.jpg", caption: "dentalClinicCaption5" },
+      { fileName: "dental-clinic-5.jpg", caption: "dentalClinicCaption6" },
+      { fileName: "dental-clinic-6.jpg", caption: "dentalClinicCaption7" },
+      { fileName: "dental-clinic-7.jpg", caption: "dentalClinicCaption8" },
+      { fileName: "dental-clinic-8.jpg", caption: "dentalClinicCaption9" },
+      { fileName: "dental-clinic-9.jpg", caption: "dentalClinicCaption10" },
+      { fileName: "dental-clinic-10.jpg", caption: "dentalClinicCaption11" },
+      { fileName: "dental-clinic-11.jpg", caption: "dentalClinicCaption12" },
+      { fileName: "dental-clinic-12.jpg", caption: "dentalClinicCaption13" },
     ],
   },
-  {
-    id: "tribute",
-    title: "tributePageTitle",
-    icon: "fas fa-book",
-    description: "tributePageDescription",
-    summary: `tributePageSummary`,
-    technologies: ["Bootstrap 3"],
-    link: "https://codepen.io/Cesar1337/pen/VmzzRL",
-    images: [
-      { fileName: "tribute-page.jpg", caption: "tributePageCaption1" },
-      { fileName: "tribute-page-2.jpg", caption: "tributePageCaption2" },
-    ],
-  },
+  // {
+  //   id: "tribute",
+  //   title: "tributePageTitle",
+  //   icon: "fas fa-book",
+  //   description: "tributePageDescription",
+  //   summary: `tributePageSummary`,
+  //   technologies: ["Bootstrap 3"],
+  //   link: "https://codepen.io/Cesar1337/pen/VmzzRL",
+  //   images: [
+  //     { fileName: "tribute-page.jpg", caption: "tributePageCaption1" },
+  //     { fileName: "tribute-page-2.jpg", caption: "tributePageCaption2" },
+  //   ],
+  // },
   {
     id: "lab",
     title: "cssLabTitle",
@@ -83,32 +88,32 @@ const projects = [
       },
     ],
   },
-  {
-    id: "math",
-    title: "mathGameTitle",
-    icon: "fas fa-gamepad",
-    description: "mathGameDescription",
-    summary: `mathGameSummary`,
-    technologies: ["Unity 2D", "C#"],
-    link: "https://cesarblasco.github.io/learnmaths/",
-    images: [
-      { fileName: "maths-1.jpg", caption: "mathGameCaption1" },
-      { fileName: "maths-2.jpg", caption: "mathGameCaption2" },
-      {
-        fileName: "maths-3.jpg",
-        caption: "mathGameCaption3",
-      },
-      {
-        fileName: "maths-4.jpg",
-        caption: "mathGameCaption4",
-      },
-      {
-        fileName: "maths-5.jpg",
-        caption: "mathGameCaption5",
-      },
-      { fileName: "maths-6.jpg", caption: "mathGameCaption6" },
-    ],
-  },
+  // {
+  //   id: "math",
+  //   title: "mathGameTitle",
+  //   icon: "fas fa-gamepad",
+  //   description: "mathGameDescription",
+  //   summary: `mathGameSummary`,
+  //   technologies: ["Unity 2D", "C#"],
+  //   link: "https://cesarblasco.github.io/learnmaths/",
+  //   images: [
+  //     { fileName: "maths-1.jpg", caption: "mathGameCaption1" },
+  //     { fileName: "maths-2.jpg", caption: "mathGameCaption2" },
+  //     {
+  //       fileName: "maths-3.jpg",
+  //       caption: "mathGameCaption3",
+  //     },
+  //     {
+  //       fileName: "maths-4.jpg",
+  //       caption: "mathGameCaption4",
+  //     },
+  //     {
+  //       fileName: "maths-5.jpg",
+  //       caption: "mathGameCaption5",
+  //     },
+  //     { fileName: "maths-6.jpg", caption: "mathGameCaption6" },
+  //   ],
+  // },
   {
     id: "crypto",
     title: "cryptoTitle",
@@ -165,6 +170,7 @@ const categoryButtons = document.querySelectorAll(".category");
 const projectsHtml = document.querySelectorAll(".project");
 const closeModalIcon = document.getElementsByClassName("close")[0];
 const modalBtn = document.getElementById("modal-btn");
+const modalSeeProjectBtn = document.getElementById("modal-see-project");
 const projectLink = document.getElementById("project-link");
 const carouselContainer = document.getElementById("carousel");
 
@@ -236,7 +242,13 @@ function openProjectInformationModal() {
     currentProject.description
   );
   translateSpecificKey(modalSummary, "projects", currentProject.summary);
-  projectLink.setAttribute("href", currentProject.link);
+  if (currentProject.link) {
+    modalSeeProjectBtn.style.display = "inline-block";
+    projectLink.setAttribute("href", currentProject.link);
+  } else {
+    modalSeeProjectBtn.style.display = "none";
+  }
+
   const path = `${prefixImageDirectory}${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`;
   const urlString = `url(${path})`;
   carousel.style.backgroundImage = urlString;

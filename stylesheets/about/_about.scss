@@ -1,5 +1,6 @@
 section {
   margin-bottom: 80px;
+  scroll-margin-top: 70px;
 }
 
 section:first-of-type {
@@ -80,10 +81,10 @@ ul {
     }
   }
 
-  .speech-text-container::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  // .speech-text-container::-webkit-scrollbar {
+  //   width: 0;
+  //   height: 0;
+  // }
 }
 
 @media (min-width: 1029px) {

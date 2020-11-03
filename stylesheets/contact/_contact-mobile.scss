@@ -1,4 +1,14 @@
+@media (max-width: 960px) {
+  form {
+    width: 70%;
+  }
+}
+
 @media (max-width: 427px) {
+  form {
+    width: 90%;
+  }
+
   .contact {
     a {
       span {
