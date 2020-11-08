@@ -86,6 +86,11 @@
     }
 
     .speech-bubble {
+      .speech-text-container::-webkit-scrollbar {
+        width: initial;
+        height: initial;
+      }
+
       .speech-text-container {
         margin-bottom: 35px;
       }

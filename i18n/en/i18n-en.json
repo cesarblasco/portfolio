@@ -157,8 +157,11 @@
     "cryptoCaption9": "Columns can be sorted. A tooltip also appears to let you know what that column's value means",
     "portfolioTitle": "Portfolio",
     "portfolioDescription": "The project you are currently on :)",
-    "portfolioSummary": "Displaying this for informational purposes. This proyect doesn't use any js / css framework or library. Pure native css and js only, I also created a custom solution to handle translations between spanish and english easily and it's fully responsive, try it out on your mobile!",
-    "portfolioCaption1": "Landing page"
+    "portfolioSummary": "I tried to use the least amount of dependencies as possible for this proyect by personal choice (Native JS without any frameworks and CSS generated via a VS code plugin using SASS). I also created a custom solution to handle translations between spanish and english easily and it's fully responsive, try it out on your mobile!",
+    "portfolioCaption1": "Home",
+    "portfolioCaption2": "About me (git skill selected, try clicking those skill pills for additional text)",
+    "portfolioCaption3": "My projects",
+    "portfolioCaption4": "Contact"
   },
   "contact": {
     "header": "Contact <span class='text-secondary'>me</span>",

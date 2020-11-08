@@ -72,18 +72,14 @@ const projects = [
     images: [
       {
         fileName: "github-search-1.jpg",
-        caption: "githubSearchCaption1",
-      },
-      {
-        fileName: "github-search-2.jpg",
         caption: "githubSearchCaption2",
       },
       {
-        fileName: "github-search-3.jpg",
+        fileName: "github-search-2.jpg",
         caption: "githubSearchCaption3",
       },
       {
-        fileName: "github-search-4.jpg",
+        fileName: "github-search-3.jpg",
         caption: "githubSearchCaption4",
       },
     ],
@@ -121,7 +117,7 @@ const projects = [
     description: "cryptoDescription",
     summary: `cryptoSummary`,
     technologies: [
-      "React JS / Hooks V 6.13.18",
+      "React JS / Hooks V 16.13.18",
       "React Tooltip",
       "Tailwind CSS",
       "Nivo.rocks charts",
@@ -154,12 +150,11 @@ const projects = [
       "JSON",
       "Font Awesome 5",
     ],
-    link: "https://cesarblasco.github.io/portfolio/",
     images: [
-      { fileName: "maths-1.jpg", caption: "portfolioCaption1" },
-      { fileName: "maths-2.jpg", caption: "portfolioCaption2" },
-      { fileName: "maths-3.jpg", caption: "portfolioCaption3" },
-      { fileName: "maths-4.jpg", caption: "portfolioCaption4" },
+      { fileName: "portfolio-1.jpg", caption: "portfolioCaption1" },
+      { fileName: "portfolio-2.jpg", caption: "portfolioCaption2" },
+      { fileName: "portfolio-3.jpg", caption: "portfolioCaption3" },
+      { fileName: "portfolio-4.jpg", caption: "portfolioCaption4" },
     ],
   },
 ];
@@ -189,7 +184,7 @@ const carouselIntervalProgressbar = document.getElementById(
 let currentImageIndex = 0;
 let carouselPagesElementCollection = null;
 
-let prefixImageDirectory = "images/projects/";
+let prefixImageDirectory = "images/projects";
 let carouselInterval = null;
 
 viewInfoButtons.forEach((item) =>
@@ -249,7 +244,7 @@ function openProjectInformationModal() {
     modalSeeProjectBtn.style.display = "none";
   }
 
-  const path = `${prefixImageDirectory}${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`;
+  const path = `${prefixImageDirectory}/${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`;
   const urlString = `url(${path})`;
   carousel.style.backgroundImage = urlString;
 
@@ -347,7 +342,7 @@ function handleImageChange(direction, selectedCarouselPageIndex = "") {
   }
 
   carouselPagesElementCollection[currentImageIndex].classList.add("active");
-  const path = `${prefixImageDirectory}${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`;
+  const path = `${prefixImageDirectory}/${currentProject.id}/${currentProject.images[currentImageIndex].fileName}`;
   const urlString = `url(${path})`;
   carousel.style.backgroundImage = urlString;
 

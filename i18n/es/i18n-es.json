@@ -157,8 +157,11 @@
     "cryptoCaption9": "Las columnas pueden ser ordenadas. Un tooltip tambien aparece para dejarte saber que significa cada valor",
     "portfolioTitle": "Portafolio",
     "portfolioDescription": "El proyecto en el que estas actualmente :)",
-    "portfolioSummary": "¿Por que mostraria mi portafolio en la seccion de proyectos? Mas que todo para fines informativos. Este proyecto no usa ninguna libreria o framework css / js. Css y js nativo y puro, nada mas, tambien cree una solucion personalizada para mi mismo para manejar las traducciones entre espanol e ingles, ademas es full responsive, prueba la pagina en tu dispositivo movil!",
-    "portfolioCaption1": "Landing page"
+    "portfolioSummary": "Intente usar la menor cantidad de recursos o dependencias externas por decisión propia (JS nativo sin framework y CSS generado por un plugin de VS Code que usa SASS). La unica dependencia externa es el paquete de iconos Font Awesome. También cree una solucion personalizada para manejar las traducciones entre español e ingles, además es full responsive ¡prueba la pagina en tu dispositivo móvil!",
+    "portfolioCaption1": "Home",
+    "portfolioCaption2": "Sobre mi (habilidad Git seleccionada, intenta hacer click en las habilidades para ver mas texto)",
+    "portfolioCaption3": "Mis proyectos",
+    "portfolioCaption4": "Contacto"
   },
   "contact": {
     "header": "Medios de <span class='text-secondary'>contacto</span>",
