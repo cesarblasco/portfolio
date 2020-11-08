@@ -1411,6 +1411,15 @@ nav ul li a.active, nav ul li a:hover {
   color: #000;
 }
 
+.btn.disabled, .disabled.btn-dark, .disabled.btn-light {
+  cursor: not-allowed;
+  background: gray;
+}
+
+.btn.disabled:hover, .disabled.btn-dark:hover, .disabled.btn-light:hover {
+  color: initial;
+}
+
 .btn-dark {
   background: black;
   color: #fff;

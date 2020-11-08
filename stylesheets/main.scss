@@ -107,6 +107,14 @@ nav {
   }
 }
 
+.btn.disabled {
+  cursor: not-allowed;
+  background: gray;
+  &:hover {
+    color: initial;
+  }
+}
+
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
