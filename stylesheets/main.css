@@ -527,6 +527,11 @@ ul {
 
 #speech-bubble-text {
   margin: 15px 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #reset-speech-bubble-btn {
