@@ -124,7 +124,7 @@ const projects = [
       "Typescript",
       "Coincap.io API",
     ],
-    link: "https://cesarblasco.github.io/crypto-compare/",
+    link: "https://cesarblasco.github.io/react-crypto-compare/",
     images: [
       { fileName: "crypto-1.jpg", caption: "cryptoCaption1" },
       { fileName: "crypto-2.jpg", caption: "cryptoCaption2" },
