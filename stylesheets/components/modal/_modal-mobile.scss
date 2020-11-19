@@ -8,7 +8,8 @@
       }
 
       .modal-header {
-        .modal-title {
+        .modal-title,
+        .modal-icon {
           font-size: 1.3rem;
         }
       }
@@ -23,8 +24,19 @@
 @media (max-width: 400px) {
   .modal {
     .modal-content {
+      .modal-header {
+        .modal-icon {
+          display: none;
+        }
+      }
+
       #modal-summary {
         max-width: 100%;
+      }
+
+      .carousel {
+        height: 150px;
+        padding: 0;
       }
     }
   }

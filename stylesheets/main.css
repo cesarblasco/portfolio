@@ -614,7 +614,7 @@ ul {
 }
 
 .pill {
-  border-radius: 25px;
+  border-radius: 50px;
   background-color: #2684ff;
   color: #fff;
   padding: 5px 30px;
@@ -1158,6 +1158,7 @@ form input[type="submit"] {
 .carousel-interval-progressbar {
   width: 40%;
   margin: 0 auto;
+  margin-top: 5px;
   border: 1px solid black;
   height: 10px;
 }
@@ -1181,6 +1182,13 @@ form input[type="submit"] {
   .carousel {
     margin-top: 0;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .previous,
+  .next {
+    margin-top: 170px;
   }
 }
 
@@ -1289,7 +1297,8 @@ form input[type="submit"] {
   .modal .modal-content button {
     margin-bottom: 10px;
   }
-  .modal .modal-content .modal-header .modal-title {
+  .modal .modal-content .modal-header .modal-title,
+  .modal .modal-content .modal-header .modal-icon {
     font-size: 1.3rem;
   }
   .modal .modal-content .modal-description {
@@ -1298,8 +1307,15 @@ form input[type="submit"] {
 }
 
 @media (max-width: 400px) {
+  .modal .modal-content .modal-header .modal-icon {
+    display: none;
+  }
   .modal .modal-content #modal-summary {
     max-width: 100%;
+  }
+  .modal .modal-content .carousel {
+    height: 150px;
+    padding: 0;
   }
 }
 
