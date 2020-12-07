@@ -534,6 +534,10 @@ ul {
   user-select: none;
 }
 
+#speech-bubble-text:focus {
+  outline: none;
+}
+
 #reset-speech-bubble-btn {
   position: absolute;
   display: none;

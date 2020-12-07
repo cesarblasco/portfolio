@@ -143,6 +143,10 @@ ul {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  &:focus{
+    outline: none;
+  }
 }
 
 #reset-speech-bubble-btn {

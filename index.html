@@ -42,7 +42,7 @@
             </a>
           </li>
 
-          <li class="languages" id="languages-dropdown-btn">
+          <li class="languages" id="languages-dropdown-btn" tabindex="0" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-globe"></i>
             <span data-translate="navbar.languages"></span>
             <i class="fas fa-chevron-down" id="languages-dropdown-icon"></i>
@@ -70,6 +70,7 @@
 
         <div class="icons">
           <a
+            aria-label="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/cesar-blasco/"
@@ -77,13 +78,14 @@
             <i class="fab fa-linkedin fa-2x"></i>
           </a>
           <a
+            aria-label="Github"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/cesarblasco"
           >
             <i class="fab fa-github fa-2x"></i>
           </a>
-          <a href="mailto:cesarblasco50@gmail.com">
+          <a aria-label="Email" href="mailto:cesarblasco50@gmail.com">
             <i class="far fa-envelope fa-2x"></i>
           </a>
         </div>

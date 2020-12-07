@@ -156,6 +156,7 @@ function getNextSpeechBubbleDialog() {
     : defaultSpeechBubbleTexts[currentTextIndex];
 
   translateSpecificKey(speechBubbleText, "about", keyToApply);
+  speechBubbleText.focus();
 }
 
 function filterTechnologiesByCategory() {
@@ -241,4 +242,5 @@ function resetSpeechBubble() {
   });
 
   translateSpecificKey(speechBubbleText, "about", "defaultSpeechBubbleText1");
+  speechBubbleText.focus();
 }

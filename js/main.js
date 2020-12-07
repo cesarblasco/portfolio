@@ -36,5 +36,7 @@ languagesDropdownBtn.addEventListener("click", () => {
   const newIconClass = displayLanguagesDropdown
     ? "fa-chevron-up"
     : "fa-chevron-down";
+
+  languagesDropdownBtn.setAttribute("aria-expanded",displayLanguagesDropdown ? "true" : "false");
   languagesDropdownIcon.classList.add(newIconClass);
 });
