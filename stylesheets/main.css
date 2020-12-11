@@ -541,7 +541,7 @@ ul {
 #reset-speech-bubble-btn {
   position: absolute;
   display: none;
-  bottom: 5%;
+  bottom: 3%;
   -webkit-animation-name: rotateClockwise;
           animation-name: rotateClockwise;
   -webkit-animation-duration: 0.5s;
@@ -875,13 +875,6 @@ ul {
   }
   #speech-bubble-text i {
     display: none;
-  }
-  #reset-speech-bubble-btn {
-    top: 88%;
-  }
-  .speech-bubble-scroll-btn {
-    top: 88%;
-    left: 85%;
   }
 }
 
@@ -1533,12 +1526,10 @@ nav ul li a.active, nav ul li a:hover {
 }
 
 .reset-speech-with-more-text {
-  top: 82%;
-  left: 75%;
+  left: 70%;
 }
 
 .reset-speech-no-more-text {
-  top: 82%;
   left: 90%;
 }
 
