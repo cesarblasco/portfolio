@@ -27,7 +27,7 @@
     "backendTechnologiesCategory": "Backend",
     "languagesTechnologiesCategory": "Lenguajes",
     "toolsTechnologiesCategory": "Herramientas",
-    "experienceTitle": "<i class='fa fa-book'></i> <i class='fas fa-book-open'></i> Experiencia <i class='fa fa-book'></i> <i class='fas fa-book-open'></i>",
+    "experienceTitle": "<i class='fa fa-book'></i> <i class='fas fa-book-open'></i> Experiencia <i class='fas fa-book-open'></i> <i class='fa fa-book'></i>",
     "educationTitle": "<i class='fas fa-graduation-cap'></i> Educación <i class='fas fa-graduation-cap'></i>",
     "educationPosition": "Ingeniero en Computación",
     "educationBullet1": "Obtuve mi titulo de pregrado como Ingeniero en Computación.",
@@ -49,7 +49,7 @@
     "dentalClinicBullet3": "La aplicación posee los siguientes módulos: Citas, gestión de especialistas y procedimientos, CRUD de pacientes, historial de pacientes, interfaz interactiva de dentadura de los pacientes, reportes (PDF, Excel) y pagos.",
     "dentalClinicBullet4": "La interfaz que muestra la dentadura del paciente permite que el usuario muestre ciertas figuras y colorear cada sección de cada diente de forma individual.",
     "dentalClinicBullet5": "Herramientas usadas: Jquery, Laravel Framework, Bootstrap 3, SVG, Raphael JS, MySQL.",
-    "defaultSpeechBubbleText1": "¡Hola! Mi nombre es César Blasco, soy un ingeniero de software que le importa el codigo limpio y las buenas practicas. Mi enfoque principal actualmente es el frontend y soy un desarrollador Angular / React. Tambien he desarrollado algo de backend con Java y frameworks PHP.",
+    "defaultSpeechBubbleText1": "¡Hola! Mi nombre es César Blasco, soy un ingeniero de software que le interesa el codigo limpio y las buenas practicas. Mi enfoque principal actualmente es el frontend y soy un desarrollador Angular / React. Tambien he desarrollado algo de backend con Java y frameworks PHP.",
     "defaultSpeechBubbleText2": "Me considero un jugador de equipo, siempre dispuesto a ayudar a los demas cuando se pueda, me ha tocado ser mentor y a su vez ser ensenado por otros con mas seniority que yo lo cual es una experiencia enriquecedora.",
     "defaultSpeechBubbleText3": "Al construir software soy analítico, metódico y oriento la arquitectura del software para brindar la mejor solución posible.",
     "defaultSpeechBubbleText4": "<div class='text-center'>Algunos de mis hobbies favoritos son:</div> <ul class='centered-unordered-list'><li><i class='fas fa-tv'></i> Ver películas y series <i class='fas fa-tv'></i></li><li><i class='fas fa-laptop-code'></i> Programar <i class='fas fa-laptop-code'></i></li> <li><i class='fas fa-gamepad'></i> Videojuegos <i class='fas fa-gamepad'></i></li> <li><i class='fas fa-music'></i> Escuchar musica <i class='fas fa-music'></i></li> <li><i class='fas fa-walking'></i> Caminar <i class='fas fa-walking'></i></li><ul>",
@@ -78,7 +78,9 @@
     "scssModulesSpeechBubbleText2": "En lo que respecta a los módulos SCSS, he trabajado con ellos recientemente y realmente ayuda a organizar y realmente separar el CSS de cada componente. Esto evita conflictos extranos entre clases o errores de CSS.",
     "jestSpeechBubbleText1": "Hacer pruebas es importante. He estado usando Jest / Enzyme para realizar pruebas a mis componentes Angular / React y tener confianza en el código que escribo, agregando esa capa adicional de seguridad contra bugs.",
     "jestSpeechBubbleText2": "He hecho pruebas unitarias mas que todo y creo que la amplitud o \"coverage\" de las pruebas del código deberían ser altas pero no irreales. Un 100% de coverage no es fácil e incluso es innecesario en mi humilde opinión.",
-    "fontAwesomeBubbleText1": "¿Ves los iconos animados? Esos vienen de la librería de iconos Font Awesome la cual estoy usando en esta pagina."
+    "fontAwesomeBubbleText1": "¿Ves los iconos animados? Esos vienen de la librería de iconos Font Awesome la cual estoy usando en esta pagina.",
+    "resetSpeechBubbleTooltip": "Reiniciar dialogo al mensaje por defecto",
+    "speechScrollTooltip": "Próximo mensaje"
   },
   "projects": {
     "header": "Mis <span class='text-secondary'>proyectos</span>",

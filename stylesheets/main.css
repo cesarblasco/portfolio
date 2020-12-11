@@ -541,7 +541,7 @@ ul {
 #reset-speech-bubble-btn {
   position: absolute;
   display: none;
-  font-size: 1rem;
+  bottom: 5%;
   -webkit-animation-name: rotateClockwise;
           animation-name: rotateClockwise;
   -webkit-animation-duration: 0.5s;
@@ -550,15 +550,22 @@ ul {
           animation-iteration-count: infinite;
 }
 
-#reset-speech-bubble-btn:hover {
+#reset-speech-bubble-btn button {
+  font-size: 1.1rem;
   cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#reset-speech-bubble-btn button:hover {
   color: #eece1a;
 }
 
 .speech-bubble-scroll-btn {
   position: absolute;
-  top: 80%;
-  left: 90%;
+  bottom: 5%;
+  right: 5%;
   -webkit-animation-name: speechScrollBtnAnimation;
           animation-name: speechScrollBtnAnimation;
   -webkit-animation-duration: 2s;
@@ -568,7 +575,7 @@ ul {
 }
 
 .speech-bubble-scroll-btn button {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   cursor: pointer;
   background: none;
   border: none;
@@ -858,7 +865,6 @@ ul {
     padding-left: 5px;
   }
   .speech-bubble .speech-text-container::-webkit-scrollbar {
-    width: initial;
     height: initial;
   }
   .speech-bubble .speech-text-container {

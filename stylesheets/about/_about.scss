@@ -149,31 +149,9 @@ ul {
   }
 }
 
-#reset-speech-bubble-btn {
-  position: absolute;
-  display: none;
-  font-size: 1rem;
-
-  animation-name: rotateClockwise;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-
-  &:hover {
-    cursor: pointer;
-    color: $secondary-color;
-  }
-}
-
-.speech-bubble-scroll-btn {
-  position: absolute;
-  top: 80%;
-  left: 90%;
-  animation-name: speechScrollBtnAnimation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-
+@mixin speechBubbleBtn{
   button {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     cursor: pointer;
     background: none;
     border: none;
@@ -183,6 +161,26 @@ ul {
       color: $secondary-color;
     }
   }
+}
+
+#reset-speech-bubble-btn {
+  position: absolute;
+  display: none;
+  bottom: 5%;
+  animation-name: rotateClockwise;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  @include speechBubbleBtn;
+}
+
+.speech-bubble-scroll-btn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  animation-name: speechScrollBtnAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  @include speechBubbleBtn;
 }
 
 .technologies-categories {

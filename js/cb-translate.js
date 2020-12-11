@@ -5,7 +5,7 @@ const currentLang = currentUrl.searchParams.get("lang");
 const loader = document.querySelector(".loader");
 const mainElement = document.querySelector("main");
 const navElement = document.querySelector("nav");
-const translatableHTMLElements = ["TEXTAREA", "INPUT", "IMG"];
+const translatableHTMLElements = ["TEXTAREA", "INPUT", "IMG", "DIV"];
 let translationsJSON = null;
 
 addOrReplaceLangInURL();
@@ -17,6 +17,9 @@ function getAttributeToTranslate(element) {
   }
   else if (element.getAttribute("alt")){
     return "alt";
+  }
+  else if (element.getAttribute("title")){
+    return "title";
   }
   return "placeholder";
 }

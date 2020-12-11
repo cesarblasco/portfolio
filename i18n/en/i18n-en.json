@@ -78,7 +78,9 @@
     "scssModulesSpeechBubbleText2": "When it comes to SCSS modules, I've worked with them recently and it really helps organize and truly separate CSS from each component. No more weird clashes between classes or weird bugs, I truly recommend it.",
     "jestSpeechBubbleText1": "Testing is important! I've been using Jest / Enzyme to test my angular / react components to have confidence in my code and add that extra layer of safety against bugs.",
     "jestSpeechBubbleText2": "I've done mostly unit tests and I believe code coverage should be high but realistic as well, 100% code coverage isn't easy or even necessary to achieve in my humble opinion.",
-    "fontAwesomeBubbleText1": "Do you see the little animated icons? Those come from the font awesome icon library which I'm using on this website."
+    "fontAwesomeBubbleText1": "Do you see the little animated icons? Those come from the font awesome icon library which I'm using on this website.",
+    "resetSpeechBubbleTooltip": "Reset speech bubble to default message",
+    "speechScrollTooltip": "Next message"
   },
   "projects": {
     "header": "My <span class='text-secondary'>projects</span>",
