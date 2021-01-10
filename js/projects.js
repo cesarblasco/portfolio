@@ -28,19 +28,6 @@ const projects = [
       { fileName: "dental-clinic-12.jpg", caption: "dentalClinicCaption13" },
     ],
   },
-  // {
-  //   id: "tribute",
-  //   title: "tributePageTitle",
-  //   icon: "fas fa-book",
-  //   description: "tributePageDescription",
-  //   summary: `tributePageSummary`,
-  //   technologies: ["Bootstrap 3"],
-  //   link: "https://codepen.io/Cesar1337/pen/VmzzRL",
-  //   images: [
-  //     { fileName: "tribute-page.jpg", caption: "tributePageCaption1" },
-  //     { fileName: "tribute-page-2.jpg", caption: "tributePageCaption2" },
-  //   ],
-  // },
   {
     id: "lab",
     title: "cssLabTitle",
@@ -118,6 +105,7 @@ const projects = [
     summary: `cryptoSummary`,
     technologies: [
       "React JS / Hooks V 16.13.18",
+      "React Context / dispatch / useReducer",
       "React Tooltip",
       "Tailwind CSS",
       "Nivo.rocks charts",
