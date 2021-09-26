@@ -773,7 +773,8 @@ ul {
 }
 
 .resume-link a,
-.company-name a {
+.company-name a,
+.bullet-link a {
   color: #eece1a;
   text-decoration: underline;
 }

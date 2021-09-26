@@ -143,12 +143,12 @@ ul {
   -ms-user-select: none;
   user-select: none;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 }
 
-@mixin speechBubbleBtn{
+@mixin speechBubbleBtn {
   button {
     font-size: 1.1rem;
     cursor: pointer;
@@ -346,7 +346,8 @@ ul {
 }
 
 .resume-link a,
-.company-name a {
+.company-name a,
+.bullet-link a {
   color: $secondary-color;
   text-decoration: underline;
 }
