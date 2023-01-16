@@ -38,7 +38,7 @@
     "pshBullet1": "<span class='bullet-link'><a href='https://www.nearpod.com' target='_BLANK'>Nearpod</a></span> es el cliente mas grande e importante de la empresa PSH y es una de las plataformas top en edtech de Estados Unidos. Mediante <span class='bullet-link'><a href='https://wearepsh.com/' target='_BLANK'>PSH</a></span> fui asignado a un equipo de desarolladores para diseñar e implementar features a la plataforma de Nearpod. Colabore con miembros del equipo tanto en Argentina como managers y desarolladores del equipo de Estados Unidos.",
     "pshBullet2": "Primera experiencia con miembros de equipo en los Estados Unidos y comunicación constante en ingles incluyendo dailies, plannings etc siguiendo la metodología scrum con sprints de 2 semanas.",
     "pshBullet3": "Si bien mi enfoque principal sigue siendo el frontend tuve la oportunidad de retomar el desarrollo full stack con React JS y una arquitectura con Redux / Sagas y un backend PHP usando herramientas internas de la empresa y pruebas unitarias en ambos lados del stack.",
-    "rankmiPosition": "Desarrollador Frontend (Junio 2018 - Actualidad)",
+    "rankmiPosition": "Desarrollador Frontend (Junio 2018 - Junio 2021)",
     "rankmiBullet1": "Desarrollé componentes, módulos y funcionalidades de diversas complejidades usando el framework Angular JS en su versión 1.6.7.",
     "rankmiBullet2": "Refactorize componentes de .js a .ts e hice mejoras a codigo legacy.",
     "rankmiBullet3": "Colaboré en crear y refactorizar componentes para permitir accesibilidad por usuarios limitados o con discapacidades (Estandares WAI ARIA para la web).",

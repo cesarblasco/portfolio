@@ -16,7 +16,7 @@ let displayLanguagesDropdown = false;
 function getCurrentYear() {
   const currentDate = new Date();
   if (currentYear) {
-    currentYear.innerHTML = currentDate.getFullYear();
+    currentYear.innerHTML = `2020 - ${currentDate.getFullYear()}`;
   }
 }
 
@@ -37,6 +37,9 @@ languagesDropdownBtn.addEventListener("click", () => {
     ? "fa-chevron-up"
     : "fa-chevron-down";
 
-  languagesDropdownBtn.setAttribute("aria-expanded",displayLanguagesDropdown ? "true" : "false");
+  languagesDropdownBtn.setAttribute(
+    "aria-expanded",
+    displayLanguagesDropdown ? "true" : "false"
+  );
   languagesDropdownIcon.classList.add(newIconClass);
 });

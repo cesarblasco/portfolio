@@ -142,7 +142,6 @@ const projects = [
       { fileName: "portfolio-1.jpg", caption: "portfolioCaption1" },
       { fileName: "portfolio-2.jpg", caption: "portfolioCaption2" },
       { fileName: "portfolio-3.jpg", caption: "portfolioCaption3" },
-      { fileName: "portfolio-4.jpg", caption: "portfolioCaption4" },
     ],
   },
 ];
@@ -265,13 +264,11 @@ function openProjectInformationModal() {
     document.getElementById("carousel-pages-container").appendChild(node);
   });
 
-  carouselPagesElementCollection = document.getElementsByClassName(
-    "carousel-page"
-  );
+  carouselPagesElementCollection =
+    document.getElementsByClassName("carousel-page");
 
-  const carouselPagesNodeCollection = document.querySelectorAll(
-    ".carousel-page"
-  );
+  const carouselPagesNodeCollection =
+    document.querySelectorAll(".carousel-page");
 
   carouselPagesElementCollection[currentImageIndex].classList.add("active");
   projectModalInfo.style.display = "block";
