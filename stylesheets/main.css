@@ -906,7 +906,6 @@ ul {
 
 .projects .project-image {
   width: 100%;
-  height: 80%;
   position: relative;
 }
 
@@ -929,6 +928,12 @@ ul {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   opacity: 1;
+}
+
+@media (max-width: 1475px) {
+  .project-image .project-title {
+    font-size: 0.3rem;
+  }
 }
 
 form {
