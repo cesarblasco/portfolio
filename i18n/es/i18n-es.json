@@ -107,7 +107,7 @@
     "cryptoAlt": "Comparador de criptos",
     "cryptoTitle": "Comparador de criptos",
     "cryptoDescription": "Un proyecto hecho en React JS para comparar criptomonedas",
-    "cryptoSummary": "Un pequeño proyecto que te permite compara todas las criptomonedas que quieras. Puedes compararlas por precio, capitalización de mercado, suministro o volumen de intercambio y además compararlas usando 3 tipos de gráficos disponibles. La data llega The data comes from desde la <a target='_blank' style='color: blue;' target='_BLANK'  rel='noreferrer noopener' href='https://docs.coincap.io/?version=latest'>API de coincap.io</a>",
+    "cryptoSummary": "Un pequeño proyecto que te permite comparar todas las criptomonedas que quieras. Puedes compararlas por precio, capitalización de mercado, suministro o volumen de intercambio y además compararlas usando 3 tipos de gráficos disponibles. La data llega desde la <a target='_blank' style='color: blue;' target='_BLANK'  rel='noreferrer noopener' href='https://docs.coincap.io/?version=latest'>API de coincap.io</a>",
     "battleCity": "<i class='fab fa-github'></i> Java Game <i class='fab fa-github'></i>",
     "cssLab": "<i class='fas fa-flask'></i> Laboratorio CSS <i class='fas fa-flask'></i>",
     "cssLabAlt": "Laboratorio CSS",
