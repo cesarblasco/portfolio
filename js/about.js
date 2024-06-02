@@ -6,102 +6,86 @@ const defaultSpeechBubbleTexts = [
 ];
 
 // Texts is an array that contains translation keys (found in i18n-es.json and i18n-en.json)
-const technologiesSpeechTexts = [
-  {
+const technologiesSpeechTextsDictionary = {
+  HTML: {
     id: "HTML",
-    texts: ["htmlSpeechBubbleText1"],
   },
-  {
-    id: "CSS3",
+  CSS3: {
     texts: [`cssSpeechBubbleText1`],
   },
-  {
-    id: "Javascript / ES6",
+  "Javascript / ES6": {
     texts: ["jsSpeechBubbleText1", "jsSpeechBubbleText2"],
   },
-  {
-    id: "PHP",
+  PHP: {
     texts: [`phpSpeechBubbleText1`],
   },
-  {
-    id: "React JS",
+  "React JS": {
     texts: [`reactSpeechBubbleText1`],
   },
-  {
-    id: "JQuery",
+  Redux: {
+    texts: [`reduxSpeechBubbleText1`],
+  },
+  JQuery: {
     texts: [`jquerySpeechBubbleText1`],
   },
-  {
-    id: "Angular",
+  Angular: {
     texts: [`angularSpeechBubbleText1`],
   },
-  {
-    id: "Angular JS",
+  "Angular JS": {
     texts: [`angularjsSpeechBubbleText1`],
   },
-  {
-    id: "Laravel",
+  Laravel: {
     texts: ["laravelSpeechBubbleText1"],
   },
-  {
-    id: "MySQL",
+  MySQL: {
     texts: ["mySqlSpeechText1"],
   },
-  {
-    id: "Underscore / Lodash ES",
+  "Underscore / Lodash ES": {
     texts: ["underscoreSpeechBubbleText1"],
   },
-  {
-    id: "Git",
+  Git: {
     texts: ["gitSpeechBubbleText1", "gitSpeechBubbleText2"],
   },
-  {
-    id: "Github",
+  Github: {
     texts: ["githubSpeechBubbleText1"],
   },
-  {
-    id: "Typescript",
+  Typescript: {
     texts: [`typescriptSpeechBubbleText1`],
   },
-  {
-    id: "ES Lint",
+  "ES Lint": {
     texts: ["esLintSpeechBubbleText1"],
   },
-  {
-    id: "Visual Studio Code",
+  "Visual Studio Code": {
     texts: [`vsCodeSpeechBubbleText1`, `vsCodeSpeechBubbleText2`],
   },
-  {
-    id: "Prettier",
+  Prettier: {
     texts: ["prettierSpeechBubbleText1"],
   },
-  {
-    id: "Bootstrap 3 / 4",
+  "Bootstrap 3 / 4": {
     texts: ["bootstrapSpeechBubbleText1"],
   },
-  {
-    id: "SCSS / SCSS Modules",
+  "SCSS / SCSS Modules": {
     texts: ["scssModulesSpeechBubbleText1", "scssModulesSpeechBubbleText2"],
   },
-  {
-    id: "Jest / Enzyme",
+  "Jest / Enzyme": {
     texts: ["jestSpeechBubbleText1", "jestSpeechBubbleText2"],
   },
-  {
-    id: "Font Awesome",
+  "Font Awesome": {
     texts: ["fontAwesomeBubbleText1"],
   },
-];
+  "VisX Charts": {
+    texts: ["visXChartsBubbleText1"],
+  },
+};
 
 const speechScrollBtn = document.getElementById("speech-scroll-btn");
 const speechBubbleText = document.getElementById("speech-bubble-text");
 const resetSpeechBubbleBtn = document.getElementById("reset-speech-bubble-btn");
-const techCategoryButtons = document.querySelectorAll(".tech-category");
+// const techCategoryButtons = document.querySelectorAll(".tech-category");
 const technologyPills = document.querySelectorAll(".pill");
 const experienceSection = document.getElementById("experience");
-const timelineCategoriesButtons = document.querySelectorAll(
-  ".timeline-category"
-);
+const timelineCategoriesButtons =
+  document.querySelectorAll(".timeline-category");
 
 let timelineEvents = document.querySelectorAll(".timeline-event");
 let timelineStackedEvents = document.querySelectorAll(
@@ -115,10 +99,10 @@ const navigateTimelineBackward = document.getElementById(
 let timelineEventsCopy = document.querySelectorAll(".timeline-event");
 let currentSelectedTimelineLayout = null;
 
-const timelineContainer = document.getElementById("timeline-container");
-techCategoryButtons.forEach((item) =>
-  item.addEventListener("click", filterTechnologiesByCategory)
-);
+// const timelineContainer = document.getElementById("timeline-container");
+// techCategoryButtons.forEach((item) =>
+//   item.addEventListener("click", filterTechnologiesByCategory)
+// );
 
 technologyPills.forEach((item) =>
   item.addEventListener("click", updateSpeechBubbleTextBySelectedTechnologyPill)
@@ -162,7 +146,7 @@ function getNextSpeechBubbleDialog() {
 function filterTechnologiesByCategory() {
   isTechnologySelected = false;
   const selectedCategory = this.getAttribute("data-category");
-  techCategoryButtons.forEach((item) => item.classList.remove("active"));
+  // techCategoryButtons.forEach((item) => item.classList.remove("active"));
   this.classList.add("active");
   if (selectedCategory === "all") {
     const [firstDefaultSpeechBubbleText] = defaultSpeechBubbleTexts;
@@ -201,13 +185,12 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
     item.classList.remove("pill-active");
   });
 
-  selectedTechnology = technologiesSpeechTexts.find(
-    ({ id }) => this.innerHTML === id
-  );
+  selectedTechnology = technologiesSpeechTextsDictionary[this.innerHTML];
+  let selectedTechnologyFirstText = "";
 
   if (selectedTechnology) {
     this.classList.add("pill-active");
-
+    [selectedTechnologyFirstText] = selectedTechnology.texts;
     speechScrollBtn.style.display =
       selectedTechnology.texts.length > 1 ? "block" : "none";
 
@@ -220,7 +203,6 @@ function updateSpeechBubbleTextBySelectedTechnologyPill() {
     }
   }
 
-  const [selectedTechnologyFirstText] = selectedTechnology.texts;
   const [firstDefaultSpeechBubbleText] = defaultSpeechBubbleTexts;
 
   const keyToApply = selectedTechnology

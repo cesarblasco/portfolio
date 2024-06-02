@@ -37,6 +37,7 @@ const projects = [
     technologies: ["HTML", "CSS"],
     link: "https://cesarblasco.github.io/css-lab/",
     images: [
+      { fileName: "css-lab-5.gif", caption: "cssLabCaption4" },
       { fileName: "css-lab-2.jpg", caption: "cssLabCaption1" },
       { fileName: "css-lab-3.jpg", caption: "cssLabCaption2" },
       { fileName: "css-lab-4.jpg", caption: "cssLabCaption3" },
@@ -148,7 +149,7 @@ const projects = [
 
 const viewInfoButtons = document.querySelectorAll(".project-info");
 const projectModalInfo = document.getElementById("modal");
-const categoryButtons = document.querySelectorAll(".category");
+// const categoryButtons = document.querySelectorAll(".category");
 const projectsHtml = document.querySelectorAll(".project");
 const closeModalIcon = document.getElementsByClassName("close")[0];
 const modalBtn = document.getElementById("modal-btn");
@@ -165,9 +166,33 @@ const currentImageCaption = document.getElementById("current-caption");
 const carouselPagesContainer = document.getElementById(
   "carousel-pages-container"
 );
+const carouselIntervalProgress = document.getElementById(
+  "carousel-interval-progress"
+);
 const carouselIntervalProgressbar = document.getElementById(
   "carousel-interval-progressbar"
 );
+const carousel = document.getElementById("carousel");
+let isCarouselPaused = false;
+let carouselRemainingTime;
+
+carousel.addEventListener("mouseenter", () => {
+  carouselIntervalProgress.style.animationPlayState = "paused";
+  isCarouselPaused = true;
+  const barWidth = carouselIntervalProgressbar.offsetWidth;
+  const progressWidth = carouselIntervalProgress.offsetWidth;
+  const progressPercentage = (progressWidth * 100) / barWidth;
+  const remainingPercentage = 100 - progressPercentage;
+  carouselRemainingTime = (4500 * remainingPercentage) / 100;
+  clearInterval(carouselInterval);
+});
+
+carousel.addEventListener("mouseleave", () => {
+  carouselIntervalProgress.style.animationPlayState = "running";
+  isCarouselPaused = false;
+  setCarouselInterval(carouselRemainingTime);
+});
+
 let currentImageIndex = 0;
 let carouselPagesElementCollection = null;
 
@@ -181,9 +206,9 @@ viewInfoButtons.forEach((item) =>
 closeModalIcon.addEventListener("click", closeProjectInformationModal);
 modalBtn.addEventListener("click", closeProjectInformationModal);
 
-categoryButtons.forEach((item) =>
-  item.addEventListener("click", filterProjectsBySelectedCategory)
-);
+// categoryButtons.forEach((item) =>
+//   item.addEventListener("click", filterProjectsBySelectedCategory)
+// );
 
 previousImageButton.addEventListener("click", () => {
   return setNextOrPreviousImageOfCurrentProject("backward");
@@ -193,12 +218,23 @@ nextImageButton.addEventListener("click", () => {
   return setNextOrPreviousImageOfCurrentProject("forward");
 });
 
-function setCarouselInterval() {
-  carouselInterval = setInterval(() => {
-    if (currentProject && carouselPagesElementCollection) {
-      handleImageChange("forward");
-    }
-  }, 4500);
+function setCarouselInterval(remainingTime) {
+  if (remainingTime) {
+    carouselInterval = setInterval(() => {
+      if (currentProject && carouselPagesElementCollection) {
+        handleImageChange("forward");
+        clearInterval(carouselInterval);
+        setCarouselInterval();
+      }
+    }, remainingTime);
+  } else {
+    carouselInterval = setInterval(() => {
+      if (currentProject && carouselPagesElementCollection) {
+        handleImageChange("forward");
+        carouselRemainingTime = 4500;
+      }
+    }, 4500);
+  }
 }
 
 function openProjectInformationModal() {
@@ -292,7 +328,7 @@ function closeProjectInformationModal() {
 
 function filterProjectsBySelectedCategory() {
   const selectedCategory = this.getAttribute("data-category");
-  categoryButtons.forEach((item) => item.classList.remove("active"));
+  // categoryButtons.forEach((item) => item.classList.remove("active"));
   this.classList.add("active");
 
   if (selectedCategory === "all") {
@@ -339,11 +375,21 @@ function handleImageChange(direction, selectedCarouselPageIndex = "") {
 }
 
 function resetCarouselIntervalProgressbar() {
-  clearInterval(carouselInterval);
-  setCarouselInterval();
-  carouselIntervalProgressbar.classList.remove("carousel-interval-progressbar");
-  void carouselIntervalProgressbar.offsetWidth;
-  carouselIntervalProgressbar.classList.add("carousel-interval-progressbar");
+  if (!isCarouselPaused) {
+    clearInterval(carouselInterval);
+    setCarouselInterval();
+    carouselIntervalProgressbar.classList.remove(
+      "carousel-interval-progressbar"
+    );
+    // void carouselIntervalProgressbar.offsetWidth;
+    setTimeout(
+      () =>
+        carouselIntervalProgressbar.classList.add(
+          "carousel-interval-progressbar"
+        ),
+      0
+    );
+  }
 }
 
 function setNextOrPreviousImageOfCurrentProject(direction) {

@@ -42,7 +42,13 @@
             </a>
           </li>
 
-          <li class="languages" id="languages-dropdown-btn" tabindex="0" aria-haspopup="true" aria-expanded="false">
+          <li
+            class="languages"
+            id="languages-dropdown-btn"
+            tabindex="0"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             <i class="fas fa-globe"></i>
             <span data-translate="navbar.languages"></span>
             <i class="fas fa-chevron-down" id="languages-dropdown-icon"></i>
@@ -95,13 +101,21 @@
               data-translate="about.defaultSpeechBubbleText1"
             ></p>
 
-            <div id="reset-speech-bubble-btn" data-translate="about.resetSpeechBubbleTooltip" title="about.resetSpeechBubbleTooltip">
+            <div
+              id="reset-speech-bubble-btn"
+              data-translate="about.resetSpeechBubbleTooltip"
+              title="about.resetSpeechBubbleTooltip"
+            >
               <button>
                 <i class="fas fa-redo-alt"></i>
               </button>
             </div>
 
-            <div class="speech-bubble-scroll-btn" data-translate="about.speechScrollTooltip" title="about.speechScrollTooltip">
+            <div
+              class="speech-bubble-scroll-btn"
+              data-translate="about.speechScrollTooltip"
+              title="about.speechScrollTooltip"
+            >
               <button id="speech-scroll-btn">
                 <i class="fas fa-chevron-down"></i>
               </button>
@@ -117,7 +131,7 @@
           id="technologies-title"
         ></h2>
 
-        <div class="categories">
+        <!-- <div class="categories">
           <div
             class="category tech-category active"
             data-category="all"
@@ -138,26 +152,27 @@
             data-category="tool"
             data-translate="about.toolsTechnologiesCategory"
           ></div>
-        </div>
+        </div> -->
 
         <div class="technologies-categories">
           <button class="pill" data-category="frontend language">HTML</button>
           <button class="pill" data-category="frontend language">CSS3</button>
-          <button class="pill" data-category="frontend language"
-            >Javascript / ES6</button
-          >
-          <button class="pill" data-category="tool frontend"
-            >SCSS / SCSS Modules</button
-          >
+          <button class="pill" data-category="frontend language">
+            Javascript / ES6
+          </button>
+          <button class="pill" data-category="tool frontend">
+            SCSS / SCSS Modules
+          </button>
           <button class="pill" data-category="frontend">React JS</button>
+          <button class="pill" data-category="frontend">Redux</button>
           <button class="pill" data-category="frontend">Angular</button>
           <button class="pill" data-category="frontend">Angular JS</button>
           <button class="pill" data-category="frontend">Bootstrap 3 / 4</button>
           <button class="pill" data-category="backend">Laravel</button>
           <button class="pill" data-category="backend">MySQL</button>
-          <button class="pill" data-category="tool frontend"
-            >Underscore / Lodash ES</button
-          >
+          <button class="pill" data-category="tool frontend">
+            Underscore / Lodash ES
+          </button>
           <button class="pill" data-category="tool">Git</button>
           <button class="pill" data-category="tool">Github</button>
           <button class="pill" data-category="tool frontend">Typescript</button>
@@ -168,6 +183,7 @@
           <button class="pill" data-category="tool">Font Awesome</button>
           <button class="pill" data-category="language">PHP</button>
           <button class="pill" data-category="frontend">JQuery</button>
+          <button class="pill" data-category="frontend">VisX Charts</button>
         </div>
       </section>
 
@@ -183,18 +199,19 @@
         <div class="timeline" id="timeline-container">
           <div class="timeline-event">
             <h3 class="company-name">
-              <a href="https://wearepsh.com/en/work/" target="_blank" noopener noreferrer
-                >PSH Digital Agency --> Nearpod.com</a
+              <a href="https://nearpod.com/" target="_blank" noopener noreferrer
+                >Nearpod.com</a
               >
             </h3>
             <p
               class="company-position"
-              data-translate="about.pshPosition"
+              data-translate="about.nearpodPosition"
             ></p>
             <ul>
-              <li data-translate="about.pshBullet1"></li>
-              <li data-translate="about.pshBullet2"></li>
-              <li data-translate="about.pshBullet3"></li>
+              <li data-translate="about.nearpodBullet1"></li>
+              <li data-translate="about.nearpodBullet2"></li>
+              <li data-translate="about.nearpodBullet3"></li>
+              <li data-translate="about.nearpodBullet4"></li>
             </ul>
           </div>
 
@@ -271,27 +288,28 @@
       </section>
 
       <section id="education" class="education-section">
-          <h2
-            class="sm-heading"
-            data-translate="about.educationTitle"
-            id="education-title"
-          ></h2>
+        <h2
+          class="sm-heading"
+          data-translate="about.educationTitle"
+          id="education-title"
+        ></h2>
 
-          <div class="timeline" id="timeline-container">
-            <div class="timeline-event">
-              <h3 class="company-name">
-                <a 
-                  >Universidad de Oriente</a
-                >
-              </h3>
-              <p
-                class="company-position"
-                data-translate="about.educationPosition"
-              ></p>
-              <div style="display: flex; justify-content: center; margin-top: 10px;"> <img src="images/udo-logo.png" width="150" height="150"></div>
-             
+        <div class="timeline" id="timeline-container">
+          <div class="timeline-event">
+            <h3 class="company-name">
+              <a>Universidad de Oriente</a>
+            </h3>
+            <p
+              class="company-position"
+              data-translate="about.educationPosition"
+            ></p>
+            <div
+              style="display: flex; justify-content: center; margin-top: 10px"
+            >
+              <img src="images/udo-logo.png" width="150" height="150" />
             </div>
           </div>
+        </div>
       </section>
 
       <section id="courses">
@@ -311,7 +329,7 @@
               width="250"
               height="200"
           /></a>
-          <a href="images/about/angular-cert.png" target="_blank" 
+          <a href="images/about/angular-cert.png" target="_blank"
             ><img src="images/about/angular-cert.png" width="250" height="200"
           /></a>
           <a href="images/about/angular-forms-cert.png" target="_blank"
@@ -320,19 +338,35 @@
               width="250"
               height="200"
           /></a>
-          <a href="https://www.udemy.com/certificate/UC-6HBRJ0Z1/" target="_blank" noreferrer noopener
+          <a
+            href="https://www.udemy.com/certificate/UC-6HBRJ0Z1/"
+            target="_blank"
+            noreferrer
+            noopener
             ><img src="images/about/flex-cert.jpg" width="250" height="200"
           /></a>
-          <a href="https://www.udemy.com/certificate/UC-JJ9JJSYN/" target="_blank" noreferrer noopener
+          <a
+            href="https://www.udemy.com/certificate/UC-JJ9JJSYN/"
+            target="_blank"
+            noreferrer
+            noopener
             ><img src="images/about/scrum-cert.jpg" width="250" height="200"
           /></a>
-          <a href="https://www.udemy.com/certificate/UC-BKGIUCOI/" target="_blank" noreferrer noopener
+          <a
+            href="https://www.udemy.com/certificate/UC-BKGIUCOI/"
+            target="_blank"
+            noreferrer
+            noopener
             ><img
               src="images/about/react-jest-cert.jpg"
               width="250"
               height="200"
           /></a>
-          <a href="https://www.udemy.com/certificate/UC-9df4cbef-2cab-49e7-a178-623cc6391af2/" target="_blank" noreferrer noopener
+          <a
+            href="https://www.udemy.com/certificate/UC-9df4cbef-2cab-49e7-a178-623cc6391af2/"
+            target="_blank"
+            noreferrer
+            noopener
             ><img
               src="images/about/node-socket-io-cert.jpg"
               width="250"
