@@ -27,6 +27,7 @@
     "backendTechnologiesCategory": "Backend",
     "languagesTechnologiesCategory": "Languages",
     "toolsTechnologiesCategory": "Tools",
+    "experienceVia": "via",
     "experienceTitle": "<i class='fa fa-book'></i> <i class='fas fa-book-open'></i> Experience <i class='fas fa-book-open'></i> <i class='fa fa-book'></i>",
     "educationTitle": "<i class='fas fa-graduation-cap'></i> Education <i class='fas fa-graduation-cap'></i>",
     "resumeDownloadLink": "You can download my resume  <a target='_blank'  rel='noreferrer noopener'  href='./files/CesarBlascoResume.pdf'>here</a>",
