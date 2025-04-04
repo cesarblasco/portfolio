@@ -72,32 +72,27 @@ const projects = [
       },
     ],
   },
-  // {
-  //   id: "math",
-  //   title: "mathGameTitle",
-  //   icon: "fas fa-gamepad",
-  //   description: "mathGameDescription",
-  //   summary: `mathGameSummary`,
-  //   technologies: ["Unity 2D", "C#"],
-  //   link: "https://cesarblasco.github.io/learnmaths/",
-  //   images: [
-  //     { fileName: "maths-1.jpg", caption: "mathGameCaption1" },
-  //     { fileName: "maths-2.jpg", caption: "mathGameCaption2" },
-  //     {
-  //       fileName: "maths-3.jpg",
-  //       caption: "mathGameCaption3",
-  //     },
-  //     {
-  //       fileName: "maths-4.jpg",
-  //       caption: "mathGameCaption4",
-  //     },
-  //     {
-  //       fileName: "maths-5.jpg",
-  //       caption: "mathGameCaption5",
-  //     },
-  //     { fileName: "maths-6.jpg", caption: "mathGameCaption6" },
-  //   ],
-  // },
+  {
+    id: "math",
+    title: "mathGameTitle",
+    icon: "fas fa-gamepad",
+    description: "mathGameDescription",
+    summary: `mathGameSummary`,
+    technologies: ["Unity 2D", "C#"],
+    link: "https://cesarblasco.github.io/learnmaths/",
+    images: [
+      { fileName: "maths-1.jpg", caption: "mathGameCaption1" },
+      { fileName: "maths-2.jpg", caption: "mathGameCaption2" },
+      {
+        fileName: "maths-3.jpg",
+        caption: "mathGameCaption3",
+      },
+      {
+        fileName: "maths-4.jpg",
+        caption: "mathGameCaption4",
+      },
+    ],
+  },
   {
     id: "crypto",
     title: "cryptoTitle",
