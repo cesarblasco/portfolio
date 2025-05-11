@@ -22,7 +22,7 @@ const technologiesSpeechTextsDictionary = {
   Redux: {
     texts: [`reduxSpeechBubbleText1`],
   },
-  "React Query": {
+  "React Query / TanStack Query": {
     texts: ["reactQuerySpeechBubbleText1"],
   },
   Microfrontends: {
@@ -72,6 +72,12 @@ const technologiesSpeechTextsDictionary = {
   },
   "Angular JS": {
     texts: [`angularjsSpeechBubbleText1`],
+  },
+  "Feature Flags": {
+    texts: ["featureFlagsTooltipBubbleText1"],
+  },
+  "Data Analytics": {
+    texts: ["userTestAndAnalyticsTooltipBubbleText2"],
   },
   "Other tools and skills": {
     texts: [

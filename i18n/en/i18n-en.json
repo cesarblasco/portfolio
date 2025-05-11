@@ -13,7 +13,7 @@
     "languages": "EN"
   },
   "index": {
-    "subHeader": "Computer Engineer, Web Developer and Programmer"
+    "subHeader": "Computer Engineer Specialized in Web Development"
   },
   "about": {
     "header": "About <span class='text-secondary'>me</span>",
@@ -35,22 +35,24 @@
     "educationPosition": "Bachelor's Degree in Computer Engineering",
     "educationBullet1": "Got my bachelor's degree in Computer Engineering",
     "educationBullet2": "Learned about many topics of computer science and engineering like Data Structures, Algorithms, Object Oriented Programming, etc",
-    "nearpodPosition": "Fullstack Developer (Frontend focused) (June 2021 - Ongoing)",
+    "nearpodPosition": "Frontend Focused Fullstack Engineer (June 2021 - Ongoing)",
     "nearpodBullet1": "<span class='bullet-link'><a href='https://nearpod.com/' target='_BLANK'>Nearpod.com</a></span> (owned by <span class='bullet-link'><a href='https://www.renaissance.com/about-us/' target='_BLANK'>Renaissance</a></span> a global leader in pre-K–12 education technology and platforms) was my first experience with team members in the US and constant communication in english including dailies, plannings etc following scrum methodology with 2 week sprints.",
-    "nearpodBullet2": "Participated and lead research (spikes) to implement two new microfrontends for the Teacher's side of the application including a complex reports module which added value to more than 1 million teachers.",
-    "nearpodBullet3": "Built essential reusable components to be used company wide via collaborations to the component library.",
-    "nearpodBullet4": "Worked on a PHP backend with the company's inhouse tooling and full unit tests which allowed me to work on backend related tasks as well even if the main focus of my role was frontend.",
+    "nearpodBullet2": " Worked on a tech stack on the frontend with React with both legacy class components and functional components, Redux with selectors, sagas, SCSS modules and JEST for testing. For microfrontends use of React, Zustand, Typescript, TanStack Query and Storybook. In the backend PHP with a custom framework 90% of my work was on the frontend)",
+    "nearpodBullet3": " Most important features built were two new microfrontends for the Teacher's side of the application including a complex reports module which added value to over a million teachers and complete redesigns of core existing functionalities.",
+    "nearpodBullet4": "Built essential reusable components to be used company wide via collaborations to the component library.",
     "nearpodBullet5": "Collaborated in important refactors to make the application accesible. This is specially important for education platforms like Nearpod allowing thousands of students to be included in the learning experiences created by their teachers.",
-    "rankmiPosition": "Frontend Developer (June 2018 - June 2021)",
-    "rankmiBullet1": "Developed components, modules and features from the most trivial, up the most complex using Angular JS framework version 1.6.7.",
-    "rankmiBullet2": "Refactored components from .js to .ts and made improvements over legacy code.",
-    "rankmiBullet3": "Collaborated in creating and refactoring components to enable accessibility by limited or impaired users (WAI ARIA standards for the web).",
-    "rankmiBullet4": "Learned React JS and collaborated in the migration of the application from Angular JS to React JS.",
-    "sotecPosition": "Fullstack Developer (June 2017 - June 2018)",
-    "sotecBullet1": "Developed components, modules and features using the Angular framework versions 2 to 5.",
-    "sotecBullet2": "Collaborated in REST API development using Spring Framework and Entity Framework with Microsoft SQL Server",
-    "sotecBullet3": "Involved in projects that used the SCRUM methodology for agile development.",
-    "dentalClinicPosition": "Fullstack Developer (June 2017 - August 2018)",
+    "rankmiPosition": "Frontend Engineer (June 2018 - June 2021)",
+    "rankmiBullet1": "<span class='bullet-link'><a href='https://www.rankmi.com' target='_BLANK'>Rankmi.com</a></span> is a SaaS platform for human resources management based in Latin America. Collaborated as a Frontend Engineer for their platform following the Scrum methodology.",
+    "rankmiBullet2": "Developed components, modules and features from the most trivial, up the most complex using Angular JS framework version 1.6.7.",
+    "rankmiBullet3": "Learned React JS and collaborated in the migration of the application from Angular JS to React JS.",
+    "rankmiBullet4": "Most important features I built are \"LinkedIn\" like resume module as well as a monitoring dashboard in React with Ant Design UI library.",
+    "rankmiBullet5": "Refactored components from plain JavaScript to TypeScript and made improvements over legacy code.",
+    "sotecPosition": "Fullstack Engineer (June 2017 - June 2018)",
+    "sotecBullet1": "<span class='bullet-link'><a href='https://www.sotec.es/index.html' target='_BLANK'>Sotec.es</a></span> is a Spain-based software development agency and was my first formal experience as a web software engineer.",
+    "sotecBullet2": "Developed components, modules and features using the Angular framework versions 2 to 5.",
+    "sotecBullet3": "Collaborated in REST API development using Spring Framework and Entity Framework with Microsoft SQL Server",
+    "sotecBullet4": "Involved in projects that used the SCRUM methodology for agile development.",
+    "dentalClinicPosition": "Fullstack Engineer (June 2017 - August 2018)",
     "dentalClinicBullet1": "This was my thesis project and my first big web application that served all the needs of a dental clinic and the beginning of my journey into web development as this was my thesis project.",
     "dentalClinicBullet2": "Even though it isn't really work related experience, it was an app developed for real world use and I consider it a worthy mention in my overall experience as a web developer.",
     "dentalClinicBullet3": "Featuring the following modules: appointments, specialist and procedures management, patient's CRUD, patient's history, interactive patient teeth interface, reports (PDF, Excel) and payments.",
@@ -97,7 +99,9 @@
     "resetSpeechBubbleTooltip": "Reset speech bubble to default message",
     "speechScrollTooltip": "Next message",
     "otherToolsSkillsSpeechBubbleText1": "Other languages I've used in the past include C++, Java, C#. I used these in college and in smaller projects early in my career. I used Spring Boot with Java and .NET with C# for backend for example.",
-    "otherToolsSkillsSpeechBubbleText2": "Other libraries or utitilies I've used before include Underscore / Lodash, ES Lint, VS Code, Raphael.js, Prettier, Bootstrap V3 and V4, Font Awesome (the icons of this portfolio use Font Awesome v5.11) and JQuery and some game dev with Unity."
+    "otherToolsSkillsSpeechBubbleText2": "Other libraries or utitilies I've used before include Underscore / Lodash, ES Lint, VS Code, Raphael.js, Prettier, Bootstrap V3 and V4, Font Awesome (the icons of this portfolio use Font Awesome v5.11) and JQuery and some game dev with Unity.",
+    "featureFlagsTooltipBubbleText1": "I have experience with feature releases and A/B testing with product managers via <span class='bullet-link'><a href=https://launchdarkly.com/' target='_BLANK'>Launch Darkly</a></span> allowing safe feature development and slow and steady releases to users until the final, full release.",
+    "userTestAndAnalyticsTooltipBubbleText2": "I also have experience with <span class='bullet-link'><a href=https://mixpanel.com/' target='_BLANK'>Mixpanel</a></span> for data analytics in frontend applications and measuring user engagement that helps product managers make decisions."
   },
   "projects": {
     "header": "My <span class='text-secondary'>projects</span>",

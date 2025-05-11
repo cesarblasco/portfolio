@@ -13,7 +13,7 @@
     "languages": "ES"
   },
   "index": {
-    "subHeader": "Ingeniero en computación, Desarrollador Web y Programador"
+    "subHeader": "Ingeniero en Computación Especializado en Desarrollo Web"
   },
   "about": {
     "header": "Sobre <span class='text-secondary'>mi</span>",
@@ -37,19 +37,21 @@
     "coursesTitle": "<i class='fas fa-chalkboard-teacher'></i> Certificados <i class='fas fa-chalkboard-teacher'></i>",
     "nearpodPosition": "Desarollador Full Stack (con enfoque en frontend) (Junio 2021 - Actualidad)",
     "nearpodBullet1": "<span class='bullet-link'><a href='https://nearpod.com/' target='_BLANK'>Nearpod.com</a></span> (siendo parte de empresas de <span class='bullet-link'><a href='https://www.renaissance.com/about-us/' target='_BLANK'>Renaissance</a></span> un líder global en plataformas y tecnologías educativas para estudiantes de educación inicial / pre-K12) fue mi primera experiencia con miembros de equipo en los Estados Unidos y comunicación constante en ingles incluyendo dailies, plannings etc siguiendo la metodología scrum con sprints de 2 semanas.",
-    "nearpodBullet2": "Participe y lidere investigación (spikes) para implementar dos nuevos microfrontends para los profesores de la aplicación, lo que agrego valor a más de un millón de profesores.",
-    "nearpodBullet3": "Construí componentes reusables esenciales a ser usados por toda la empresa mediante colaboraciones a la librería de componentes de la empresa",
-    "nearpodBullet4": "Trabaje en un backend PHP con las herramientas internas de la empresa y pruebas unitarias lo cual me permitió tomar tareas relacionadas a backend aunque mi rol era primariamente de frontend.",
-    "nearpodBullet5": "Colabore en refactors importantes para hacer la aplicacion accesible. Esto es especiialmente importante para plataformas educativas como Nearpod permitiendo que miles de estudiantes puedan ser incluidos en las experiencias de aprendizaje creadas por sus profesores",
+    "nearpodBullet2": "Colaboré en un tech stack en el frontend en React tanto con componentes de clase como componentes funcionales, Redux con selectores, sagas, módulos SCSS Y Jest para pruebas. Para los microfrontends use React, Zustand, Typescript, TanStack Query y Storybook. En el backend PHP con un framework personalizados (el 90% de mi trabajo fue en el frontend).",
+    "nearpodBullet3": "Las funcionalidades más importantes que construí fueron dos nuevos mircrofrontends para los profesores de la aplicación, incluyendo un módulo de reporteria complejo lo cual agrego valor a un millón de profesores y rediseños completos a funcionalidades existentes esenciales.",
+    "nearpodBullet4": "Construí componentes reusables esenciales a ser usados a nivel de toda la empresa gracias a que colabore al desarrollo de componentes en la librería de componentes de la empresa.",
+    "nearpodBullet5": "Colabore en refactors importantes para hacer la aplicación accesible. Esto es especialmente importante para plataformas educativas como Nearpod permitiendo que miles de estudiantes puedan ser incluidos en las experiencias de aprendizaje creadas por sus profesores.",
     "rankmiPosition": "Desarrollador Frontend (Junio 2018 - Junio 2021)",
     "rankmiBullet1": "Desarrollé componentes, módulos y funcionalidades de diversas complejidades usando el framework Angular JS en su versión 1.6.7.",
-    "rankmiBullet2": "Refactorize componentes de .js a .ts e hice mejoras a codigo legacy.",
-    "rankmiBullet3": "Colaboré en crear y refactorizar componentes para permitir accesibilidad por usuarios limitados o con discapacidades (Estandares WAI ARIA para la web).",
-    "rankmiBullet4": "Aprendí React JS y colaboré en la migración de la aplicación de AngularJS a React JS.",
+    "rankmiBullet2": "<span class='bullet-link'><a href='https://www.rankmi.com' target='_BLANK'>Rankmi.com</a></span> es una plataforma SaaS para el manejo de recursos humanos ubicada en Latinoamérica. Colabore con el desarrollo de su plataforma siguiendo la metodología scrum.",
+    "rankmiBullet3": "Aprendí React JS y colaboré en la migración de la aplicación de AngularJS a React JS.",
+    "rankmiBullet4": "Las funcionalidades más importantes que desarrolle fueron un módulo de curriculums estilo LinkedIn y un módulo de monitoreo en React usando la librería de componentes Ant Design.",
+    "rankmiBullet5": "Hice refactors a componentes de JavaScript puro a TypeScript e hice mejoras a codigo legacy.",
     "sotecPosition": "Desarrollador Fullstack (Junio 2017 - Junio 2018)",
-    "sotecBullet1": "Desarrollé componentes, módulos y funcionalidades usando el framework Angular versiones 2 a 5.",
-    "sotecBullet2": "Colaboré en desarrollo de REST APIs usando Spring Framework y Entity Framework con Microsoft SQL Server.",
-    "sotecBullet3": "Participé en proyectos utilizando la metodología Scrum para desarrollo ágil.",
+    "sotecBullet1": "<span class='bullet-link'><a href='https://www.sotec.es/index.html' target='_BLANK'>Sotec.es</a></span> es una agencia de desarrollo de software y fue mi primera experiencia formal como ingeniero de software web.",
+    "sotecBullet2": "Desarrollé componentes, módulos y funcionalidades usando el framework Angular versiones 2 a 5.",
+    "sotecBullet3": "Colaboré en desarrollo de REST APIs usando Spring Framework y Entity Framework con Microsoft SQL Server.",
+    "sotecBullet4": "Participé en proyectos utilizando la metodología Scrum para desarrollo ágil.",
     "dentalClinicPosition": "Desarollador Fullstack (Junio 2016 - Agosto 2017)",
     "dentalClinicBullet1": "Mi primera gran aplicación web que sirvió todas las funcionalidades de una clínica dental y el inicio de mi carrera hacia el desarrollo web. ",
     "dentalClinicBullet2": "Aunque no es realmente experiencia relacionada con un cargo o empleo, esta fue una app desarrollada para uso en el mundo real y lo considero una mención bastante valiosa en mi experiencia como desarrollador web.",
@@ -97,7 +99,9 @@
     "resetSpeechBubbleTooltip": "Reiniciar dialogo al mensaje por defecto",
     "speechScrollTooltip": "Próximo mensaje",
     "otherToolsSkillsSpeechBubbleText1": "Otros lenguajes que he usado en el pasado han sido C++, Java y C#. Use estos lenguajes en la universidad y en proyectos más pequeños al iniciar mi carrera. Por ejemplo, he usado Spring Boot con Java y .NET con C# para backend.",
-    "otherToolsSkillsSpeechBubbleText2": "Otras librerias y utilidades que he usado: Underscore / Lodash, ES Lint, VS Code, Prettier, Raphael.js, Bootstrap V3 y v4, Font Awesome (los iconos de este portafolio usan Font Awesome 5.11) y JQuery. Tambien Expore un poco de desarrollo de videojuegos con Unity, puede ver un pequeño juego en este portafolio."
+    "otherToolsSkillsSpeechBubbleText2": "Otras librerias y utilidades que he usado: Underscore / Lodash, ES Lint, VS Code, Prettier, Raphael.js, Bootstrap V3 y v4, Font Awesome (los iconos de este portafolio usan Font Awesome 5.11) y JQuery. Tambien Expore un poco de desarrollo de videojuegos con Unity, puede ver un pequeño juego en este portafolio.",
+    "featureFlagsTooltipBubbleText1": "Tengo experiencia con despliegue de funcionalides y pruebas de tipo A/B con gerentes de productos usando <span class='bullet-link'><a href=https://launchdarkly.com/' target='_BLANK'>Launch Darkly</a></span> permitiendo despliegues de funcionalidades de forma segura y de forma progresiva a usuarios hasta el despliegue general.",
+    "userTestAndAnalyticsTooltipBubbleText2": "También tengo experiencia con <span class='bullet-link'><a href=https://mixpanel.com/' target='_BLANK'>Mixpanel</a></span> para análisis de datos en aplicaciones frontend y medición de como los usuarios interactúan con la aplicación que ayuda a gerentes de producto a tomar decisiones."
   },
   "projects": {
     "header": "Mis <span class='text-secondary'>proyectos</span>",
