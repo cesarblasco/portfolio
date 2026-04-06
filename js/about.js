@@ -49,6 +49,9 @@ const technologiesSpeechTextsDictionary = {
   PHP: {
     texts: [`phpSpeechBubbleText1`],
   },
+  "PHP UNIT": {
+    texts: [`phpUnitSpeechBubbleText1`],
+  },
   Git: {
     texts: ["gitSpeechBubbleText1", "gitSpeechBubbleText2"],
   },
@@ -75,6 +78,9 @@ const technologiesSpeechTextsDictionary = {
   },
   "Feature Flags": {
     texts: ["featureFlagsTooltipBubbleText1"],
+  },
+  "AI Tools": {
+     texts: ["AiToolsTooltipBubbleText"],
   },
   "Data Analytics": {
     texts: ["userTestAndAnalyticsTooltipBubbleText2"],
