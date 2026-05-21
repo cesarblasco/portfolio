@@ -6,7 +6,7 @@
     "contactTitle": "Contactame"
   },
   "navbar": {
-    "home": "Home",
+    "home": "Home y medios de contacto",
     "aboutMe": "Sobre mi",
     "projects": "Mis proyectos",
     "contact": "Contacto",
@@ -37,10 +37,11 @@
     "coursesTitle": "<i class='fas fa-chalkboard-teacher'></i> Certificados <i class='fas fa-chalkboard-teacher'></i>",
     "nearpodPosition": "Desarollador Full Stack (con enfoque en frontend) (Junio 2021 - Actualidad)",
     "nearpodBullet1": "<span class='bullet-link'><a href='https://nearpod.com/' target='_BLANK'>Nearpod.com</a></span> (siendo parte de empresas de <span class='bullet-link'><a href='https://www.renaissance.com/about-us/' target='_BLANK'>Renaissance</a></span> un líder global en plataformas y tecnologías educativas para estudiantes de educación inicial / pre-K12) fue mi primera experiencia con miembros de equipo en los Estados Unidos y comunicación constante en ingles incluyendo dailies, plannings etc siguiendo la metodología scrum con sprints de 2 semanas.",
-    "nearpodBullet2": "Colaboré en un tech  stack  en el frontend  en React tanto con componentes de clase como componentes funcionales, Redux  con selectores, sagas, módulos SCSS Y Jest  para pruebas. Para los microfrontends  usé React, Zustand , Typescript , TanStack  Query  y Storybook . En el backend  PHP con un framework  personalizado, PHP para pruebas unitarias, colabore en microservicios  con Nest.js y gRCP  para comunicación entre los servicios.",
-    "nearpodBullet3": "Las funcionalidades más importantes que construí fueron dos nuevos mircrofrontends para los profesores de la aplicación, incluyendo un módulo de reporteria complejo lo cual agrego valor a un millón de profesores y rediseños completos a funcionalidades existentes esenciales.",
+    "nearpodBullet2": "Colaboré en un tech  stack  en el frontend  en React tanto con componentes de clase como componentes funcionales, Redux  con selectores, sagas, módulos SCSS Y Jest  para pruebas. Para los microfrontends  usé React, Zustand , Typescript , TanStack  Query  y Storybook . En el backend  PHP con un framework  personalizado, PHP para pruebas unitarias.",
+    "nearpodBullet3": "Colaboré en la creación de dos nuevos microfrontends para funcionalidades de profesores incluyendo un módulo de reportes complejo y nuevas formas de previsualizar lecciones usadas por los profesores en alrededor de <span class='bullet-link'><a href='https://nearpod.com/about-us'target='_BLANK'>75% de los distritos de Estados Unidos</a></span> tomando en cuenta modularidad, rendimiento y escalabilidad.",
     "nearpodBullet4": "Construí componentes reusables esenciales a ser usados a nivel de toda la empresa gracias a que colabore al desarrollo de componentes en la librería de componentes de la empresa.",
-    "nearpodBullet5": "Colabore en refactors importantes para hacer la aplicación accesible. Esto es especialmente importante para plataformas educativas como Nearpod permitiendo que miles de estudiantes puedan ser incluidos en las experiencias de aprendizaje creadas por sus profesores.",
+    "nearpodBullet5": "Colabore en refactors claves de accesibilidad para hacer la plataforma inclusiva para estudiantes con discapacidades, permitiendo resolver una necesidad crítica en plataformas de enfocadas en educación como Nearpod. A resaltar: Componente de Video Accesible.",
+    "nearpodBullet6": "Utilice herramientas de IA como Claude Code y Cursor para acelerar el desarrollo, la planificación y la investigación de funcionalidades.",
     "rankmiPosition": "Desarrollador Frontend (Junio 2018 - Junio 2021)",
     "rankmiBullet1": "Desarrollé componentes, módulos y funcionalidades de diversas complejidades usando el framework Angular JS en su versión 1.6.7.",
     "rankmiBullet2": "<span class='bullet-link'><a href='https://www.rankmi.com' target='_BLANK'>Rankmi.com</a></span> es una plataforma SaaS para el manejo de recursos humanos ubicada en Latinoamérica. Colabore con el desarrollo de su plataforma siguiendo la metodología scrum.",
@@ -195,7 +196,7 @@
   },
   "contact": {
     "header": "Medios de <span class='text-secondary'>contacto</span>",
-    "subHeader": "Asi se puede poner en contacto conmigo",
+    "subHeader": "Contácteme:",
     "name": "Nombre:",
     "namePlaceholder": "Su nombre",
     "email": "Email:",
