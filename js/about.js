@@ -34,6 +34,9 @@ const technologiesSpeechTextsDictionary = {
   "React DND": {
     texts: ["reactDNDSpeechBubbleText1"],
   },
+  "Next JS": {
+    texts: ["nextJSSpeechBubbleText1"],
+  },
   Accessibility: {
     texts: ["accessibilitySpeechBubbleText1"],
   },
