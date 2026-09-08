@@ -1,7 +1,9 @@
 const projects = [
   {
     id: "dental",
-    title: "dentalClinicTitle",
+    title: "projects.dentalClinic",
+    imageAlt: "projects.dentalClinicAlt",
+    thumbnailSrc: "images/projects/dental/thumbnail.jpg",
     icon: "fas fa-tooth",
     description: "dentalClinicDescription",
     summary: "dentalClinicSummary",
@@ -29,23 +31,10 @@ const projects = [
     ],
   },
   {
-    id: "lab",
-    title: "cssLabTitle",
-    icon: "fas fa-flask",
-    description: "cssLabDescription",
-    summary: `cssLabSummary`,
-    technologies: ["HTML", "CSS"],
-    link: "https://cesarblasco.github.io/css-lab/",
-    images: [
-      { fileName: "css-lab-5.gif", caption: "cssLabCaption4" },
-      { fileName: "css-lab-2.jpg", caption: "cssLabCaption1" },
-      { fileName: "css-lab-3.jpg", caption: "cssLabCaption2" },
-      { fileName: "css-lab-4.jpg", caption: "cssLabCaption3" },
-    ],
-  },
-  {
     id: "search",
-    title: "githubSearchTitle",
+    title: "projects.githubSearch",
+    imageAlt: "projects.githubSearchTitleAlt",
+    thumbnailSrc: "images/projects/search/thumbnail.jpg",
     icon: "fab fa-github",
     description: "githubSearchDescription",
     summary: "githubSearchSummary",
@@ -73,8 +62,77 @@ const projects = [
     ],
   },
   {
+    id: "crypto",
+    title: "projects.crypto",
+    imageAlt: "projects.cryptoAlt",
+    thumbnailSrc: "images/projects/crypto/thumbnail.jpg",
+    icon: "fab fa-bitcoin",
+    description: "cryptoDescription",
+    summary: `cryptoSummary`,
+    technologies: [
+      "React JS / Hooks V 16.13.18",
+      "React Context / dispatch / useReducer",
+      "React Tooltip",
+      "Tailwind CSS",
+      "Nivo.rocks charts",
+      "Typescript",
+      "Coincap.io API",
+    ],
+    link: "https://cesarblasco.github.io/react-crypto-compare/",
+    images: [
+      { fileName: "crypto-1.jpg", caption: "cryptoCaption1" },
+      { fileName: "crypto-2.jpg", caption: "cryptoCaption2" },
+      { fileName: "crypto-3.jpg", caption: "cryptoCaption3" },
+      { fileName: "crypto-4.jpg", caption: "cryptoCaption4" },
+      { fileName: "crypto-5.jpg", caption: "cryptoCaption5" },
+      { fileName: "crypto-6.jpg", caption: "cryptoCaption6" },
+      { fileName: "crypto-7.jpg", caption: "cryptoCaption7" },
+      { fileName: "crypto-8.jpg", caption: "cryptoCaption8" },
+      { fileName: "crypto-9.jpg", caption: "cryptoCaption9" },
+    ],
+  },
+  {
+    id: "lab",
+    title: "projects.cssLab",
+    imageAlt: "projects.cssLabTitleAlt",
+    thumbnailSrc: "images/projects/lab/thumbnail.gif",
+    icon: "fas fa-flask",
+    description: "cssLabDescription",
+    summary: `cssLabSummary`,
+    technologies: ["HTML", "CSS"],
+    link: "https://cesarblasco.github.io/css-lab/",
+    images: [
+      { fileName: "css-lab-2.jpg", caption: "cssLabCaption1" },
+      { fileName: "css-lab-3.jpg", caption: "cssLabCaption2" },
+      { fileName: "css-lab-4.jpg", caption: "cssLabCaption3" },
+    ],
+  },
+  {
+    id: "portfolio",
+    title: "projects.portfolio",
+    imageAlt: "projects.portfolioAlt",
+    thumbnailSrc: "images/projects/portfolio/portfolio-thumbnail.jpg",
+    icon: "fas fa-suitcase",
+    description: "portfolioDescription",
+    summary: `portfolioSummary`,
+    technologies: [
+      "HTML",
+      "SASS ---> CSS via Watch SASS VS code plugin",
+      "JS / ES6",
+      "JSON",
+      "Font Awesome 5",
+    ],
+    images: [
+      { fileName: "portfolio-1.jpg", caption: "portfolioCaption1" },
+      { fileName: "portfolio-2.jpg", caption: "portfolioCaption2" },
+      { fileName: "portfolio-3.jpg", caption: "portfolioCaption3" },
+    ],
+  },
+  {
     id: "math",
-    title: "mathGameTitle",
+    title: "projects.learnMaths",
+    imageAlt: "projects.learnMathsAlt",
+    thumbnailSrc: "images/projects/math/thumbnail.jpg",
     icon: "fas fa-gamepad",
     description: "mathGameDescription",
     summary: `mathGameSummary`,
@@ -94,53 +152,113 @@ const projects = [
     ],
   },
   {
-    id: "crypto",
-    title: "cryptoTitle",
-    icon: "fab fa-bitcoin",
-    description: "cryptoDescription",
-    summary: `cryptoSummary`,
-    technologies: [
-      "React JS / Hooks V 16.13.18",
-      "React Context / dispatch / useReducer",
-      "React Tooltip",
-      "Tailwind CSS",
-      "Nivo.rocks charts",
-      "Typescript",
-      "Coincap.io API",
-    ],
-    // link: "https://cesarblasco.github.io/react-crypto-compare/",
+    id: "multipleDND",
+    title: "projects.multipleDND",
+    imageAlt: "projects.multipleDNDAlt",
+    thumbnailSrc: "images/projects/multipleDND/thumbnail.gif",
+    icon: "fas fa-mouse",
+    description: "multipleDNDDescription",
+    summary: `multipleDNDSummary`,
+    technologies: ["NextJS", "ReactDND" ],
+    link: "https://cesarblasco.github.io/Multiple-drag-and-drop/",
     images: [
-      { fileName: "crypto-1.jpg", caption: "cryptoCaption1" },
-      { fileName: "crypto-2.jpg", caption: "cryptoCaption2" },
-      { fileName: "crypto-3.jpg", caption: "cryptoCaption3" },
-      { fileName: "crypto-4.jpg", caption: "cryptoCaption4" },
-      { fileName: "crypto-5.jpg", caption: "cryptoCaption5" },
-      { fileName: "crypto-6.jpg", caption: "cryptoCaption6" },
-      { fileName: "crypto-7.jpg", caption: "cryptoCaption7" },
-      { fileName: "crypto-8.jpg", caption: "cryptoCaption8" },
-      { fileName: "crypto-9.jpg", caption: "cryptoCaption9" },
-    ],
-  },
-  {
-    id: "portfolio",
-    title: "portfolioTitle",
-    icon: "fas fa-suitcase",
-    description: "portfolioDescription",
-    summary: `portfolioSummary`,
-    technologies: [
-      "HTML",
-      "SASS ---> CSS via Watch SASS VS code plugin",
-      "JS / ES6",
-      "JSON",
-      "Font Awesome 5",
-    ],
-    images: [
-      { fileName: "portfolio-1.jpg", caption: "portfolioCaption1" },
-      { fileName: "portfolio-2.jpg", caption: "portfolioCaption2" },
-      { fileName: "portfolio-3.jpg", caption: "portfolioCaption3" },
+      { fileName: "multiple-dnd-1.gif", caption: "multipleDNDCaption1" },
     ],
   },
 ];
+
+
+  const projectsContainerNode = document.getElementById("projects");
+
+  projects.forEach((project) => {
+    // child 1
+    // <div class="project" data-category="web"></div>
+    const projectNode = document.createElement("div");
+    projectNode.classList.add("project")
+
+    // <div class="project-image">
+    const projectImageNode = document.createElement("div");
+    projectImageNode.classList.add("project-image");
+
+    // <span class="project-title" id="dental-title" data-translate="projects.dentalClinic"></span>
+    const projectTitleNode = document.createElement("span");
+    projectTitleNode.classList.add("project-title");
+    projectTitleNode.setAttribute("data-translate", project.title)
+
+   // <a href="#!" class="project-info" data-project="dental">
+    const projectInfoLinkNode = document.createElement("a");
+    projectInfoLinkNode.classList.add("project-info");
+    projectInfoLinkNode.setAttribute("href", "#!");
+    projectInfoLinkNode.setAttribute("data-project", project.id);
+
+    // <img src="images/projects/dental/thumbnail.jpg" data-translate="projects.dentalClinicAlt" alt="projects.dentalClinicAlt"></img>
+    const projectInfoImgNode = document.createElement("img");
+    projectInfoImgNode.setAttribute("src", project.thumbnailSrc)
+    projectInfoImgNode.setAttribute("alt", project.imageAlt);
+
+    // child 2    
+    // <a href="#!" class="btn-light project-info" data-project="dental">
+    const infoBtnLinkNode = document.createElement("a");
+    infoBtnLinkNode.setAttribute("href", "#!");
+    infoBtnLinkNode.classList.add("btn-light", "project-info");
+    infoBtnLinkNode.setAttribute("data-project", project.id);
+
+    // <i class="fas fa-eye"></i> 
+    const projectInfoIconNode = document.createElement("i")
+    projectInfoIconNode.classList.add("fas", "fa-eye", "p-right-5");
+
+    // <span data-translate="projects.infoBtn"></span>
+    const projectInfoIconLabelNode = document.createElement("span");
+    projectInfoIconLabelNode.setAttribute("data-translate", "projects.infoBtn");
+
+
+    // child 3
+    // a href="#!" class="btn-dark disabled">
+    const githubLinkNode = document.createElement("a");
+    githubLinkNode.setAttribute("href", "#!");
+    githubLinkNode.classList.add("btn-dark");
+
+    if(!project.link) {
+      githubLinkNode.classList.add("disabled");
+    }
+
+    // <i class="fab fa-github"></i> <span data-translate="projects.githubBtn"></span>
+    const projectInfoGithubIconNode = document.createElement("i")
+    projectInfoGithubIconNode.classList.add("fab", "fa-github", "p-right-5");
+
+    const projectInfoIconGithubLabelNode = document.createElement("span");
+    projectInfoIconGithubLabelNode.setAttribute("data-translate", "projects.githubBtn");
+    
+
+    // child 1
+    projectNode.appendChild(projectImageNode);
+
+    projectImageNode.appendChild(projectTitleNode)
+    projectImageNode.appendChild(projectInfoLinkNode)
+
+    projectInfoLinkNode.appendChild(projectInfoIconNode)
+    projectInfoLinkNode.appendChild(projectInfoImgNode)
+
+    projectNode.appendChild(infoBtnLinkNode);
+
+
+    // child 2
+    infoBtnLinkNode.appendChild(projectInfoIconNode)
+    infoBtnLinkNode.appendChild(projectInfoIconLabelNode)
+
+
+    // child 3 
+    githubLinkNode.appendChild(projectInfoGithubIconNode)
+    githubLinkNode.appendChild(projectInfoIconGithubLabelNode)
+
+
+    // all childs inside parent
+    projectNode.appendChild(infoBtnLinkNode)
+    projectNode.appendChild(githubLinkNode);
+
+    // parent inside main container
+    projectsContainerNode.appendChild(projectNode)
+})
 
 const viewInfoButtons = document.querySelectorAll(".project-info");
 const projectModalInfo = document.getElementById("modal");
@@ -248,7 +366,10 @@ function openProjectInformationModal() {
   );
   const modalIcons = document.getElementsByClassName("modal-icon");
 
-  translateSpecificKey(modalTitle, "projects", currentProject.title);
+  const titleKeys = currentProject.title.split(".");
+  const titleBaseKey = titleKeys[0];
+  const titleKey = titleKeys[1];
+  translateSpecificKey(modalTitle, titleBaseKey, titleKey);
   translateSpecificKey(
     modalDescription,
     "projects",
@@ -271,10 +392,6 @@ function openProjectInformationModal() {
     "projects",
     currentProject.images[currentImageIndex].caption
   );
-
-  for (let i = 0; i < modalIcons.length; i++) {
-    modalIcons[i].className = `modal-icon fa-2x ${currentProject.icon}`;
-  }
 
   removeAllChildsFromNode(modalTechnologies);
 

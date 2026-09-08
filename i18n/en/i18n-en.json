@@ -135,6 +135,8 @@
     "portfolioAlt": "Portfolio",
     "learnMaths": "<i class='fas fa-square-root-alt'></i> Learn Maths <i class='fas fa-square-root-alt'></i>",
     "learnMathsAlt": "Portfolio",
+    "multipleDND": "<i class='fas fa-mouse'></i> Drag & Drop <i class='fas fa-mouse'></i>",
+    "multipleDNDAlt": "Multiple Drag & Drop",
     "technologiesUsed": "Technologies used:",
     "tryProject": "Live Demo",
     "dentalClinicTitle": "Dental Clinic",
@@ -193,7 +195,11 @@
     "portfolioCaption1": "Home",
     "portfolioCaption2": "About me (git skill selected, try clicking those skill pills for additional text)",
     "portfolioCaption3": "My projects",
-    "portfolioCaption4": "Contact"
+    "portfolioCaption4": "Contact",
+    "multipleDNDTitle": "Multiple Drag & Drop",
+    "multipleDNDDescription": "Animated Multiple Drag & Drop",
+    "multipleDNDSummary": "Multiple Drag & Drop experiment with animations simulating actions like a gmail multiselect and allowing dropping the elements inside another one that accepts them",
+    "multipleDNDCaption1": "Multiple Drag and Drop Sample"
   },
   "contact": {
     "header": "Contact <span class='text-secondary'>me</span>",

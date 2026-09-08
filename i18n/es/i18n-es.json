@@ -134,6 +134,8 @@
     "portfolio": "<i class='fas fa-suitcase'></i> Portafolio <i class='fas fa-suitcase'></i>",
     "learnMaths": "<i class='fas fa-square-root-alt'></i> Learn Maths <i class='fas fa-square-root-alt'></i>",
     "learnMathsAlt": "Portfolio",
+    "multipleDND": "<i class='fas fa-mouse'></i> Drag & Drop Multiple <i class='fas fa-mouse'></i>",
+    "multipleDNDAlt": "Drag & Drop Multiple",
     "portfolioAlt": "Portafolio",
     "technologiesUsed": "Tecnologías usadas:",
     "tryProject": "Demo en vivo",
@@ -193,7 +195,11 @@
     "portfolioCaption1": "Home",
     "portfolioCaption2": "Sobre mi (habilidad Git seleccionada, intenta hacer click en las habilidades para ver mas texto)",
     "portfolioCaption3": "Mis proyectos",
-    "portfolioCaption4": "Contacto"
+    "portfolioCaption4": "Contacto",
+    "multipleDNDTitle": "Drag & Drop Multiple",
+    "multipleDNDDescription": "Drag & Drop Multiple Animado",
+    "multipleDNDSummary": "Experimento de Drag & Drop multiple con animaciones simulando seleccion y arrastrado de elementos como en gmail y con funcionalidades de soltar elementos dentro de otro que los soporte",
+    "multipleDNDCaption1": "Demo de Drag & Drop multiple animado"
   },
   "contact": {
     "header": "Medios de <span class='text-secondary'>contacto</span>",
