@@ -46,6 +46,7 @@ const projects = [
       "Github API",
     ],
     link: "https://cesarblasco.github.io/RKM-Test-Base",
+    githubLink: "https://github.com/cesarblasco/RKM-Test-Base",
     images: [
       {
         fileName: "github-search-1.jpg",
@@ -79,6 +80,7 @@ const projects = [
       "Coincap.io API",
     ],
     // link: "https://cesarblasco.github.io/react-crypto-compare/",
+    githubLink: "https://github.com/cesarblasco/react-crypto-compare",
     images: [
       { fileName: "crypto-1.jpg", caption: "cryptoCaption1" },
       { fileName: "crypto-2.jpg", caption: "cryptoCaption2" },
@@ -101,6 +103,7 @@ const projects = [
     summary: `cssLabSummary`,
     technologies: ["HTML", "CSS"],
     link: "https://cesarblasco.github.io/css-lab/",
+    githubLink: "https://github.com/cesarblasco/css-lab",
     images: [
       { fileName: "css-lab-2.jpg", caption: "cssLabCaption1" },
       { fileName: "css-lab-3.jpg", caption: "cssLabCaption2" },
@@ -122,6 +125,7 @@ const projects = [
       "JSON",
       "Font Awesome 5",
     ],
+    githubLink: 'https://github.com/cesarblasco/portfolio',
     images: [
       { fileName: "portfolio-1.jpg", caption: "portfolioCaption1" },
       { fileName: "portfolio-2.jpg", caption: "portfolioCaption2" },
@@ -138,6 +142,7 @@ const projects = [
     summary: `mathGameSummary`,
     technologies: ["Unity 2D", "C#"],
     link: "https://cesarblasco.github.io/learnmaths/",
+    githubLink: "https://github.com/cesarblasco/learnmaths",
     images: [
       { fileName: "maths-1.jpg", caption: "mathGameCaption1" },
       { fileName: "maths-2.jpg", caption: "mathGameCaption2" },
@@ -161,6 +166,7 @@ const projects = [
     summary: `multipleDNDSummary`,
     technologies: ["NextJS", "ReactDND" ],
     link: "https://cesarblasco.github.io/Multiple-drag-and-drop/",
+    githubLink: "https://github.com/cesarblasco/Multiple-drag-and-drop",
     images: [
       { fileName: "multiple-dnd-1.gif", caption: "multipleDNDCaption1" },
     ],
@@ -215,10 +221,12 @@ const projects = [
     // child 3
     // a href="#!" class="btn-dark disabled">
     const githubLinkNode = document.createElement("a");
-    githubLinkNode.setAttribute("href", "#!");
+    let githubLink = project.githubLink || "#!"
+    githubLinkNode.setAttribute("href", githubLink);
+    githubLinkNode.setAttribute("target", "BLANK");
     githubLinkNode.classList.add("btn-dark");
 
-    if(!project.link) {
+    if(!project.githubLink) {
       githubLinkNode.classList.add("disabled");
     }
 
